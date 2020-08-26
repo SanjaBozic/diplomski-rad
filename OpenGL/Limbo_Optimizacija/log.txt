@@ -1,0 +1,10 @@
+Running Steam on arch rolling 64-bit
+STEAM_RUNTIME is enabled automatically
+Pins up-to-date!
+Steam client's requirements are satisfied
+/home/marijan/.local/share/Steam/ubuntu12_32/steam steam://run/48000
+STEAM_RUNTIME_HEAVY: ./steam-runtime-heavy
+[2020-08-26 23:09:42] Startup - updater built Jul 31 2020 09:12:07
+[2020-08-26 23:09:42] Verifying installation...
+[2020-08-26 23:09:42] Verification complete
+[2020-08-26 23:11:01] Shutdown

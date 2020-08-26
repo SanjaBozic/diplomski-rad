@@ -1,0 +1,52 @@
+[require]
+GLSL >= 4.10
+GL_ARB_separate_shader_objects
+SSO ENABLED
+
+[fragment shader]
+#version 410 core
+// LunarGOO output
+#extension GL_ARB_gpu_shader5 : enable
+#extension GL_ARB_shading_language_420pack : enable
+#extension GL_ARB_tessellation_shader : enable
+layout(binding=0) uniform sampler2D g_tTexture0;
+layout(binding=1) uniform sampler2D g_tTexture1;
+layout(binding=2) uniform sampler2D g_tTexture2;
+layout(location=0) in vec4 PS_INPUT_gl_vTex;
+layout(location=1) in vec4 PS_INPUT_gl_vColor;
+layout(location=0) out vec4 PS_OUTPUT_gl_vColor;
+const float C_a0d0625 = -0.0625;
+const float C_1d1643 = 1.1643;
+const float C_a0d5 = -0.5;
+const float C_1d5958 = 1.5958;
+const float C_0d39173 = 0.39173;
+const float C_0d8129 = 0.8129;
+const float C_2d017 = 2.017;
+const float C_2d2 = 2.2;
+const vec4 C_xx1m2m1 = vec4(0.0, 0.0, 0.0, 1.0);
+void main()
+{
+	vec4 H_hpjt6l1 = texture(g_tTexture0, PS_INPUT_gl_vTex.xy);
+	vec4 H_e96hu2 = texture(g_tTexture1, PS_INPUT_gl_vTex.xy);
+	vec4 H_zycz67 = texture(g_tTexture2, PS_INPUT_gl_vTex.xy);
+	float H_qugu2q = H_hpjt6l1.x + C_a0d0625;
+	float H_u3ulbd = H_qugu2q * C_1d1643;
+	float H_8xezgj = H_e96hu2.x + C_a0d5;
+	float H_8hodvg = C_a0d5 + H_zycz67.x;
+	float H_i4jm5a = H_8hodvg * C_1d5958;
+	float H_bk5dzl = H_i4jm5a + H_u3ulbd;
+	float H_fjr17t1 = H_8xezgj * C_0d39173;
+	float H_6jiwdt = H_u3ulbd - H_fjr17t1;
+	float H_atjfo8 = H_8hodvg * C_0d8129;
+	float H_a4dojp1 = H_6jiwdt - H_atjfo8;
+	float H_0mu0wn1 = H_8xezgj * C_2d017;
+	float H_729v501 = H_0mu0wn1 + H_u3ulbd;
+	float vColor = pow(H_bk5dzl, C_2d2);
+	float vColor1 = pow(H_a4dojp1, C_2d2);
+	float vColor2 = pow(H_729v501, C_2d2);
+	vec4 H_rwwpo7 = C_xx1m2m1;
+	H_rwwpo7.xyz = vec3(vColor, vColor1, vColor2);
+	vec4 H_c5bt741 = H_rwwpo7 * PS_INPUT_gl_vColor;
+	PS_OUTPUT_gl_vColor = H_c5bt741;
+}
+

@@ -1,0 +1,60 @@
+#version 460 core
+// ps_5_0
+// Checksum: f346bc28_e5cf087c_4733bc95_06719489
+// Name: guiscreenshot
+
+layout(location = 1) in idx_Varying1 { vec4 v; } v1;
+layout(location = 0) out vec4 o0;
+vec4 r0, r1;
+
+// Uniform buffer declarations (dcl_constant_buffer)
+
+layout (std140) uniform cb_ps1 { vec4 cb1[1]; } idx_uniforms1_ps;
+
+layout (std140) uniform cb_ps2 { vec4 cb2[2]; } idx_uniforms2_ps;
+
+
+// Sampler/resource pairs
+
+uniform sampler2D resourceSamplerPair_0_ps; // res0, s0
+
+
+void Initialise()
+{
+}
+
+
+uvec4 movc(in uvec4 src0, in uvec4 src1, in uvec4 src2)
+{
+	return mix(src2, src1, bvec4(src0));
+}
+
+uvec3 movc(in uvec3 src0, in uvec3 src1, in uvec3 src2)
+{
+	return mix(src2, src1, bvec3(src0));
+}
+
+uvec2 movc(in uvec2 src0, in uvec2 src1, in uvec2 src2)
+{
+	return mix(src2, src1, bvec2(src0));
+}
+
+uint movc(in uint src0, in uint src1, in uint src2)
+{
+	return mix(src2, src1, bool(src0));
+}
+
+void main()
+{
+	Initialise();
+	r0 = (texture(resourceSamplerPair_0_ps, v1.v.xy));
+	r1.x = intBitsToFloat(r0.w == float(0.00000000f) ? int(0xffffffff) : int(0x00000000));
+	r0 = r0 * idx_uniforms1_ps.cb1[0];
+	r0 = uintBitsToFloat(movc(floatBitsToUint(r1.xxxx), uvec4(0x00000000, 0x00000000, 0x00000000, 0x00000000), floatBitsToUint(r0)));
+	r0.xyz = log2(r0.xyz);
+	o0.w = r0.w;
+	r0.xyz = r0.xyz * idx_uniforms2_ps.cb2[1].xxx;
+	o0.xyz = exp2(r0.xyz);
+	return;
+}
+

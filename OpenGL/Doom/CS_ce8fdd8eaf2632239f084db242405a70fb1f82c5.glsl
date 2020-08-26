@@ -1,0 +1,196 @@
+#version 430 core
+#extension GL_ARB_shader_clock : enable
+//This is a compute Shader
+
+float saturate( float v ) { return clamp( v, 0.0, 1.0 ); }
+vec2 saturate( vec2 v ) { return clamp( v, 0.0, 1.0 ); }
+vec3 saturate( vec3 v ) { return clamp( v, 0.0, 1.0 ); }
+vec4 saturate( vec4 v ) { return clamp( v, 0.0, 1.0 ); }
+
+vec4 tex2D( sampler2D image, vec2 texcoord ) { return texture( image, texcoord.xy ); }
+vec4 tex2D( sampler2DShadow image, vec3 texcoord ) { return vec4( texture( image, texcoord.xyz ) ); }
+vec4 tex2DARRAY( sampler2DArray image, vec3 texcoord ) { return texture( image, texcoord.xyz ); }
+
+vec4 tex2D( sampler2D image, vec2 texcoord, vec2 dx, vec2 dy ) { return textureGrad( image, texcoord.xy, dx, dy ); }
+vec4 tex2D( sampler2DShadow image, vec3 texcoord, vec2 dx, vec2 dy ) { return vec4( textureGrad( image, texcoord.xyz, dx, dy ) ); }
+vec4 tex2DARRAY( sampler2DArray image, vec3 texcoord, vec2 dx, vec2 dy ) { return textureGrad( image, texcoord.xyz, dx, dy ); }
+
+vec4 texCUBE( samplerCube image, vec3 texcoord ) { return texture( image, texcoord.xyz ); }
+vec4 texCUBE( samplerCubeShadow image, vec4 texcoord ) { return vec4( texture( image, texcoord.xyzw ) ); }
+vec4 texCUBEARRAY( samplerCubeArray image, vec4 texcoord ) { return texture( image, texcoord.xyzw ); }
+
+vec4 tex1Dproj( sampler1D image, vec2 texcoord ) { return textureProj( image, texcoord ); }
+vec4 tex2Dproj( sampler2D image, vec3 texcoord ) { return textureProj( image, texcoord ); }
+vec4 tex3Dproj( sampler3D image, vec4 texcoord ) { return textureProj( image, texcoord ); }
+
+vec4 tex1Dlod( sampler1D image, vec4 texcoord ) { return textureLod( image, texcoord.x, texcoord.w ); }
+vec4 tex2Dlod( sampler2D image, vec4 texcoord ) { return textureLod( image, texcoord.xy, texcoord.w ); }
+vec4 tex2DARRAYlod( sampler2DArray image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 tex3Dlod( sampler3D image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBElod( samplerCube image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBEARRAYlod( samplerCubeArray image, vec4 texcoord, float lod ) { return textureLod( image, texcoord.xyzw, lod ); }
+
+vec4 tex2DGatherRed( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 0 ); }
+vec4 tex2DGatherGreen( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 1 ); }
+vec4 tex2DGatherBlue( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 2 ); }
+vec4 tex2DGatherAlpha( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 3 ); }
+
+vec4 tex2DGatherOffsetRed( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 0 ); }
+vec4 tex2DGatherOffsetGreen( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 1 ); }
+vec4 tex2DGatherOffsetBlue( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 2 ); }
+vec4 tex2DGatherOffsetAlpha( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 3 ); }
+
+#define tex2DGatherOffsetsRed( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 0 )
+#define tex2DGatherOffsetsGreen( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 1 )
+#define tex2DGatherOffsetsBlue( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 2 )
+#define tex2DGatherOffsetsAlpha( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 3 )
+
+uniform vec4 _ca_freqHigh [14];
+uniform vec4 _ca_freqLow [7];
+layout( local_size_x = 8, local_size_y = 8, local_size_z = 1 ) in ;
+uniform sampler2D samp_tex4;
+uniform sampler2D samp_tex2;
+uniform sampler2D samp_tex0;
+uniform sampler2D samp_tex3;
+uniform sampler2D samp_tex1;
+layout( binding = 0, r11f_g11f_b10f ) uniform image2D ib_computepostprocesstarget ;
+layout( binding = 1, rg16f ) uniform image2D ib_computevelocitytarget ;
+float fmax3 ( float f1, float f2, float f3 ) { return max( f1, max( f2, f3 ) ); }
+float fmin3 ( float f1, float f2, float f3 ) { return min( f1, min( f2, f3 ) ); }
+vec4 tex2DFetch ( sampler2D image, ivec2 texcoord, int mip ) { return texelFetch( image, texcoord, mip ); }
+float GetLuma ( vec3 c ) {
+	return dot( c, vec3( 0.2126, 0.7152, 0.0722 ) );
+}
+vec4 OutputVelocityTarget ( vec4 mbParms, vec2 v, float z ) {
+	const vec2 v_orig = v;
+	float alpha = 1.0;
+	v *= mbParms.z * alpha;
+	const float len = inversesqrt( dot( v.xy, v.xy ) );
+	v *= saturate( mbParms.w * len );
+	v *= mbParms.xy;
+	return vec4( v_orig, vec2( length( v.xy ), z ) );
+}
+float GetLinearDepth ( float ndcZ, vec4 projectionMatrixZ, float rcpFarZ, bool bFirstPersonArmsRescale ) {
+	float linearZ = projectionMatrixZ.w / ( ndcZ + projectionMatrixZ.z );
+	if ( bFirstPersonArmsRescale ) {
+		linearZ *= linearZ < 1.0 ? 10.0 : 1.0;
+	}
+	return linearZ * rcpFarZ;
+}
+float w0 (float a) { return (1.0/6.0)*(a*(a*(-a + 3.0) - 3.0) + 1.0); }
+float w1 (float a) { return (1.0/6.0)*(a*a*(3.0*a - 6.0) + 4.0); }
+float w2 (float a) { return (1.0/6.0)*(a*(a*(-3.0*a + 3.0) + 3.0) + 1.0); }
+float w3 (float a) { return (1.0/6.0)*(a*a*a); }
+const float bias = 128.0;
+const float scale = 1.0;
+vec3 toneMap ( vec3 linearHDR ) {
+	const vec3 toneMapped = saturate( linearHDR / ( bias + scale * GetLuma( linearHDR.rgb ) ) );
+	return sqrt( toneMapped );
+}
+vec3 toneMapInverse ( vec3 toneMapped ) {
+	const vec3 linearHDR = toneMapped * toneMapped;
+	return ( linearHDR * bias / ( 1.0 - scale * GetLuma( linearHDR ) ) );
+}
+vec3 computeVelocity ( vec2 winPos ) {
+	const ivec2 offsets = ivec2( 1, -1 );
+	const vec4 depths = tex2DGatherOffsetsRed( samp_tex4, winPos.xy, offsets.yy, offsets.xy, offsets.yx, offsets.xx );
+	vec3 offsetMinZ = vec3( offsets.yy, depths.x );
+	offsetMinZ = depths.y < offsetMinZ.z ? vec3( offsets.xy, depths.y ) : offsetMinZ;
+	offsetMinZ = depths.z < offsetMinZ.z ? vec3( offsets.yx, depths.z ) : offsetMinZ;
+	offsetMinZ = depths.w < offsetMinZ.z ? vec3( offsets.xx, depths.w ) : offsetMinZ;
+	winPos += offsetMinZ.xy * _ca_freqHigh[0 ].zw;
+	const float linearZ = GetLinearDepth( offsetMinZ.z, _ca_freqLow[0 ], 1.0, true );
+	const vec3 frustumVecX0 = mix( _ca_freqLow[1 ].xyz, _ca_freqLow[2 ].xyz, winPos.x * _ca_freqLow[3 ].z );
+	const vec3 frustumVecX1 = mix( _ca_freqLow[4 ].xyz, _ca_freqLow[5 ].xyz, winPos.x * _ca_freqLow[3 ].z );
+	const vec3 frustumVec = mix( frustumVecX1.xyz, frustumVecX0.xyz, winPos.y * _ca_freqLow[3 ].w );
+	const vec3 world_pos = _ca_freqLow[6 ].xyz + frustumVec * linearZ;
+	const float rcpHW = 1.0 / ( world_pos.x * _ca_freqHigh[1 ].x + ( world_pos.y * _ca_freqHigh[1 ].y + ( world_pos.z * _ca_freqHigh[1 ].z + _ca_freqHigh[1 ].w ) ) );
+	const vec2 winPosPrev = vec2( ( world_pos.x * _ca_freqHigh[2 ].x + ( world_pos.y * _ca_freqHigh[2 ].y + ( world_pos.z * _ca_freqHigh[2 ].z + _ca_freqHigh[2 ].w ) ) ),
+	( world_pos.x * _ca_freqHigh[3 ].x + ( world_pos.y * _ca_freqHigh[3 ].y + ( world_pos.z * _ca_freqHigh[3 ].z + _ca_freqHigh[3 ].w ) ) ) ) * rcpHW;
+	const vec2 objV = tex2Dlod( samp_tex2, vec4( winPos, 0, 0 ) ).xy;
+	return vec3( ( objV.x < 1.0 ) ? objV.xy : winPos.xy - winPosPrev.xy * _ca_freqLow[3 ].xy , linearZ );
+}
+void main() {
+	{
+		ivec3 pixelLocation = ivec3(gl_GlobalInvocationID );
+		vec2 tc = ( pixelLocation.xy + 0.5 ) * _ca_freqHigh[4 ].zw;
+		vec3 outputColor0;
+		vec3 outputColor1;
+		{
+			vec3 curr_frame = vec3( 0 );
+			vec3 curr_frame_lowpass = vec3( 0 );
+			vec3 cMax = vec3( 0 );
+			vec3 cMin = vec3( 0 );
+			vec3 M = toneMap( tex2DFetch( samp_tex0, pixelLocation.xy, 0 ).xyz );
+			float transparency_k = saturate( ( length( M.xyz - toneMap( tex2DFetch( samp_tex3, pixelLocation.xy, 0 ).xyz ) ) ) * _ca_freqHigh[5 ].z );
+			{
+				vec3 ML = toneMap( tex2DFetch( samp_tex0, pixelLocation.xy + ivec2( -1, 0 ), 0 ).xyz );
+				vec3 MR = toneMap( tex2DFetch( samp_tex0, pixelLocation.xy + ivec2( 1, 0 ), 0 ).xyz );
+				vec3 T = toneMap( tex2DFetch( samp_tex0, pixelLocation.xy + ivec2( 0, -1 ), 0 ).xyz );
+				vec3 B = toneMap( tex2DFetch( samp_tex0, pixelLocation.xy + ivec2( 0, 1 ), 0 ).xyz );
+				cMax = vec3( fmax3( fmax3( T.x, M.x, B.x ), ML.x, MR.x ), fmax3( fmax3( T.y, M.y, B.y ), ML.y, MR.y ), fmax3( fmax3( T.z, M.z, B.z ), ML.z, MR.z ) );
+				cMin = vec3( fmin3( fmin3( T.x, M.x, B.x ), ML.x, MR.x ), fmin3( fmin3( T.y, M.y, B.y ), ML.y, MR.y ), fmin3( fmin3( T.z, M.z, B.z ), ML.z, MR.z ) );
+				curr_frame = ( ( ( ( T * _ca_freqHigh[6 ].y ) + ML * _ca_freqHigh[6 ].w ) + M * _ca_freqHigh[7 ].x ) + MR * _ca_freqHigh[7 ].y ) + B * _ca_freqHigh[7 ].w;
+				curr_frame_lowpass = ( ( ( ( T * _ca_freqHigh[8 ].y ) + ML * _ca_freqHigh[8 ].w ) + M * _ca_freqHigh[9 ].x ) + MR * _ca_freqHigh[9 ].y ) + B * _ca_freqHigh[9 ].w;
+			}
+			{
+				vec3 TL = toneMap( tex2DFetch( samp_tex0, pixelLocation.xy + ivec2( -1, -1 ), 0 ).xyz );
+				vec3 TR = toneMap( tex2DFetch( samp_tex0, pixelLocation.xy + ivec2( 1, -1 ), 0 ).xyz );
+				vec3 BL = toneMap( tex2DFetch( samp_tex0, pixelLocation.xy + ivec2( -1, 1 ), 0 ).xyz );
+				vec3 BR = toneMap( tex2DFetch( samp_tex0, pixelLocation.xy + ivec2( 1, 1 ), 0 ).xyz );
+				cMax = ( vec3( fmax3( fmax3( TL.x, TR.x, BL.x ), BR.x, cMax.x ), fmax3( fmax3( TL.y, TR.y, BL.y ), BR.y, cMax.y ), fmax3( fmax3( TL.z, TR.z, BL.z ), BR.z, cMax.z ) ) + cMax ) * 0.5;
+				cMin = ( vec3( fmin3( fmin3( TL.x, TR.x, BL.x ), BR.x, cMin.x ), fmin3( fmin3( TL.y, TR.y, BL.y ), BR.y, cMin.y ), fmin3( fmin3( TL.z, TR.z, BL.z ), BR.z, cMin.z ) ) + cMin ) * 0.5;
+				curr_frame += ( ( ( TL * _ca_freqHigh[6 ].x ) + TR * _ca_freqHigh[6 ].z ) + BL * _ca_freqHigh[7 ].z ) + BR * _ca_freqHigh[10 ].x;
+				curr_frame_lowpass += ( ( ( TL * _ca_freqHigh[8 ].x ) + TR * _ca_freqHigh[8 ].z ) + BL * _ca_freqHigh[9 ].z ) + BR * _ca_freqHigh[11 ].x;
+			}
+			curr_frame = saturate( curr_frame );
+			curr_frame_lowpass = saturate( curr_frame_lowpass );
+			cMax = max( curr_frame_lowpass, cMax );
+			cMin = min( curr_frame_lowpass, cMin );
+			vec3 velocity = computeVelocity( tc );
+			vec3 prev_frame = vec3( 0 );
+			{
+				vec2 tc_prev = tc * _ca_freqHigh[12 ].xy;
+				vec2 uv = ( tc_prev.xy - velocity.xy) * _ca_freqHigh[0 ].xy;
+				vec2 iuv = floor( uv - 0.5 ) + 0.5;
+				vec2 fuv = uv - iuv;
+				vec2 fuv2 = fuv * fuv;
+				vec2 fuv3 = fuv * fuv2;
+				vec2 w0 = fuv2 - 0.5 * (fuv3 + fuv);
+				vec2 w1 = 1.5 * fuv3 - 2.5 * fuv2 + 1.0;
+				vec2 w3 = 0.5 * (fuv3 - fuv2);
+				vec2 w2 = 1.0 - w0 - w1 - w3;
+				vec2 wm = ( w1 + w2 );
+				vec2 fuvM = w2 / ( w1 + w2 );
+				vec2 t0 = ( iuv - 1 ) * _ca_freqHigh[0 ].zw;
+				vec2 t1 = ( iuv + fuvM ) * _ca_freqHigh[0 ].zw;
+				vec2 t2 = ( iuv + 2 ) * _ca_freqHigh[0 ].zw;
+				prev_frame = tex2Dlod( samp_tex1, vec4( vec2( t0.x, t0.y ), 0, 0 ) ).xyz * w0.x * w0.y;
+				prev_frame += tex2Dlod( samp_tex1, vec4( vec2( t1.x, t0.y ), 0, 0 ) ).xyz * wm.x * w0.y;
+				prev_frame += tex2Dlod( samp_tex1, vec4( vec2( t2.x, t0.y ), 0, 0 ) ).xyz * w3.x * w0.y;
+				prev_frame += tex2Dlod( samp_tex1, vec4( vec2( t0.x, t1.y ), 0, 0 ) ).xyz * w0.x * wm.y;
+				prev_frame += tex2Dlod( samp_tex1, vec4( vec2( t1.x, t1.y ), 0, 0 ) ).xyz * wm.x * wm.y;
+				prev_frame += tex2Dlod( samp_tex1, vec4( vec2( t2.x, t1.y ), 0, 0 ) ).xyz * w3.x * wm.y;
+				prev_frame += tex2Dlod( samp_tex1, vec4( vec2( t0.x, t2.y ), 0, 0 ) ).xyz * w0.x * w3.y;
+				prev_frame += tex2Dlod( samp_tex1, vec4( vec2( t1.x, t2.y ), 0, 0 ) ).xyz * wm.x * w3.y;
+				prev_frame += tex2Dlod( samp_tex1, vec4( vec2( t2.x, t2.y ), 0, 0 ) ).xyz * w3.x * w3.y;
+			}
+			prev_frame = saturate( toneMap( prev_frame ) );
+			vec3 cubeBlendRatios = saturate( ( cMax.rgb - prev_frame.rgb ) / ( cMax.rgb - cMin.rgb ) );
+			prev_frame.rgb = mix( cMax.rgb, cMin.rgb, cubeBlendRatios.xyz );
+			float luma_prev_frame = GetLuma( prev_frame.rgb );
+			float luma_max = GetLuma( cMax.rgb );
+			float luma_min = GetLuma( cMin.rgb );
+			float curr_frame_edges = luma_max - luma_min;
+			float prev_frame_edges = min( abs( luma_prev_frame - luma_max ), abs( luma_prev_frame - luma_min ) );
+			float velocity_k = saturate( length( velocity.xy * _ca_freqHigh[0 ].xy ) ) ;
+			float k = prev_frame_edges * ( 1.0 + 5.0 * velocity_k ) / 8.0;
+			float w = saturate( transparency_k + k / ( k + curr_frame_edges ) );
+			outputColor0.xyz = max( vec3( 0 ), toneMapInverse( mix( prev_frame.xyz, curr_frame.xyz, vec3( saturate( w ) ) ) ) );
+			outputColor1.xy = OutputVelocityTarget( _ca_freqHigh[13 ], velocity.xy , velocity.z ).zw;
+			outputColor1.x = 1.0 / outputColor1.x;
+		};
+		imageStore( ib_computepostprocesstarget, pixelLocation.xy, vec4( outputColor0.x, outputColor0.y, outputColor0.z, 0.0 ) );
+		imageStore( ib_computevelocitytarget, pixelLocation.xy, vec4( outputColor1.x, outputColor1.y, 0.0, 0.0 ) );
+	}
+}

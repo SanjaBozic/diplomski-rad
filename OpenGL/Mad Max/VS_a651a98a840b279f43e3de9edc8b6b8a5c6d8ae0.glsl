@@ -1,0 +1,90 @@
+#version 460 core
+// vs_5_0
+// Checksum: b8440cdd_fe23fa27_c849ce02_5ab79c8f
+// Name: dirtroad
+
+layout(location = 0) in vec4 v0;
+layout(location = 1) in vec4 v1;
+layout(location = 2) in vec4 v2;
+layout(location = 3) in vec4 v3;
+layout(location = 4) in vec4 v4;
+// gl_Position
+layout(location = 1) out idx_Varying1 { vec4 v; } o1;
+layout(location = 2) out idx_Varying2 { vec4 v; } o2;
+layout(location = 3) out idx_Varying3 { vec4 v; } o3;
+layout(location = 4) out idx_Varying4 { vec4 v; } o4;
+layout(location = 5) out idx_Varying5 { vec4 v; } o5;
+vec4 r0, r1, r2;
+
+// Uniform buffer declarations (dcl_constant_buffer)
+
+layout (std140) uniform cb_vs0 { vec4 cb0[10]; } idx_uniforms0_vs;
+
+
+out gl_PerVertex {
+	vec4 gl_Position;
+};
+uniform vec4 idx_Viewport_vs;
+vec4 D3DtoGL(in vec4 pos)
+{
+	pos.xy += idx_Viewport_vs.xy * vec2(pos.w, -pos.w);
+	return pos;
+}
+vec4 GLtoD3D(in vec4 pos)
+{
+	pos.xy -= idx_Viewport_vs.xy * vec2(pos.w, -pos.w);
+	return pos;
+}
+
+
+void Initialise()
+{
+}
+
+
+void VertexEpilog()
+{
+	gl_Position = D3DtoGL(gl_Position);
+}
+
+#define saturate(rhs)  clamp(rhs, float(0), float(1))
+void main()
+{
+	Initialise();
+	r0.xyz = v0.xyz + -idx_uniforms0_vs.cb0[9].xyz;
+	r0.x = dot(r0.xyz, r0.xyz);
+	r0.x = sqrt(r0.x);
+	r0.y = fma(-r0.x, float(0.00999999978f), float(1.00000000f));
+	r0.x = r0.x + float(-600.000000f);
+	r0.x = r0.x * float(0.00666666683f);
+	r0.x = max(r0.x, float(0.00000000f));
+	o1.v.w = saturate(-r0.x + v2.w);
+	r0.x = max(r0.y, float(0.00000000f));
+	r0.x = r0.x * float(0.0149999997f);
+	r0.yz = v0.xz + -idx_uniforms0_vs.cb0[9].xz;
+	r0.y = max(abs(r0.z), abs(r0.y));
+	r0.y = fma(r0.y, float(0.00200000009f), v0.y);
+	r0.y = r0.y + float(0.0199999996f);
+	r1 = r0.yyyy * idx_uniforms0_vs.cb0[1];
+	r1 = fma(v0.xxxx, idx_uniforms0_vs.cb0[0], r1);
+	r1 = fma(v0.zzzz, idx_uniforms0_vs.cb0[2], r1);
+	r1 = r1 + idx_uniforms0_vs.cb0[3];
+	r0.x = fma(r1.w, float(9.99999975e-06f), r0.x);
+	gl_Position.z = r0.x + r1.z;
+	gl_Position.xyw = r1.xyw;
+	o1.v.xyz = fma(v3.xyz, vec3(2.00787401f, 2.00787401f, 2.00787401f), vec3(-1.00787401f, -1.00787401f, -1.00787401f));
+	o2.v.x = v2.y;
+	o2.v.yz = v1.xy;
+	o3.v.xyz = fma(v4.xyz, vec3(2.00787401f, 2.00787401f, 2.00787401f), vec3(-1.00787401f, -1.00787401f, -1.00787401f));
+	o3.v.w = v2.x;
+	r0.xyz = fma(v3.yzx, vec3(2.00787401f, 2.00787401f, 2.00787401f), vec3(-1.00787401f, -1.00787401f, -1.00787401f));
+	r1.xyz = fma(v4.zxy, vec3(2.00787401f, 2.00787401f, 2.00787401f), vec3(-1.00787401f, -1.00787401f, -1.00787401f));
+	r2.xyz = r0.xyz * r1.xyz;
+	o4.v.xyz = fma(r1.zxy, r0.yzx, -r2.xyz);
+	r0.x = v4.w + v4.w;
+	o4.v.w = fma(r0.x, r0.x, float(0.00999999978f));
+	o5.v.xy = fma(v0.xz, vec2(3.05175781e-05f, 3.05175781e-05f), vec2(0.500000000f, 0.500000000f));
+	VertexEpilog();
+	return;
+}
+

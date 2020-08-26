@@ -1,0 +1,154 @@
+[require]
+GLSL >= 4.60
+GL_ARB_separate_shader_objects
+SSO ENABLED
+
+[fragment shader]
+#version 460 core
+// ps_5_0
+// Checksum: cc96af72_41432aa6_308f0c2e_6dbe29ac
+// Name: fogvolumeapplycloudshadowsnear
+
+vec4 v0 = vec4(gl_FragCoord.xyz, 1.0 / gl_FragCoord.w);
+layout(location = 1) in idx_Varying1 { vec4 v; } v1;
+layout(location = 0) out vec4 o0;
+vec4 r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10;
+
+// Uniform buffer declarations (dcl_constant_buffer)
+
+layout (std140) uniform cb_ps0 { vec4 cb0[5]; } idx_uniforms0_ps;
+
+layout (std140) uniform cb_ps1 { vec4 cb1[22]; } idx_uniforms1_ps;
+
+
+// Sampler/resource pairs
+
+uniform sampler2D resourceSamplerPair_0_ps; // res0, s0
+
+uniform sampler2D resourceSamplerPair_1_ps; // res3, s3
+
+uniform sampler2DArrayShadow resourceSamplerPair_2_ps; // res14, s14
+
+
+void Initialise()
+{
+}
+
+
+uvec4 movc(in uvec4 src0, in uvec4 src1, in uvec4 src2)
+{
+	return mix(src2, src1, bvec4(src0));
+}
+
+uvec3 movc(in uvec3 src0, in uvec3 src1, in uvec3 src2)
+{
+	return mix(src2, src1, bvec3(src0));
+}
+
+uvec2 movc(in uvec2 src0, in uvec2 src1, in uvec2 src2)
+{
+	return mix(src2, src1, bvec2(src0));
+}
+
+uint movc(in uint src0, in uint src1, in uint src2)
+{
+	return mix(src2, src1, bool(src0));
+}
+
+#define saturate(rhs)  clamp(rhs, float(0), float(1))
+void main()
+{
+	Initialise();
+	r0.xy = v1.v.zw * v1.v.xy;
+	r0.x = ((texture(resourceSamplerPair_0_ps, r0.xy))).x;
+	r1 = v1.v.yyyy * idx_uniforms1_ps.cb1[13];
+	r1 = fma(v1.v.xxxx, idx_uniforms1_ps.cb1[12], r1);
+	r0 = fma(r0.xxxx, idx_uniforms1_ps.cb1[14], r1);
+	r0 = r0 + idx_uniforms1_ps.cb1[15];
+	r0.xyz = r0.xyz / r0.www;
+	r0.xyz = r0.xyz + -idx_uniforms0_ps.cb0[4].xyz;
+	r0.w = dot(r0.xyz, r0.xyz);
+	r1.x = sqrt(r0.w);
+	r1.x = max(r1.x, float(9.99999975e-05f));
+	r1.yzw = r0.xyz / r1.xxx;
+	r2.x = saturate(r1.z);
+	r2.x = r2.x * r2.x;
+	r2.x = fma(r2.x, idx_uniforms1_ps.cb1[16].w, float(1.00000000f));
+	r1.x = r1.x * float(0.0250000004f);
+	r1.x = min(r1.x, idx_uniforms1_ps.cb1[16].z);
+	r1.yzw = r1.xxx * r1.yzw;
+	r2.y = dot(v0.xy, vec2(0.467943996f, -0.703647971f));
+	r2.y = fract(r2.y);
+	r3.xyz = r1.yzw * r2.yyy;
+	r2.yzw = fma(r2.yyy, r1.yzw, idx_uniforms0_ps.cb0[4].xyz);
+	r4.xyz = r1.zzz * idx_uniforms1_ps.cb1[5].xyz;
+	r4.xyz = fma(r1.yyy, idx_uniforms1_ps.cb1[4].xyz, r4.xyz);
+	r4.xyz = fma(r1.www, idx_uniforms1_ps.cb1[6].xyz, r4.xyz);
+	r5.xyz = r3.yyy * idx_uniforms1_ps.cb1[5].xyz;
+	r5.xyz = fma(r3.xxx, idx_uniforms1_ps.cb1[4].xyz, r5.xyz);
+	r5.xyz = fma(r3.zzz, idx_uniforms1_ps.cb1[6].xyz, r5.xyz);
+	r5.xyz = r5.xyz + idx_uniforms1_ps.cb1[7].xyz;
+	r6.xyz = r1.zzz * idx_uniforms1_ps.cb1[9].xyz;
+	r6.xyz = fma(r1.yyy, idx_uniforms1_ps.cb1[8].xyz, r6.xyz);
+	r6.xyz = fma(r1.www, idx_uniforms1_ps.cb1[10].xyz, r6.xyz);
+	r7.xyz = r3.yyy * idx_uniforms1_ps.cb1[9].xyz;
+	r3.xyw = fma(r3.xxx, idx_uniforms1_ps.cb1[8].xyz, r7.xyz);
+	r3.xyz = fma(r3.zzz, idx_uniforms1_ps.cb1[10].xyz, r3.xyw);
+	r3.xyz = r3.xyz + idx_uniforms1_ps.cb1[11].xyz;
+	r2.yw = r2.yw + idx_uniforms1_ps.cb1[21].yz;
+	r2.yzw = r2.yzw * idx_uniforms1_ps.cb1[21].www;
+	r7.xyz = r2.yzw;
+	r8.xyz = r5.xyz;
+	r9.xyz = r3.xyz;
+	r3.w = uintBitsToFloat(uint(0x00000000));
+	r4.w = uintBitsToFloat(uint(0x00000000));
+	while (true)
+	{
+		r5.w = intBitsToFloat(floatBitsToInt(r4.w) >= int(40) ? int(0xffffffff) : int(0x00000000));
+		if (floatBitsToUint(r5.w) != uint(0))
+			break;
+		r10.x = r7.y * idx_uniforms0_ps.cb0[1].w;
+		r10.y = r7.y * idx_uniforms0_ps.cb0[3].w;
+		r10.xy = r7.xz + -r10.xy;
+		r5.w = ((texture(resourceSamplerPair_1_ps, r10.xy)).yzwx).w;
+		r5.w = saturate(r5.w + idx_uniforms1_ps.cb1[21].x);
+		r10.xy = fma(r8.xy, vec2(10.0000000f, 10.0000000f), vec2(-5.00000000f, -5.00000000f));
+		r6.w = max(abs(r10.y), abs(r10.x));
+		r6.w = intBitsToFloat(r6.w < float(4.94999981f) ? int(0xffffffff) : int(0x00000000));
+		r10.xyz = uintBitsToFloat(movc(floatBitsToUint(r6.www), floatBitsToUint(r8.zxy), floatBitsToUint(r9.zxy)));
+		r10.w = uintBitsToFloat(movc(floatBitsToUint(r6.w), uint(0x3f800000), uint(0x40000000)));
+		r10.x = saturate(r10.x);
+		r6.w = texture(resourceSamplerPair_2_ps, vec4(r10.yzw, r10.x));
+		r3.w = fma(r5.w, r6.w, r3.w);
+		r7.xyz = fma(r1.yzw, idx_uniforms1_ps.cb1[21].www, r7.xyz);
+		r8.xyz = r4.xyz + r8.xyz;
+		r9.xyz = r6.xyz + r9.xyz;
+		r4.w = intBitsToFloat(floatBitsToInt(r4.w) + int(1));
+	}
+	r3.x = r3.w * float(0.200000003f);
+	r3.y = uintBitsToFloat(uint(0x3f800000));
+	r1.x = r1.x / idx_uniforms1_ps.cb1[16].z;
+	r1.xy = r1.xx * r3.xy;
+	r1.xy = r1.xy / r2.xx;
+	r0.w = inversesqrt(r0.w);
+	r0.xyz = r0.www * r0.xyz;
+	r0.x = dot(r0.xyz, -idx_uniforms0_ps.cb0[3].xyz);
+	r0.x = r0.x + float(1.00000000f);
+	r0.x = r0.x * float(0.500000000f);
+	r0.y = idx_uniforms1_ps.cb1[16].y * idx_uniforms1_ps.cb1[16].y;
+	r0.y = fma(r0.y, float(25.0000000f), float(0.00100000005f));
+	r0.x = log2(r0.x);
+	r0.x = r0.x * r0.y;
+	r0.x = exp2(r0.x);
+	r0.x = r0.x + float(-1.00000000f);
+	r0.x = fma(idx_uniforms1_ps.cb1[16].y, r0.x, float(1.00000000f));
+	r0.y = r0.x * r1.x;
+	o0.z = uintBitsToFloat(uint(0x00000000));
+	r0.x = fma(r1.x, r0.x, float(-1.00000000f));
+	o0.w = saturate(r0.x * float(0.125000000f));
+	o0.y = r1.y;
+	o0.x = r0.y;
+	return;
+}
+
+

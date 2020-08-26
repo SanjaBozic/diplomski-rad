@@ -1,0 +1,214 @@
+[require]
+GLSL >= 3.30
+GL_ARB_separate_shader_objects
+SSO ENABLED
+
+[fragment shader]
+#version 330 core
+// LunarGOO output
+#extension GL_ARB_separate_shader_objects : enable
+#extension GL_ARB_shading_language_420pack : enable
+layout(std140, binding = 0 ) uniform PerViewConstantBuffer_t {
+	layout(row_major) mat4 g_matWorldToProjection;
+	layout(row_major) mat4 g_matProjectionToWorld;
+	layout(row_major) mat4 g_matWorldToView;
+	layout(row_major) mat4 g_matViewToProjection;
+	vec4 g_vInvProjRow3;
+	vec4 g_vClipPlane0;
+	float g_flToneMapScalarLinear;
+	float g_flLightMapScalar;
+	float g_flEnvMapScalar;
+	float g_flToneMapScalarGamma;
+	vec3 g_vCameraPositionWs;
+	float g_flViewportMinZ;
+	vec3 g_vCameraDirWs;
+	float g_flViewportMaxZ;
+	vec3 g_vCameraUpDirWs;
+	float g_flTime;
+	vec3 g_vDepthPsToVsConversion;
+	float g_flNearPlane;
+	float g_flFarPlane;
+	float g_flLightBinnerFarPlane;
+	vec2 g_vInvViewportSize;
+	vec2 g_vViewportToGBufferRatio;
+	vec2 g_vMorphTextureAtlasSize;
+	vec4 g_vInvGBufferSize;
+	vec2 g_vViewportOffset;
+	vec2 g_vViewportSize;
+	vec2 g_vRenderTargetSize;
+	float g_flFogBlendToBackground;
+	float g_flHenyeyGreensteinCoeff;
+	vec3 g_vFogColor;
+	float g_flNegFogStartOverFogRange;
+	float g_flInvFogRange;
+	float g_flFogMaxDensity;
+	float g_flFogExponent;
+	float g_flMod2xIdentity;
+	vec2 g_bRoughnessParams;
+	float g_bStereoEnabled;
+	float g_flStereoCameraIndex;
+	vec3 g_vMiddleEyePositionWs;
+	float g_flPad2;
+	layout(row_major) mat4 g_matWorldToProjectionMultiview[2];
+	vec4 g_vCameraPositionWsMultiview[2];
+	vec4 g_vFrameBufferCopyInvSizeAndUvScale;
+	vec4 g_vCameraAngles;
+	vec4 g_vWorldToCameraOffset;
+	vec4 g_vWorldToCameraOffsetMultiview[2];
+	vec4 g_vPerViewConstantExtraData0;
+	vec4 g_vPerViewConstantExtraData1;
+	vec4 g_vPerViewConstantExtraData2;
+	vec4 g_vPerViewConstantExtraData3;
+} ;
+layout(std140, binding = 1 ) uniform _Globals_ {
+	vec4 g_vInvTextureDim;
+	vec4 g_vInvQuarterResEffectsDim;
+	float g_flBloomScale;
+	vec4 g_vSrcViewportRect;
+} ;
+layout( binding = 0 ) uniform sampler2D g_tInputTexture;
+layout(std140, binding = 2 ) uniform DotaGlobalParams_t {
+	vec3 g_vGlobalLightDir;
+	vec3 g_vGlobalLightColor;
+	float g_flGlobalLightSpecularScale;
+	vec3 g_vGlobalLightSpecularDir;
+	float g_flGlobalLightSpecularExp;
+	vec3 g_vGlobalLightSpecularColor;
+	float g_flGlobalLightSpecularIndependence;
+	vec3 g_vGlobalLightAmbientDir;
+	float g_flGlobalLightAmbientScale1;
+	vec3 g_vGlobalLightAmbientColor1;
+	float g_flGlobalLightAmbientScale2;
+	vec3 g_vGlobalLightAmbientColor2;
+	float g_flGlobalLightAmbientScale2Hero;
+	vec2 g_vGlobalCloud1Offset;
+	vec2 g_vGlobalCloud2Offset;
+	vec3 g_vFowColor;
+	float g_flGlobalCloudScale;
+	float g_flFowDarkness;
+	float g_flFowGrayFactor;
+	float g_flFowColorFactor;
+	float g_flFowGrayHilights;
+	vec4 g_vFowWorldSize;
+	vec4 g_vFowTexOffsets;
+	layout(row_major) mat4 g_matShadowWorldToTexture;
+	vec4 g_vInvShadowDepthTextureSize;
+	vec3 g_vGlobalLightAmbientColor3;
+	float g_flGlobalLightAmbientShadowAmount;
+} ;
+layout( binding = 1 ) uniform sampler2D g_tGBufferLightingTerms;
+layout( binding = 2 ) uniform sampler2D g_tGBufferAlbedo;
+layout( binding = 3 ) uniform sampler2D g_tQuarterResEffectsColor;
+uniform sampler2D g_tFow;
+uniform sampler2D g_tFrameBufferCopyTexture;
+uniform sampler2D g_tDepthTexture;
+uniform sampler2D g_tGBufferDepth;
+uniform sampler2D g_tGBufferNormalWs;
+layout(std140) uniform PerViewLightingConstantBuffer_t {
+	vec4 g_vInvLightTextureDims;
+	vec4 g_vLightBinCounts;
+	vec2 g_vLowResDeferredLightingTextureDim;
+	vec2 g_vLowResDeferredLightingTextureInvDim;
+	vec3 g_vToolsAmbientLighting;
+	float g_flSSAOEnabled;
+	vec3 g_vIrradAtlasInvSize;
+	float g_flIrradGlobalLightingFactor;
+	vec4 g_vGlobalLightingSHRed;
+	vec4 g_vGlobalLightingSHGreen;
+	vec4 g_vGlobalLightingSHBlue;
+	vec3 g_vRayleighScatteringCoeff;
+	float g_flMieScatteringEccentricity;
+	vec3 g_vMieScatteringCoeff;
+	float g_flMieForwardScatteringRatio;
+	vec3 g_vSpecularCubeMapScale;
+	float g_flDefaultEnvMapIndex;
+	vec4 g_vLightCookieSheetSequenceAndSizes;
+	vec3 g_vLpvBoxMinCascade0;
+	float g_flLpvBrightnessScale;
+	vec3 g_vLpvInvBoxDimCascade0;
+	vec2 g_vLpvInvCoeffTextureDim;
+} ;
+layout(std140) uniform PerLayerConstantBuffer_t {
+	vec4 g_vWireframeColor;
+} ;
+uniform sampler2D g_tClouds;
+uniform sampler2DShadow g_tShadowDepthTexture;
+layout(location=0) in vec2 PS_INPUT_gl_vTexCoord;
+layout(location=0) out vec4 PS_OUTPUT_gl_vColor;
+const vec3 C_m3ov0r1[13] = vec3[13](vec3(0.0, -2.0, 0.5), vec3(-1.0, -1.0, 0.5), vec3(0.0, -1.0, 0.75), vec3(1.0, -1.0, 0.5), vec3(-2.0, 0.0, 0.5), vec3(-1.0, 0.0, 0.75), vec3(0.0, 0.0, 1.0), vec3(1.0, 0.0, 0.75), vec3(2.0, 0.0, 0.5), vec3(-1.0, 1.0, 0.5), vec3(0.0, 1.0, 0.75), vec3(1.0, 1.0, 0.5), vec3(0.0, 2.0, 0.5));
+const vec4 C_vec4p0d0p = vec4(0.0);
+const int C_0 = 0;
+const float C_0d0 = 0.0;
+vec3 Lg_1;
+vec3 Lg_2;
+const float C_1d0 = 1.0;
+const vec3 C_vec3p12d92p = vec3(12.92);
+const vec3 C_vec3p1d055p = vec3(1.055);
+const vec3 C_bw96as = vec3(0.0521327);
+const vec3 C_vec3p2d4p = vec3(2.4);
+const float C_0d04045 = 0.04045;
+const vec4 C_xx1m2m1 = vec4(0.0, 0.0, 0.0, 1.0);
+void main()
+{
+	vec4 o;
+	int s;
+	float flCount;
+	vec3 vTemp;
+	vec2 vScreenUv = g_vInvGBufferSize.xy * gl_FragCoord.xy;
+	vec4 vMinMaxs = g_vInvTextureDim.xyxy * g_vSrcViewportRect;
+	o = C_vec4p0d0p;
+	s = C_0;
+	flCount = C_0d0;
+	for ( ; s != 13; ++s) {
+		Lg_1 = vec3(flCount);
+		vec2 H_qtgmc5 = C_m3ov0r1[s].xy * g_vInvTextureDim.xy;
+		vec2 vCoord = H_qtgmc5 + vScreenUv;
+		vec2 vCoord1 = clamp(vCoord, vMinMaxs.xy, vMinMaxs.zw);
+		vec4 flSpecularAmount = textureLod(g_tInputTexture, vCoord1, C_0d0);
+		float param = flSpecularAmount.w * g_flBloomScale;
+		float misc3a = clamp(param, C_0d0, C_1d0);
+		vec3 H_lzb5nn1 = vec3(misc3a);
+		vec3 vTemp1 = H_lzb5nn1 * g_vGlobalLightSpecularColor;
+		vec4 vLightingTerms = textureLod(g_tGBufferLightingTerms, vCoord1, C_0d0);
+		bool H_p5ljlc1 = vLightingTerms.y > C_0d0;
+		vTemp = vTemp1;
+		if (H_p5ljlc1) {
+			vec4 vDiffuse = textureLod(g_tGBufferAlbedo, vCoord1, C_0d0);
+			float param1 = vLightingTerms.y * vLightingTerms.z;
+			float misc3a1 = clamp(param1, C_0d0, C_1d0);
+			vec3 H_gsyr871 = vec3(misc3a1);
+			vec3 H_6dv3ii1 = H_gsyr871 * vDiffuse.xyz;
+			vec3 vTemp2 = H_6dv3ii1 + vTemp1;
+			vTemp = vTemp2;
+		}
+		vec3 vTemp3 = C_m3ov0r1[s].zzz * vTemp;
+		float H_0gbjg6 = C_m3ov0r1[s].z + flCount;
+		vec3 H_7bgmpu = o.xyz + vTemp3;
+		vec4 H_ad4uxs1 = o;
+		H_ad4uxs1.xyz = H_7bgmpu.xyz;
+		o = H_ad4uxs1;
+		flCount = H_0gbjg6;
+	}
+	vec3 H_vk4d4j = o.xyz / Lg_1;
+	vec2 H_bo9tpn = gl_FragCoord.xy - g_vViewportOffset;
+	vec2 vScreenUv1 = H_bo9tpn * g_vInvViewportSize;
+	vec2 H_cbz6iv = g_vInvQuarterResEffectsDim.xy / g_vInvViewportSize;
+	vec2 vTexCoordEffectsBloom = H_cbz6iv * vScreenUv1;
+	vec4 vEffectsBloom = textureLod(g_tQuarterResEffectsColor, vTexCoordEffectsBloom, C_0d0);
+	vec3 vLinearSegment = vEffectsBloom.xyz / C_vec3p12d92p;
+	vec3 H_sr091c = vEffectsBloom.xyz / C_vec3p1d055p;
+	vec3 H_rgwx5y = H_sr091c + C_bw96as;
+	vec3 vExpSegment = pow(H_rgwx5y, C_vec3p2d4p);
+	bool H_p9iy4p = vEffectsBloom.x > C_0d04045;
+	float select = H_p9iy4p ? vExpSegment.x : vLinearSegment.x;
+	bool H_qqky0r = vEffectsBloom.y > C_0d04045;
+	float select1 = H_qqky0r ? vExpSegment.y : vLinearSegment.y;
+	bool H_zufa581 = vEffectsBloom.z > C_0d04045;
+	float select2 = H_zufa581 ? vExpSegment.z : vLinearSegment.z;
+	vec3 H_g5tqsp = vec3(select, select1, select2);
+	vec3 H_z7qkjk1 = H_g5tqsp + H_vk4d4j;
+	vec4 H_rwwpo7 = C_xx1m2m1;
+	H_rwwpo7.xyz = H_z7qkjk1.xyz;
+	PS_OUTPUT_gl_vColor = H_rwwpo7;
+}
+

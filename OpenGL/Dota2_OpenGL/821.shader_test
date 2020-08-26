@@ -1,0 +1,205 @@
+[require]
+GLSL >= 3.30
+GL_ARB_separate_shader_objects
+SSO ENABLED
+
+[fragment shader]
+#version 330 core
+// LunarGOO output
+#extension GL_ARB_separate_shader_objects : enable
+#extension GL_ARB_shading_language_420pack : enable
+layout(std140) uniform PerViewConstantBuffer_t {
+	layout(row_major) mat4 g_matWorldToProjection;
+	layout(row_major) mat4 g_matProjectionToWorld;
+	layout(row_major) mat4 g_matWorldToView;
+	layout(row_major) mat4 g_matViewToProjection;
+	vec4 g_vInvProjRow3;
+	vec4 g_vClipPlane0;
+	float g_flToneMapScalarLinear;
+	float g_flLightMapScalar;
+	float g_flEnvMapScalar;
+	float g_flToneMapScalarGamma;
+	vec3 g_vCameraPositionWs;
+	float g_flViewportMinZ;
+	vec3 g_vCameraDirWs;
+	float g_flViewportMaxZ;
+	vec3 g_vCameraUpDirWs;
+	float g_flTime;
+	vec3 g_vDepthPsToVsConversion;
+	float g_flNearPlane;
+	float g_flFarPlane;
+	float g_flLightBinnerFarPlane;
+	vec2 g_vInvViewportSize;
+	vec2 g_vViewportToGBufferRatio;
+	vec2 g_vMorphTextureAtlasSize;
+	vec4 g_vInvGBufferSize;
+	vec2 g_vViewportOffset;
+	vec2 g_vViewportSize;
+	vec2 g_vRenderTargetSize;
+	float g_flFogBlendToBackground;
+	float g_flHenyeyGreensteinCoeff;
+	vec3 g_vFogColor;
+	float g_flNegFogStartOverFogRange;
+	float g_flInvFogRange;
+	float g_flFogMaxDensity;
+	float g_flFogExponent;
+	float g_flMod2xIdentity;
+	vec2 g_bRoughnessParams;
+	float g_bStereoEnabled;
+	float g_flStereoCameraIndex;
+	vec3 g_vMiddleEyePositionWs;
+	float g_flPad2;
+	layout(row_major) mat4 g_matWorldToProjectionMultiview[2];
+	vec4 g_vCameraPositionWsMultiview[2];
+	vec4 g_vFrameBufferCopyInvSizeAndUvScale;
+	vec4 g_vCameraAngles;
+	vec4 g_vWorldToCameraOffset;
+	vec4 g_vWorldToCameraOffsetMultiview[2];
+	vec4 g_vPerViewConstantExtraData0;
+	vec4 g_vPerViewConstantExtraData1;
+	vec4 g_vPerViewConstantExtraData2;
+	vec4 g_vPerViewConstantExtraData3;
+} ;
+uniform sampler2D g_tNormal;
+uniform sampler2D g_tFresnelWarp;
+layout( binding = 0 ) uniform sampler2D g_tMasks1;
+layout(std140, binding = 0 ) uniform _Globals_ {
+	float g_flAmbientScale;
+	vec3 g_vColorTint;
+	float g_flFresnelModulatesAlpha;
+	float g_flDetail2BlendFactor;
+	float g_flColorWarpBlendFactorFromCode;
+	float g_flCubeMapScalar;
+	float g_flCloakFactor;
+	float g_flFullyCloakedRefractFactor;
+	float g_flMaterialCloakFactor;
+	float g_flCloakRefractAmount;
+	float g_flCloakIntensity;
+	float g_flCloakBlurAmount;
+	vec3 g_vCloakColorTint;
+	float g_flDetailBlendToFull;
+	float g_flDiffuseWarpBlendToFull;
+	float g_flMetalnessBlendToFull;
+	float g_flSelfIllumBlendToFull;
+	float g_flSpecularBlendToFull;
+	float g_flEnvMapBlendToFull;
+	float g_flReflectionsTintByBaseBlendToNone;
+	float g_flSpecularExponentBlendToFull;
+	vec3 g_vBloomColor;
+	float g_flBloomScale;
+	float g_flBloomShift;
+	vec3 g_vSpecularColor;
+	float g_flSpecularExponent;
+	float g_flSpecularScale;
+	vec3 g_vDetail1ColorTint;
+	vec3 g_vDetail2ColorTint;
+	float g_bFog;
+	float g_bMaskCubeMapByMetalness;
+	vec2 g_vTexCoordScale;
+	vec2 g_vDetailTexCoordScale;
+} ;
+layout( binding = 1 ) uniform sampler2D g_tColor;
+layout(std140) uniform DotaGlobalParams_t {
+	vec3 g_vGlobalLightDir;
+	vec3 g_vGlobalLightColor;
+	float g_flGlobalLightSpecularScale;
+	vec3 g_vGlobalLightSpecularDir;
+	float g_flGlobalLightSpecularExp;
+	vec3 g_vGlobalLightSpecularColor;
+	float g_flGlobalLightSpecularIndependence;
+	vec3 g_vGlobalLightAmbientDir;
+	float g_flGlobalLightAmbientScale1;
+	vec3 g_vGlobalLightAmbientColor1;
+	float g_flGlobalLightAmbientScale2;
+	vec3 g_vGlobalLightAmbientColor2;
+	float g_flGlobalLightAmbientScale2Hero;
+	vec2 g_vGlobalCloud1Offset;
+	vec2 g_vGlobalCloud2Offset;
+	vec3 g_vFowColor;
+	float g_flGlobalCloudScale;
+	float g_flFowDarkness;
+	float g_flFowGrayFactor;
+	float g_flFowColorFactor;
+	float g_flFowGrayHilights;
+	vec4 g_vFowWorldSize;
+	vec4 g_vFowTexOffsets;
+	layout(row_major) mat4 g_matShadowWorldToTexture;
+	vec4 g_vInvShadowDepthTextureSize;
+	vec3 g_vGlobalLightAmbientColor3;
+	float g_flGlobalLightAmbientShadowAmount;
+} ;
+uniform sampler2D g_tFow;
+uniform sampler2D g_tFrameBufferCopyTexture;
+uniform sampler2D g_tDepthTexture;
+uniform sampler2D g_tGBufferAlbedo;
+uniform sampler2D g_tGBufferLightingTerms;
+uniform sampler2D g_tGBufferDepth;
+uniform sampler2D g_tGBufferNormalWs;
+layout(std140) uniform PerViewLightingConstantBuffer_t {
+	vec4 g_vInvLightTextureDims;
+	vec4 g_vLightBinCounts;
+	vec2 g_vLowResDeferredLightingTextureDim;
+	vec2 g_vLowResDeferredLightingTextureInvDim;
+	vec3 g_vToolsAmbientLighting;
+	float g_flSSAOEnabled;
+	vec3 g_vIrradAtlasInvSize;
+	float g_flIrradGlobalLightingFactor;
+	vec4 g_vGlobalLightingSHRed;
+	vec4 g_vGlobalLightingSHGreen;
+	vec4 g_vGlobalLightingSHBlue;
+	vec3 g_vRayleighScatteringCoeff;
+	float g_flMieScatteringEccentricity;
+	vec3 g_vMieScatteringCoeff;
+	float g_flMieForwardScatteringRatio;
+	vec3 g_vSpecularCubeMapScale;
+	float g_flDefaultEnvMapIndex;
+	vec4 g_vLightCookieSheetSequenceAndSizes;
+	vec3 g_vLpvBoxMinCascade0;
+	float g_flLpvBrightnessScale;
+	vec3 g_vLpvInvBoxDimCascade0;
+	vec2 g_vLpvInvCoeffTextureDim;
+} ;
+layout(std140) uniform PerLayerConstantBuffer_t {
+	vec4 g_vWireframeColor;
+} ;
+uniform sampler2D g_tClouds;
+uniform sampler2DShadow g_tShadowDepthTexture;
+uniform sampler2D g_tDetail2;
+uniform sampler3D g_tColorWarp3DFromCode;
+uniform sampler2D g_tSpecularWarp;
+uniform samplerCube g_tCubeMap;
+layout(location=0) in vec4 PS_INPUT_gl_vBaseTexCoord_vDetailTexCoord;
+layout(location=1) in vec3 PS_INPUT_gl_vNormalWs;
+layout(location=2) in vec4 PS_INPUT_gl_vTangentUWs_flTangentVSign;
+layout(location=3) in vec4 PS_INPUT_gl_vVertexColor;
+layout(location=4) in vec4 PS_INPUT_gl_vPositionWs_flLinearDepth;
+layout(location=0) out vec4 PS_OUTPUT_gl_vDiffuse;
+layout(location=1) out vec4 PS_OUTPUT_gl_vSpecular;
+layout(location=2) out vec4 PS_OUTPUT_gl_flDepth;
+layout(location=3) out vec4 PS_OUTPUT_gl_vNormal;
+const vec3 C_vec3p0d5p = vec3(0.5);
+const float C_0d0 = 0.0;
+const vec4 C_obaw8x1 = vec4(0.0, 0.0, 0.0, 0.0);
+const float C_1d0 = 1.0;
+void main()
+{
+	vec3 vGeometricNormalWs = normalize(PS_INPUT_gl_vNormalWs);
+	vec3 H_fcuksf = vGeometricNormalWs * C_vec3p0d5p;
+	vec3 H_j223wv1 = C_vec3p0d5p + H_fcuksf;
+	vec4 H_18jcae = vec4(H_j223wv1.x, H_j223wv1.y, H_j223wv1.z, C_0d0);
+	vec4 vMasks = texture(g_tMasks1, PS_INPUT_gl_vBaseTexCoord_vDetailTexCoord.xy);
+	float flSelfIllumMask = max(vMasks.w, g_flSelfIllumBlendToFull);
+	vec4 vColorTexel = texture(g_tColor, PS_INPUT_gl_vBaseTexCoord_vDetailTexCoord.xy);
+	vec3 vAlbedo = PS_INPUT_gl_vVertexColor.xyz * vColorTexel.xyz;
+	float H_n0t3xq = flSelfIllumMask * g_flBloomScale;
+	vec4 H_5agmpi = C_obaw8x1;
+	H_5agmpi.yzw = vec3(H_n0t3xq, H_n0t3xq, C_0d0);
+	float H_bob7ex = H_n0t3xq * g_flBloomShift;
+	vec3 H_n0cpgt = mix(vAlbedo, g_vBloomColor, H_bob7ex);
+	vec4 H_d1kn0r = vec4(H_n0cpgt.x, H_n0cpgt.y, H_n0cpgt.z, C_1d0);
+	PS_OUTPUT_gl_vDiffuse = H_d1kn0r;
+	PS_OUTPUT_gl_vSpecular = H_5agmpi;
+	PS_OUTPUT_gl_flDepth = PS_INPUT_gl_vPositionWs_flLinearDepth.wwww;
+	PS_OUTPUT_gl_vNormal = H_18jcae;
+}
+

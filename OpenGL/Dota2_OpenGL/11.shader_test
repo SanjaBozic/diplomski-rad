@@ -1,0 +1,43 @@
+[require]
+GLSL >= 3.30
+GL_ARB_separate_shader_objects
+SSO ENABLED
+
+[fragment shader]
+#version 330 core
+// LunarGOO output
+#extension GL_ARB_separate_shader_objects : enable
+#extension GL_ARB_shading_language_420pack : enable
+layout(std140, binding = 0 ) uniform _Globals_ {
+	vec4 g_vViewport;
+	vec2 g_vImageAspectRatio;
+} ;
+layout( binding = 0 ) uniform sampler2D g_tColor;
+layout(location=0) in vec4 PS_INPUT_gl_vColor;
+layout(location=1) in vec2 PS_INPUT_gl_vTexCoord;
+layout(location=0) out vec4 PS_OUTPUT_gl_vColor;
+const float C_1d0 = 1.0;
+const float C_a0d5 = -0.5;
+const float C_0d5 = 0.5;
+void main()
+{
+	float H_mfguzc1 = g_vViewport.z / g_vImageAspectRatio.x;
+	float H_yicuqo = g_vViewport.w / g_vImageAspectRatio.y;
+	float H_li6g631 = H_mfguzc1 / H_yicuqo;
+	bool H_9bfzil = H_li6g631 > C_1d0;
+	float H_sludbq = PS_INPUT_gl_vTexCoord.y + C_a0d5;
+	float H_nyjbwd1 = H_sludbq / H_li6g631;
+	float H_x032qb = H_nyjbwd1 + C_0d5;
+	vec2 H_80juat1 = PS_INPUT_gl_vTexCoord;
+	H_80juat1.y = H_x032qb;
+	float H_p6csix = C_a0d5 + PS_INPUT_gl_vTexCoord.x;
+	float H_kskjpd1 = H_li6g631 * H_p6csix;
+	float H_ech93i = C_0d5 + H_kskjpd1;
+	vec2 H_80juat1r = PS_INPUT_gl_vTexCoord;
+	H_80juat1r.x = H_ech93i;
+	vec2 select = H_9bfzil ? H_80juat1 : H_80juat1r;
+	vec4 H_k7gtl3 = texture(g_tColor, select);
+	vec4 H_qxgb3m1 = H_k7gtl3 * PS_INPUT_gl_vColor;
+	PS_OUTPUT_gl_vColor = H_qxgb3m1;
+}
+

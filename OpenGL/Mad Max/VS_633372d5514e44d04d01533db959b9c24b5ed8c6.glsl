@@ -1,0 +1,78 @@
+#version 460 core
+// vs_5_0
+// Checksum: 22ca8bc7_e3c15734_1c9ee69d_f391fdca
+// Name: skidmarks_normal
+
+layout(location = 0) in vec4 v0;
+layout(location = 1) in vec4 v1;
+layout(location = 2) in vec4 v2;
+layout(location = 3) in vec4 v3;
+layout(location = 4) in vec4 v4;
+// gl_Position
+layout(location = 1) out idx_Varying1 { vec4 v; } o1;
+layout(location = 2) out idx_Varying2 { vec4 v; } o2;
+layout(location = 3) out idx_Varying3 { vec4 v; } o3;
+layout(location = 4) out idx_Varying4 { vec4 v; } o4;
+layout(location = 5) out idx_Varying5 { vec4 v; } o5;
+vec4 r0, r1;
+
+// Uniform buffer declarations (dcl_constant_buffer)
+
+layout (std140) uniform cb_vs1 { vec4 cb1[1]; } idx_uniforms1_vs;
+
+layout (std140) uniform cb_vs0 { vec4 cb0[4]; } idx_uniforms0_vs;
+
+
+out gl_PerVertex {
+	vec4 gl_Position;
+};
+uniform vec4 idx_Viewport_vs;
+vec4 D3DtoGL(in vec4 pos)
+{
+	pos.xy += idx_Viewport_vs.xy * vec2(pos.w, -pos.w);
+	return pos;
+}
+vec4 GLtoD3D(in vec4 pos)
+{
+	pos.xy -= idx_Viewport_vs.xy * vec2(pos.w, -pos.w);
+	return pos;
+}
+
+
+void Initialise()
+{
+}
+
+
+void VertexEpilog()
+{
+	gl_Position = D3DtoGL(gl_Position);
+}
+
+void main()
+{
+	Initialise();
+	r0 = v0.yyyy * idx_uniforms0_vs.cb0[1];
+	r0 = fma(v0.xxxx, idx_uniforms0_vs.cb0[0], r0);
+	r0 = fma(v0.zzzz, idx_uniforms0_vs.cb0[2], r0);
+	r0 = r0 + idx_uniforms0_vs.cb0[3];
+	gl_Position = r0 + vec4(0.00000000f, 0.00000000f, 9.99999975e-05f, 0.00000000f);
+	o1.v.w = -r0.z + r0.w;
+	o1.v.xyz = v1.xyw * vec3(1.00000000f, 8.00000000f, 1.00000000f);
+	r0.xyz = v0.www * vec3(1.00000000f, 0.0156250000f, 0.000244140625f);
+	r0.xyz = fract(r0.xyz);
+	r1.xyz = fma(r0.xyz, vec3(0.610612035f, 0.610612035f, 0.610612035f), vec3(0.682171106f, 0.682171106f, 0.682171106f));
+	r0.xyz = r0.xyz + r0.xyz;
+	r1.xyz = fma(r0.xyz, r1.xyz, vec3(0.0125228781f, 0.0125228781f, 0.0125228781f));
+	o2.v.xyz = r0.xyz * r1.xyz;
+	o2.v.w = v1.z * idx_uniforms1_vs.cb1[0].w;
+	r0.xyz = v2.xyz + vec3(-0.500000000f, -0.500000000f, -0.500000000f);
+	o3.v.xyz = r0.xyz + r0.xyz;
+	r0.xyz = v3.xyz + vec3(-0.500000000f, -0.500000000f, -0.500000000f);
+	o4.v.xyz = r0.xyz + r0.xyz;
+	r0.xyz = v4.xyz + vec3(-0.500000000f, -0.500000000f, -0.500000000f);
+	o5.v.xyz = r0.xyz + r0.xyz;
+	VertexEpilog();
+	return;
+}
+

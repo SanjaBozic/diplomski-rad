@@ -1,0 +1,32 @@
+#version 460 core
+// ps_4_0
+// Checksum: a9024d09_8759b1a5_2fd3437e_185c4a2b
+// Name: built_in_resolve_depth.fb
+
+vec4 v0 = vec4(gl_FragCoord.xyz, 1.0 / gl_FragCoord.w);
+layout(location = 0) out vec4 o0;
+precise vec4 r0;
+
+// Uniform buffer declarations (dcl_constant_buffer)
+
+
+// Sampler/resource pairs
+
+uniform sampler2D resourceSamplerPair_0_ps; // res0, s-1
+
+
+void Initialise()
+{
+}
+
+
+void main()
+{
+	Initialise();
+	r0.xy = intBitsToFloat(ivec2(v0.xy));
+	r0.zw = uintBitsToFloat(uvec2(0x00000000, 0x00000000));
+	r0 = (texelFetch(resourceSamplerPair_0_ps, floatBitsToInt(r0.xy), int(floatBitsToInt(r0.w))));
+	o0.x = r0.x;
+	return;
+}
+

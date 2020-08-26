@@ -1,0 +1,25 @@
+[require]
+GLSL >= 1.50
+
+[vertex shader]
+#version 150
+in vec4 pos;
+in vec4 color;
+out vec4 out_color;
+
+void main()
+{
+    gl_Position = pos;
+    out_color = color;
+}
+
+[fragment shader]
+#version 150
+in vec4 out_color;
+out vec4 fragment_color;
+
+void main()
+{
+    fragment_color = out_color;
+}
+

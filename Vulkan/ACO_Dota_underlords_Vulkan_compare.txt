@@ -1,0 +1,802 @@
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+--> 0.pipeline_test
+0.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 208 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+0.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 100.pipeline_test
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+100.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 116 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+100.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 1184 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 101.pipeline_test
+101.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 904 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+101.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 102.pipeline_test
+102.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 20 Code Size: 480 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+102.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 936 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 103.pipeline_test
+103.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 532 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+103.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1096 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 104.pipeline_test
+104.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 848 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+104.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1400 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 105.pipeline_test
+105.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+105.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 106.pipeline_test
+106.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+106.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 107.pipeline_test
+107.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 660 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+107.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 36 Code Size: 1240 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 108.pipeline_test
+108.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 696 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+108.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 109.pipeline_test
+109.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 772 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+109.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 36 Code Size: 1240 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 10.pipeline_test
+10.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 88 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+10.pipeline_test (VS) - Shader Stats: SGPRS: 18 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 110.pipeline_test
+110.pipeline_test (FS) - Shader Stats: SGPRS: 48 VGPRS: 44 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 11 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+110.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 40 Code Size: 1596 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 111.pipeline_test
+111.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 648 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+111.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1200 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 112.pipeline_test
+112.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 648 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+112.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1200 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 113.pipeline_test
+113.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 848 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+113.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1400 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 114.pipeline_test
+114.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+114.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1832 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 115.pipeline_test
+115.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 28 Code Size: 732 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+115.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 116.pipeline_test
+116.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 648 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+116.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1200 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 117.pipeline_test
+117.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+117.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 580 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 118.pipeline_test
+118.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+118.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 580 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 119.pipeline_test
+119.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+119.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 580 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 11.pipeline_test
+11.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 408 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+11.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1104 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 120.pipeline_test
+120.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+120.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 32 Code Size: 896 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 121.pipeline_test
+121.pipeline_test (FS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1084 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+121.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 32 Code Size: 1096 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 122.pipeline_test
+122.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+122.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 32 Code Size: 896 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 123.pipeline_test
+123.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 576 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+123.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 124.pipeline_test
+124.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+124.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 616 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 125.pipeline_test
+125.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 376 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+125.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 664 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 126.pipeline_test
+126.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+126.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 616 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 127.pipeline_test
+127.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 400 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+127.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 12 Code Size: 484 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 128.pipeline_test
+128.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 40 Code Size: 916 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 129.pipeline_test
+129.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 292 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+129.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 40 Code Size: 1368 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 12.pipeline_test
+12.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 116 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+12.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 1184 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 130.pipeline_test
+130.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1072 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 131.pipeline_test
+--> 132.pipeline_test
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+131.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 372 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+131.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1592 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 133.pipeline_test
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+133.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+133.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1484 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 134.pipeline_test
+132.pipeline_test (FS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1712 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+132.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1992 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 135.pipeline_test
+134.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 360 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+134.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2364 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 136.pipeline_test
+135.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 300 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+135.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 2040 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 137.pipeline_test
+137.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 224 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+137.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 16 Code Size: 236 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 138.pipeline_test
+138.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 576 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+138.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 139.pipeline_test
+139.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+139.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 13.pipeline_test
+136.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+136.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 44 Code Size: 1904 LDS: 0 Scratch: 0 Max Waves: 11 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 140.pipeline_test
+140.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+140.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 24 Code Size: 1304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 141.pipeline_test
+13.pipeline_test (FS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 1960 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+13.pipeline_test (VS) - Shader Stats: SGPRS: 18 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 142.pipeline_test
+141.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 612 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+141.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1832 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 143.pipeline_test
+142.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 624 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+142.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1832 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 144.pipeline_test
+143.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+143.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1484 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 145.pipeline_test
+144.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1336 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+144.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2020 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 146.pipeline_test
+145.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1320 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+145.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1508 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 147.pipeline_test
+147.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 156 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+147.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 148.pipeline_test
+148.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+148.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 149.pipeline_test
+149.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 224 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+149.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 16 Code Size: 236 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 14.pipeline_test
+14.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 340 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+14.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 936 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 150.pipeline_test
+146.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1336 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+146.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1508 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 151.pipeline_test
+150.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+150.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 152.pipeline_test
+151.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+151.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 24 Code Size: 1304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 153.pipeline_test
+152.pipeline_test (FS) - Shader Stats: SGPRS: 56 VGPRS: 40 Code Size: 1368 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+152.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 154.pipeline_test
+153.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 1188 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+153.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 155.pipeline_test
+154.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 1232 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+154.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 156.pipeline_test
+155.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 28 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+155.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 157.pipeline_test
+156.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1192 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+156.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 158.pipeline_test
+158.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 224 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+158.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 16 Code Size: 236 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 159.pipeline_test
+157.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1216 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+157.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 15.pipeline_test
+159.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+159.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 24 Code Size: 1304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 160.pipeline_test
+15.pipeline_test (FS) - Shader Stats: SGPRS: 48 VGPRS: 44 Code Size: 1936 LDS: 0 Scratch: 0 Max Waves: 11 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+15.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 432 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 161.pipeline_test
+160.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1336 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+160.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2020 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 162.pipeline_test
+161.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1320 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+161.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1508 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 163.pipeline_test
+162.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 624 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+162.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1832 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 164.pipeline_test
+163.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1336 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+163.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1508 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 165.pipeline_test
+164.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+164.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1484 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 166.pipeline_test
+166.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 612 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+166.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1832 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 167.pipeline_test
+165.pipeline_test (FS) - Shader Stats: SGPRS: 56 VGPRS: 40 Code Size: 1368 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+165.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 168.pipeline_test
+168.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+168.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 24 Code Size: 1304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 169.pipeline_test
+167.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 28 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+167.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 16.pipeline_test
+16.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 528 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+16.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 432 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 170.pipeline_test
+169.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1192 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+169.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 171.pipeline_test
+--> 172.pipeline_test
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+170.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 1224 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+170.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1800 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 173.pipeline_test
+171.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 28 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+171.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1800 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 174.pipeline_test
+173.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1216 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+173.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 175.pipeline_test
+172.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 1232 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+172.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 176.pipeline_test
+174.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 1188 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+174.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 177.pipeline_test
+177.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+177.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 178.pipeline_test
+175.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 1224 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+175.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1800 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 179.pipeline_test
+178.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+178.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 24 Code Size: 1304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 17.pipeline_test
+176.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 28 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+176.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1800 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 180.pipeline_test
+17.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 116 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+17.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 1184 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 181.pipeline_test
+179.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1336 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+179.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2020 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 182.pipeline_test
+181.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 28 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+180.pipeline_test (FS) - Shader Stats: SGPRS: 56 VGPRS: 40 Code Size: 1368 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+181.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 183.pipeline_test
+180.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 184.pipeline_test
+182.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 624 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+182.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1832 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 185.pipeline_test
+183.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1320 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+183.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1508 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 186.pipeline_test
+184.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1192 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+184.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 187.pipeline_test
+186.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+186.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1484 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 188.pipeline_test
+185.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 1232 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+185.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 189.pipeline_test
+187.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 1188 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+187.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 18.pipeline_test
+18.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 428 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+18.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 190.pipeline_test
+189.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1336 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+189.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1508 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 191.pipeline_test
+188.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 1224 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+188.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1800 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 192.pipeline_test
+192.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 224 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+192.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 193.pipeline_test
+193.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 88 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+193.pipeline_test (VS) - Shader Stats: SGPRS: 18 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 194.pipeline_test
+194.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 124 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+194.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 195.pipeline_test
+191.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 28 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+191.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1800 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 196.pipeline_test
+190.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1216 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+190.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1984 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 197.pipeline_test
+197.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 116 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+197.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 1184 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 198.pipeline_test
+196.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 408 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+196.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1104 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 199.pipeline_test
+195.pipeline_test (FS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 2188 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+195.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 432 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 19.pipeline_test
+198.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 340 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+198.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 936 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 1.pipeline_test
+1.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 208 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+1.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 288 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 200.pipeline_test
+19.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 828 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+19.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 201.pipeline_test
+199.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 28 Code Size: 784 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+199.pipeline_test (VS) - Shader Stats: SGPRS: 96 VGPRS: 40 Code Size: 1864 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 202.pipeline_test
+201.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 116 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+201.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 1184 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 203.pipeline_test
+200.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 48 Code Size: 1364 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 204.pipeline_test
+202.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 408 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+202.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1104 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 205.pipeline_test
+205.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 206.pipeline_test
+204.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1072 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 207.pipeline_test
+203.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 828 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+203.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 208.pipeline_test
+208.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 209.pipeline_test
+209.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 20.pipeline_test
+206.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 828 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+206.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 210.pipeline_test
+20.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 424 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+20.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 211.pipeline_test
+207.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 904 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+207.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 212.pipeline_test
+211.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 213.pipeline_test
+213.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 532 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+213.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1096 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 214.pipeline_test
+210.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 904 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+212.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 660 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+212.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 36 Code Size: 1240 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+210.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 215.pipeline_test
+--> 216.pipeline_test
+216.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 40 Code Size: 916 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 217.pipeline_test
+214.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 772 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+214.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 36 Code Size: 1240 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 218.pipeline_test
+215.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 696 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+215.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 219.pipeline_test
+219.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 20 Code Size: 480 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+219.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 936 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 21.pipeline_test
+217.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 848 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+217.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1400 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 220.pipeline_test
+218.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 848 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+218.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1400 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 221.pipeline_test
+220.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 292 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+220.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 40 Code Size: 1368 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 222.pipeline_test
+21.pipeline_test (FS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 2188 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+21.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 432 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 223.pipeline_test
+221.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 28 Code Size: 732 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+221.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 224.pipeline_test
+223.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 648 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+223.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1200 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 225.pipeline_test
+224.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 648 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+224.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1200 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 226.pipeline_test
+222.pipeline_test (FS) - Shader Stats: SGPRS: 48 VGPRS: 44 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 11 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+222.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 40 Code Size: 1596 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 227.pipeline_test
+226.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+226.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 580 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 228.pipeline_test
+227.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+227.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 580 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 229.pipeline_test
+225.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 648 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+225.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1200 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 22.pipeline_test
+228.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+228.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 580 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 230.pipeline_test
+22.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 336 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+22.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 432 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 231.pipeline_test
+229.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+229.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 32 Code Size: 896 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 232.pipeline_test
+230.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+230.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 32 Code Size: 896 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 233.pipeline_test
+233.pipeline_test (FS) - Shader Stats: SGPRS: 16 VGPRS: 20 Code Size: 564 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+233.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 20 Code Size: 240 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 234.pipeline_test
+234.pipeline_test (FS) - Shader Stats: SGPRS: 40 VGPRS: 36 Code Size: 856 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+234.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 200 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 235.pipeline_test
+231.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+231.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1832 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 236.pipeline_test
+232.pipeline_test (FS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1084 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+232.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 32 Code Size: 1096 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 237.pipeline_test
+--> 238.pipeline_test
+235.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 400 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+236.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 352 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+235.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 12 Code Size: 484 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+236.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 239.pipeline_test
+--> 23.pipeline_test
+23.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+23.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 240.pipeline_test
+237.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 280 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+237.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 16 Code Size: 228 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 241.pipeline_test
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+239.pipeline_test (FS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2544 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+239.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1992 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 242.pipeline_test
+238.pipeline_test (FS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2756 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+238.pipeline_test (VS) - Shader Stats: SGPRS: 80 VGPRS: 48 Code Size: 2052 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 243.pipeline_test
+240.pipeline_test (FS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2660 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+240.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2020 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 244.pipeline_test
+241.pipeline_test (FS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 2500 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+241.pipeline_test (VS) - Shader Stats: SGPRS: 88 VGPRS: 48 Code Size: 2380 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 245.pipeline_test
+244.pipeline_test (FS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 2188 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+244.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 432 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 246.pipeline_test
+245.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 88 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+245.pipeline_test (VS) - Shader Stats: SGPRS: 18 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 247.pipeline_test
+247.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 280 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+247.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 16 Code Size: 228 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 248.pipeline_test
+242.pipeline_test (FS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1548 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+242.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 1912 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 249.pipeline_test
+243.pipeline_test (FS) - Shader Stats: SGPRS: 56 VGPRS: 48 Code Size: 2028 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+243.pipeline_test (VS) - Shader Stats: SGPRS: 80 VGPRS: 48 Code Size: 2068 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 24.pipeline_test
+24.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 250.pipeline_test
+250.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 180 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+250.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 200 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 251.pipeline_test
+251.pipeline_test (FS) - Shader Stats: SGPRS: 9 VGPRS: 8 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+251.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 16 Code Size: 236 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 252.pipeline_test
+246.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 320 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+246.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 2452 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 25.pipeline_test
+252.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 628 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+252.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 20 Code Size: 256 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 26.pipeline_test
+25.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 240 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+25.pipeline_test (VS) - Shader Stats: SGPRS: 18 VGPRS: 12 Code Size: 260 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 27.pipeline_test
+248.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 360 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+248.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2364 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 28.pipeline_test
+249.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 300 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+249.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 2040 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 29.pipeline_test
+28.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 2.pipeline_test
+26.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 532 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+26.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 30.pipeline_test
+27.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 528 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+27.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 31.pipeline_test
+2.pipeline_test (CS) - Shader Stats: SGPRS: 48 VGPRS: 16 Code Size: 480 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 32.pipeline_test
+30.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 33.pipeline_test
+33.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 34.pipeline_test
+31.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 408 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+31.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1104 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 35.pipeline_test
+34.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 20 Code Size: 480 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+34.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 936 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 36.pipeline_test
+29.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 28 Code Size: 784 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+29.pipeline_test (VS) - Shader Stats: SGPRS: 96 VGPRS: 40 Code Size: 1864 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 37.pipeline_test
+32.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 904 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+32.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 38.pipeline_test
+35.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 40 Code Size: 1592 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+35.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 20 Code Size: 524 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 39.pipeline_test
+38.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 40 Code Size: 916 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 3.pipeline_test
+3.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+3.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 40.pipeline_test
+36.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 660 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+36.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 36 Code Size: 1240 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 41.pipeline_test
+37.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 904 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+37.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 42.pipeline_test
+39.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 648 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+39.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1200 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 43.pipeline_test
+40.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 828 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+40.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 44.pipeline_test
+41.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 772 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+41.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 36 Code Size: 1240 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 45.pipeline_test
+42.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 696 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+42.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 46.pipeline_test
+44.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 532 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+44.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1096 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 47.pipeline_test
+43.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 648 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+43.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1200 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 48.pipeline_test
+45.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 848 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+45.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1400 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 49.pipeline_test
+46.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 848 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+46.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1400 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 4.pipeline_test
+49.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+49.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 580 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 50.pipeline_test
+4.pipeline_test (FS) - Shader Stats: SGPRS: 9 VGPRS: 8 Code Size: 64 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+4.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 200 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 51.pipeline_test
+47.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 648 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+47.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1200 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 52.pipeline_test
+50.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+50.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 580 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 53.pipeline_test
+51.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 308 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+51.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 24 Code Size: 580 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 54.pipeline_test
+48.pipeline_test (FS) - Shader Stats: SGPRS: 48 VGPRS: 44 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 11 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+48.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 40 Code Size: 1596 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 55.pipeline_test
+52.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 292 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+52.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 40 Code Size: 1368 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 56.pipeline_test
+55.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+55.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 32 Code Size: 896 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 57.pipeline_test
+54.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 304 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+54.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 32 Code Size: 896 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 58.pipeline_test
+53.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 28 Code Size: 732 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+53.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 59.pipeline_test
+59.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 400 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+59.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 12 Code Size: 484 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 5.pipeline_test
+5.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 224 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+5.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 60.pipeline_test
+56.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+56.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1484 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 61.pipeline_test
+58.pipeline_test (FS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1084 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+58.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 32 Code Size: 1096 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 62.pipeline_test
+57.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+57.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1832 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 63.pipeline_test
+61.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 360 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+60.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 320 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+61.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2364 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 64.pipeline_test
+60.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 2452 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 65.pipeline_test
+62.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 300 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+62.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 2040 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 66.pipeline_test
+63.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 300 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+63.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 2040 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 67.pipeline_test
+65.pipeline_test (FS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2544 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+65.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 1992 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 68.pipeline_test
+64.pipeline_test (FS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2756 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+64.pipeline_test (VS) - Shader Stats: SGPRS: 80 VGPRS: 48 Code Size: 2052 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 69.pipeline_test
+66.pipeline_test (FS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2660 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+66.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 2020 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 6.pipeline_test
+67.pipeline_test (FS) - Shader Stats: SGPRS: 64 VGPRS: 48 Code Size: 2500 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+6.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 156 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+6.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 70.pipeline_test
+67.pipeline_test (VS) - Shader Stats: SGPRS: 88 VGPRS: 48 Code Size: 2380 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 71.pipeline_test
+71.pipeline_test (FS) - Shader Stats: SGPRS: 9 VGPRS: 8 Code Size: 64 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+71.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 200 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 72.pipeline_test
+70.pipeline_test (FS) - Shader Stats: SGPRS: 9 VGPRS: 8 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+70.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 16 Code Size: 236 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 73.pipeline_test
+72.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 156 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+72.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 74.pipeline_test
+73.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+73.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 75.pipeline_test
+74.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 124 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+74.pipeline_test (VS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 1156 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 76.pipeline_test
+75.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 48 Code Size: 1364 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 77.pipeline_test
+68.pipeline_test (FS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1548 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+68.pipeline_test (VS) - Shader Stats: SGPRS: 72 VGPRS: 48 Code Size: 1912 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 78.pipeline_test
+77.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+77.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 16 Code Size: 240 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 79.pipeline_test
+79.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 144 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+79.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 7.pipeline_test
+78.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 272 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+78.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 20 Code Size: 268 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 80.pipeline_test
+80.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 8 Code Size: 180 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+80.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 200 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 81.pipeline_test
+81.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 352 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+81.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 82.pipeline_test
+7.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 468 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+7.pipeline_test (VS) - Shader Stats: SGPRS: 18 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 83.pipeline_test
+69.pipeline_test (FS) - Shader Stats: SGPRS: 56 VGPRS: 48 Code Size: 2028 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+76.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 48 Code Size: 1072 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 84.pipeline_test
+69.pipeline_test (VS) - Shader Stats: SGPRS: 80 VGPRS: 48 Code Size: 2068 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 85.pipeline_test
+84.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 224 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+84.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 86.pipeline_test
+85.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 88 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+85.pipeline_test (VS) - Shader Stats: SGPRS: 18 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 87.pipeline_test
+82.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 24 Code Size: 628 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+82.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 20 Code Size: 256 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 88.pipeline_test
+83.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 588 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+83.pipeline_test (VS) - Shader Stats: SGPRS: 17 VGPRS: 12 Code Size: 216 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 89.pipeline_test
+86.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 4 Code Size: 116 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+86.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 1184 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 8.pipeline_test
+88.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 408 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+88.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1104 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 90.pipeline_test
+8.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 20 Code Size: 468 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+8.pipeline_test (VS) - Shader Stats: SGPRS: 18 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 91.pipeline_test
+89.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 408 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+89.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 36 Code Size: 1104 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 92.pipeline_test
+87.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 12 Code Size: 232 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+87.pipeline_test (VS) - Shader Stats: SGPRS: 40 VGPRS: 32 Code Size: 1484 LDS: 0 Scratch: 0 Max Waves: 16 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 93.pipeline_test
+91.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 94.pipeline_test
+93.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 95.pipeline_test
+94.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 16 Code Size: 340 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+94.pipeline_test (VS) - Shader Stats: SGPRS: 56 VGPRS: 28 Code Size: 936 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 96.pipeline_test
+96.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 97.pipeline_test
+90.pipeline_test (FS) - Shader Stats: SGPRS: 48 VGPRS: 48 Code Size: 2188 LDS: 0 Scratch: 0 Max Waves: 10 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+90.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 12 Code Size: 432 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 98.pipeline_test
+97.pipeline_test (VS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 500 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 99.pipeline_test
+95.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 828 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+92.pipeline_test (FS) - Shader Stats: SGPRS: 24 VGPRS: 28 Code Size: 784 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+95.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+--> 9.pipeline_test
+92.pipeline_test (VS) - Shader Stats: SGPRS: 96 VGPRS: 40 Code Size: 1864 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+9.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 36 Code Size: 632 LDS: 0 Scratch: 0 Max Waves: 14 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+9.pipeline_test (VS) - Shader Stats: SGPRS: 18 VGPRS: 12 Code Size: 204 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+98.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 24 Code Size: 828 LDS: 0 Scratch: 0 Max Waves: 20 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+98.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+99.pipeline_test (FS) - Shader Stats: SGPRS: 32 VGPRS: 28 Code Size: 904 LDS: 0 Scratch: 0 Max Waves: 18 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+99.pipeline_test (VS) - Shader Stats: SGPRS: 64 VGPRS: 40 Code Size: 1408 LDS: 0 Scratch: 0 Max Waves: 12 Spilled SGPRs: 0 Spilled VGPRs: 0 PrivMem VGPRs: 0 
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+GPU: AMD RADV NAVI10 (ACO)
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+GPU: AMD RADV NAVI10 (ACO)
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Number of devices: 1
+GPU: AMD RADV NAVI10 (ACO)
+Thread 14 took 4.24 seconds and compiled 73 pipelines
+Thread 8 took 0.05 seconds and compiled 0 pipelines
+Thread 5 took 0.05 seconds and compiled 0 pipelines
+Thread 12 took 0.05 seconds and compiled 0 pipelines
+Thread 3 took 0.05 seconds and compiled 0 pipelines
+Thread 11 took -0.31 seconds and compiled 49 pipelines
+Thread 10 took 0.05 seconds and compiled 0 pipelines
+Thread 2 took 0.00 seconds and compiled 0 pipelines
+Thread 9 took 0.05 seconds and compiled 0 pipelines
+Thread 0 took 0.07 seconds and compiled 103 pipelines
+Thread 13 took 0.05 seconds and compiled 0 pipelines
+Thread 1 took 4.19 seconds and compiled 28 pipelines
+Thread 15 took 0.05 seconds and compiled 0 pipelines
+Thread 4 took 0.05 seconds and compiled 0 pipelines
+Thread 6 took 0.05 seconds and compiled 0 pipelines
+Thread 7 took 0.05 seconds and compiled 0 pipelines

@@ -1,0 +1,2191 @@
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Loaded SDL version 2.0.13-5893924
+/usr/share/themes/Breeze-Dark/gtk-2.0/widgets/entry:70: error: unexpected identifier `direction', expected character `}'
+
+(steam:10132): Gtk-WARNING **: Unable to locate theme engine in module_path: "adwaita",
+/usr/share/themes/Breeze-Dark/gtk-2.0/widgets/styles:36: error: invalid string constant "combobox_entry", expected valid string constant
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Fontconfig warning: line 5: unknown element "its:rules"
+Fontconfig warning: line 6: unknown element "its:translateRule"
+Fontconfig warning: line 9: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 4: unknown element "description"
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 80: saw unknown, expected number
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 4: unknown element "description"
+[0826/173151.932608:INFO:crash_reporting.cc(247)] Crash reporting enabled for process: browser
+[0826/173151.954566:WARNING:crash_reporting.cc(286)] Failed to set crash key: UserID with value: 0
+[0826/173151.954618:WARNING:crash_reporting.cc(286)] Failed to set crash key: BuildID with value: 1596186727
+[0826/173151.954622:WARNING:crash_reporting.cc(286)] Failed to set crash key: SteamUniverse with value: Public
+[0826/173151.954626:WARNING:crash_reporting.cc(286)] Failed to set crash key: Vendor with value: Valve
+[0826/173151.980738:WARNING:crash_reporting.cc(286)] Failed to set crash key: UserID with value: 0
+[0826/173151.980788:WARNING:crash_reporting.cc(286)] Failed to set crash key: BuildID with value: 1596186727
+[0826/173151.980792:WARNING:crash_reporting.cc(286)] Failed to set crash key: SteamUniverse with value: Public
+[0826/173151.980796:WARNING:crash_reporting.cc(286)] Failed to set crash key: Vendor with value: Valve
+[0826/173151.981151:INFO:crash_reporting.cc(247)] Crash reporting enabled for process: gpu-process
+[0826/173152.037915:ERROR:sandbox_linux.cc(372)] InitializeSandbox() called with multiple threads in process gpu-process.
+[0826/173152.057635:WARNING:crash_reporting.cc(286)] Failed to set crash key: UserID with value: 0
+[0826/173152.057713:WARNING:crash_reporting.cc(286)] Failed to set crash key: BuildID with value: 1596186727
+[0826/173152.057721:WARNING:crash_reporting.cc(286)] Failed to set crash key: SteamUniverse with value: Public
+[0826/173152.057728:WARNING:crash_reporting.cc(286)] Failed to set crash key: Vendor with value: Valve
+[0826/173152.058354:INFO:crash_reporting.cc(247)] Crash reporting enabled for process: utility
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Warning: failed to set thread priority: set failed for 8: -1: setpriority() failed
+Warning: failed to set thread priority: set failed for priority 8
+Warning: support for elevated priorities is most likely unavailable, suppressing future warnings
+Warning: failed to set thread priority: set failed for 8: -1: setpriority() failed
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Proceed to auto login
+
+** (steam:10132): WARNING **: Unknown device type 14
+
+** (steam:10132): WARNING **: Could not create object for /org/freedesktop/NetworkManager/Devices/1: unknown object type
+CApplicationManagerPopulateThread took 56 milliseconds to initialize (will have waited on CAppInfoCacheReadFromDiskThread)
+CAppInfoCacheReadFromDiskThread took 124 milliseconds to initialize
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Opted-in Controller Mask for AppId 0: 0
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+
+** (steam:10132): WARNING **: Ignoring invalid property 'interface-name'
+
+** (steam:10132): WARNING **: Unknown setting 'proxy'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'interface-name'
+
+** (steam:10132): WARNING **: Unknown setting 'proxy'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'autoconnect-priority'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'interface-name'
+
+** (steam:10132): WARNING **: Unknown setting 'proxy'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'interface-name'
+
+** (steam:10132): WARNING **: Unknown setting 'proxy'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'interface-name'
+
+** (steam:10132): WARNING **: Unknown setting 'proxy'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'autoconnect-priority'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'interface-name'
+
+** (steam:10132): WARNING **: Unknown setting 'proxy'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'route-data'
+
+** (steam:10132): WARNING **: Ignoring invalid property 'address-data'
+
+(steam:10132): Gtk-WARNING **: gtk_disable_setlocale() must be called before gtk_init()
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Failed to create /home/marijan/.local/share/Steam/shader_cache_temp_dir_vk_64/mesa_shader_cache for shader cache (Permission denied)---disabling.
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+Fossilize INFO: Overriding serialization path: "/home/marijan/.local/share/Steam/shader_cache_temp_dir_vk_64/fozpipelinesv4/steamapprun_pipeline_cache".
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+roaming config store loaded successfully - 2489 bytes.
+migrating temporary roaming config store
+BRefreshApplicationsInLibrary 1: 11ms
+[0826/173155.093427:INFO:crash_reporting.cc(270)] Crash reporting enabled for process: renderer
+[0826/173155.143194:INFO:crash_reporting.cc(270)] Crash reporting enabled for process: renderer
+[0826/173155.218339:INFO:crash_reporting.cc(270)] Crash reporting enabled for process: renderer
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+Failed to init SteamVR because it isn't installed
+ExecCommandLine: "'/home/marijan/.local/share/Steam/ubuntu12_32/steam' 'steam://run/41070'"
+ExecuteSteamURL: "steam://run/41070"
+System startup time: 3.70 seconds
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+
+(steam:10132): LIBDBUSMENU-GLIB-WARNING **: Trying to remove a child that doesn't believe we're it's parent.
+[0826/173155.432010:INFO:crash_reporting.cc(270)] Crash reporting enabled for process: renderer
+[0826/173155.433573:INFO:crash_reporting.cc(270)] Crash reporting enabled for process: renderer
+GameAction [AppID 41070, ActionID 1] : LaunchApp changed task to ProcessingInstallScript with ""
+esync: up and running.
+BuildCompleteAppOverviewChange: 370
+RegisterForAppOverview 1: 7ms
+RegisterForAppOverview 2: 7ms
+Fontconfig warning: line 5: unknown element "its:rules"
+Fontconfig warning: line 6: unknown element "its:translateRule"
+Fontconfig warning: line 9: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 4: unknown element "description"
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 80: saw unknown, expected number
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: line 5: unknown element "its:rules"
+Fontconfig warning: line 6: unknown element "its:translateRule"
+Fontconfig warning: line 9: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 4: unknown element "description"
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 80: saw unknown, expected number
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: line 5: unknown element "its:rules"
+Fontconfig warning: line 6: unknown element "its:translateRule"
+Fontconfig warning: line 9: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 4: unknown element "description"
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 80: saw unknown, expected number
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: line 5: unknown element "its:rules"
+Fontconfig warning: line 6: unknown element "its:translateRule"
+Fontconfig warning: line 9: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 4: unknown element "description"
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 80: saw unknown, expected number
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 4: unknown element "description"
+GameAction [AppID 41070, ActionID 1] : LaunchApp changed task to SynchronizingCloud with ""
+GameAction [AppID 41070, ActionID 1] : LaunchApp changed task to SiteLicenseSeatCheckout with ""
+GameAction [AppID 41070, ActionID 1] : LaunchApp changed task to CreatingProcess with ""
+GameAction [AppID 41070, ActionID 1] : LaunchApp waiting for user response to CreatingProcess ""
+GameAction [AppID 41070, ActionID 1] : LaunchApp continues with user response "CreatingProcess"
+Opted-in Controller Mask for AppId 41070: 0
+Game update: AppID 41070 "", ProcID 10624, IP 0.0.0.0:0
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+Starting app 41070
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+>>> Adding process 10624 for game ID 41070
+GameAction [AppID 41070, ActionID 1] : LaunchApp changed task to WaitingGameWindow with ""
+GameAction [AppID 41070, ActionID 1] : LaunchApp changed task to Completed with ""
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+>>> Adding process 10625 for game ID 41070
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+>>> Adding process 10627 for game ID 41070
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+esync: up and running.
+>>> Adding process 10633 for game ID 41070
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+>>> Adding process 10635 for game ID 41070
+>>> Adding process 10638 for game ID 41070
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+Installing breakpad exception handler for appid(steam)/version(1596217132)
+>>> Adding process 10640 for game ID 41070
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+>>> Adding process 10644 for game ID 41070
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+>>> Adding process 10651 for game ID 41070
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+>>> Adding process 10659 for game ID 41070
+Fontconfig warning: line 5: unknown element "its:rules"
+Fontconfig warning: line 6: unknown element "its:translateRule"
+Fontconfig warning: line 9: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 4: unknown element "description"
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 80: saw unknown, expected number
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 4: unknown element "description"
+Game update: AppID 41070 "", ProcID 10633, IP 0.0.0.0:0
+RecordSteamInterfaceCreation (PID 10633): SteamUtils009 / Utils
+Setting breakpad minidump AppID = 41070
+RecordSteamInterfaceCreation (PID 10633): SteamUser019 / User
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561198237582120 [API loaded no]
+RecordSteamInterfaceCreation (PID 10633): SteamUser019 / User
+RecordSteamInterfaceCreation (PID 10633): SteamFriends015 / Friends
+RecordSteamInterfaceCreation (PID 10633): SteamUtils009 / Utils
+RecordSteamInterfaceCreation (PID 10633): SteamMatchMaking009 / Matchmaking
+RecordSteamInterfaceCreation (PID 10633): SteamMatchMakingServers002 / MatchmakingServers
+RecordSteamInterfaceCreation (PID 10633): STEAMUSERSTATS_INTERFACE_VERSION011 / UserStats
+RecordSteamInterfaceCreation (PID 10633): STEAMAPPS_INTERFACE_VERSION008 / Apps
+RecordSteamInterfaceCreation (PID 10633): SteamNetworking005 / Networking
+RecordSteamInterfaceCreation (PID 10633): STEAMREMOTESTORAGE_INTERFACE_VERSION014 / RemoteStorage
+RecordSteamInterfaceCreation (PID 10633): STEAMSCREENSHOTS_INTERFACE_VERSION003 / Screenshots
+RecordSteamInterfaceCreation (PID 10633): STEAMHTTP_INTERFACE_VERSION002 / HTTP
+RecordSteamInterfaceCreation (PID 10633): SteamController006 / Controller
+RecordSteamInterfaceCreation (PID 10633): STEAMUGC_INTERFACE_VERSION010 / UGC
+RecordSteamInterfaceCreation (PID 10633): STEAMAPPLIST_INTERFACE_VERSION001 / AppList
+RecordSteamInterfaceCreation (PID 10633): STEAMMUSIC_INTERFACE_VERSION001 / Music
+RecordSteamInterfaceCreation (PID 10633): STEAMMUSICREMOTE_INTERFACE_VERSION001 / MusicRemote
+RecordSteamInterfaceCreation (PID 10633): STEAMHTMLSURFACE_INTERFACE_VERSION_004 / HTMLSurface
+RecordSteamInterfaceCreation (PID 10633): STEAMINVENTORY_INTERFACE_V002 / Inventory
+RecordSteamInterfaceCreation (PID 10633): STEAMVIDEO_INTERFACE_V002 / Video
+RecordSteamInterfaceCreation (PID 10633): STEAMPARENTALSETTINGS_INTERFACE_VERSION001 / ParentalSettings
+ERROR: ld.so: object '/home/marijan/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
+>>> Adding process 10677 for game ID 41070
+Fontconfig warning: line 5: unknown element "its:rules"
+Fontconfig warning: line 6: unknown element "its:translateRule"
+Fontconfig warning: line 9: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 4: unknown element "description"
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 80: saw unknown, expected number
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 4: unknown element "description"
+wine: Read access denied for device L"\\??\\Z:\\", FS volume label and serial are not available.
+Game update: AppID 41070 "", ProcID 10677, IP 0.0.0.0:0
+RecordSteamInterfaceCreation (PID 10677): SteamUser018 / User
+RecordSteamInterfaceCreation (PID 10677): SteamFriends015 / Friends
+RecordSteamInterfaceCreation (PID 10677): SteamUtils007 / Utils
+RecordSteamInterfaceCreation (PID 10677): SteamMatchMaking009 / Matchmaking
+RecordSteamInterfaceCreation (PID 10677): SteamMatchMakingServers002 / MatchmakingServers
+RecordSteamInterfaceCreation (PID 10677): STEAMUSERSTATS_INTERFACE_VERSION011 / UserStats
+RecordSteamInterfaceCreation (PID 10677): STEAMAPPS_INTERFACE_VERSION007 / Apps
+RecordSteamInterfaceCreation (PID 10677): SteamNetworking005 / Networking
+RecordSteamInterfaceCreation (PID 10677): STEAMREMOTESTORAGE_INTERFACE_VERSION013 / RemoteStorage
+RecordSteamInterfaceCreation (PID 10677): STEAMSCREENSHOTS_INTERFACE_VERSION002 / Screenshots
+RecordSteamInterfaceCreation (PID 10677): STEAMHTTP_INTERFACE_VERSION002 / HTTP
+RecordSteamInterfaceCreation (PID 10677): STEAMUNIFIEDMESSAGES_INTERFACE_VERSION001 / UnifiedMessages
+RecordSteamInterfaceCreation (PID 10677): SteamController003 / Controller
+RecordSteamInterfaceCreation (PID 10677): STEAMUGC_INTERFACE_VERSION007 / UGC
+RecordSteamInterfaceCreation (PID 10677): STEAMAPPLIST_INTERFACE_VERSION001 / AppList
+RecordSteamInterfaceCreation (PID 10677): STEAMMUSIC_INTERFACE_VERSION001 / Music
+RecordSteamInterfaceCreation (PID 10677): STEAMMUSICREMOTE_INTERFACE_VERSION001 / MusicRemote
+RecordSteamInterfaceCreation (PID 10677): STEAMHTMLSURFACE_INTERFACE_VERSION_003 / HTMLSurface
+RecordSteamInterfaceCreation (PID 10677): STEAMINVENTORY_INTERFACE_V001 / Inventory
+RecordSteamInterfaceCreation (PID 10677): STEAMVIDEO_INTERFACE_V001 / Video
+Fossilize INFO: Overriding serialization path: "/home/marijan/.local/share/Steam/steamapps/shadercache/41070/fozpipelinesv4/steamapprun_pipeline_cache".
+shader: MESA_SHADER_FRAGMENT
+name: GLSL0
+inputs: 0
+outputs: 1
+uniforms: 6
+shared: 0
+decl_var uniform INTERP_MODE_NONE vec4[3] gl_CurrentAttribFragMESA (0, 12, 0)
+decl_var shader_out INTERP_MODE_NONE vec4 gl_FragColor (FRAG_RESULT_COLOR.xyzw, 0, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec1 32 ssa_0 = load_const (0x00000000 /* 0.000000 */)
+	vec1 32 ssa_1 = load_const (0x00000050 /* 0.000000 */)
+	vec4 32 ssa_2 = intrinsic load_ubo (ssa_0, ssa_1) (0, 4, 0) /* access=0 */ /* align_mul=4 */ /* align_offset=0 */
+	vec1 32 ssa_3 = deref_var &gl_FragColor (shader_out vec4) 
+	intrinsic store_deref (ssa_3, ssa_2) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 1
+Pixel Shader LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_ps <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> @main(<4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, float addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %2, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %3, i32 inreg %4, i32 inreg %5, <2 x i32> %6, <2 x i32> %7, <2 x i32> %8, <3 x i32> %9, <2 x i32> %10, <2 x i32> %11, <2 x i32> %12, <3 x float> %13, float %14, float %15, float %16, float %17, i32 %18, i32 %19, float %20, i32 %21) #0 {
+main_body:
+  %22 = ptrtoint float addrspace(6)* %2 to i32
+  %23 = insertelement <4 x i32> <i32 undef, i32 32768, i32 96, i32 822177708>, i32 %22, i32 0
+  %24 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %23, i32 80, i32 0) #1
+  %25 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %23, i32 84, i32 0) #1
+  %26 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %23, i32 88, i32 0) #1
+  %27 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %23, i32 92, i32 0) #1
+  %28 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> undef, i32 %4, 4
+  %29 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %28, float %24, 5
+  %30 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %29, float %25, 6
+  %31 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %30, float %26, 7
+  %32 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %31, float %27, 8
+  %33 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %32, float %20, 19
+  ret <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %33
+}
+
+; Function Attrs: nounwind readnone
+declare float @llvm.amdgcn.s.buffer.load.f32(<4 x i32>, i32, i32 immarg) #1
+
+attributes #0 = { "InitialPSInputAddr"="0xb077" "amdgpu-32bit-address-high-bits"="0xffff8000" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { nounwind readnone }
+
+shader: MESA_SHADER_VERTEX
+name: ARB0
+inputs: 0
+outputs: 1
+uniforms: 5
+shared: 0
+decl_var uniform INTERP_MODE_NONE vec4[5] state..internal.current[0] (0, 0, 0)
+decl_var shader_out INTERP_MODE_NONE vec4 out_0 (VARYING_SLOT_POS.xyzw, 0, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec1 32 ssa_0 = load_const (0x00000000 /* 0.000000 */)
+	vec4 32 ssa_1 = intrinsic load_ubo (ssa_0, ssa_0) (0, 4, 0) /* access=0 */ /* align_mul=4 */ /* align_offset=0 */
+	vec1 32 ssa_2 = load_const (0x00000010 /* 0.000000 */)
+	vec4 32 ssa_3 = intrinsic load_ubo (ssa_0, ssa_2) (0, 4, 0) /* access=0 */ /* align_mul=4 */ /* align_offset=0 */
+	vec1 32 ssa_4 = fmul ssa_1.x, ssa_3.x
+	vec1 32 ssa_5 = fmul ssa_1.x, ssa_3.y
+	vec1 32 ssa_6 = fmul ssa_1.x, ssa_3.z
+	vec1 32 ssa_7 = fmul ssa_1.x, ssa_3.w
+	vec1 32 ssa_8 = load_const (0x00000020 /* 0.000000 */)
+	vec4 32 ssa_9 = intrinsic load_ubo (ssa_0, ssa_8) (0, 4, 0) /* access=0 */ /* align_mul=4 */ /* align_offset=0 */
+	vec1 32 ssa_10 = ffma ssa_1.y, ssa_9.x, ssa_4
+	vec1 32 ssa_11 = ffma ssa_1.y, ssa_9.y, ssa_5
+	vec1 32 ssa_12 = ffma ssa_1.y, ssa_9.z, ssa_6
+	vec1 32 ssa_13 = ffma ssa_1.y, ssa_9.w, ssa_7
+	vec1 32 ssa_14 = load_const (0x00000030 /* 0.000000 */)
+	vec4 32 ssa_15 = intrinsic load_ubo (ssa_0, ssa_14) (0, 4, 0) /* access=0 */ /* align_mul=4 */ /* align_offset=0 */
+	vec1 32 ssa_16 = ffma ssa_1.z, ssa_15.x, ssa_10
+	vec1 32 ssa_17 = ffma ssa_1.z, ssa_15.y, ssa_11
+	vec1 32 ssa_18 = ffma ssa_1.z, ssa_15.z, ssa_12
+	vec1 32 ssa_19 = ffma ssa_1.z, ssa_15.w, ssa_13
+	vec1 32 ssa_20 = load_const (0x00000040 /* 0.000000 */)
+	vec4 32 ssa_21 = intrinsic load_ubo (ssa_0, ssa_20) (0, 4, 0) /* access=0 */ /* align_mul=4 */ /* align_offset=0 */
+	vec1 32 ssa_22 = ffma ssa_1.w, ssa_21.x, ssa_16
+	vec1 32 ssa_23 = ffma ssa_1.w, ssa_21.y, ssa_17
+	vec1 32 ssa_24 = ffma ssa_1.w, ssa_21.z, ssa_18
+	vec1 32 ssa_25 = ffma ssa_1.w, ssa_21.w, ssa_19
+	vec4 32 ssa_26 = vec4 ssa_22, ssa_23, ssa_24, ssa_25
+	vec1 32 ssa_27 = deref_var &out_0 (shader_out vec4) 
+	intrinsic store_deref (ssa_27, ssa_26) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 2
+Vertex Shader as ESGS LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_gs void @main(float addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, i32 inreg %2, i32 inreg %3, i32 inreg %4, i32 inreg %5, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %6, i32 inreg %7, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %8, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %9, float addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %10, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %11, i32 inreg %12, i32 inreg %13, i32 inreg %14, i32 inreg %15, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %16, i32 %17, i32 %18, i32 %19, i32 %20, i32 %21, i32 %22, i32 %23, i32 %24, i32 %25) #0 {
+main_body:
+  call void @llvm.amdgcn.init.exec(i64 -1) #1
+  %26 = and i32 %3, 251658240
+  %27 = icmp eq i32 %26, 0
+  br i1 %27, label %if5020, label %endif5020
+
+if5020:                                           ; preds = %main_body
+  %28 = lshr i32 %2, 12
+  %29 = and i32 %28, 511
+  %30 = lshr i32 %2, 10
+  %31 = and i32 %30, 2093056
+  %32 = or i32 %31, %29
+  call void @llvm.amdgcn.s.sendmsg(i32 9, i32 %32) #2
+  br label %endif5020
+
+endif5020:                                        ; preds = %if5020, %main_body
+  %33 = lshr i32 %3, 8
+  %34 = and i32 %33, 255
+  %35 = call i32 @llvm.amdgcn.mbcnt.lo(i32 -1, i32 0) #3, !range !0
+  %36 = icmp ult i32 %35, %34
+  br i1 %36, label %if6001, label %endif6001
+
+if6001:                                           ; preds = %endif5020
+  %37 = bitcast i32 %17 to float
+  call void @llvm.amdgcn.exp.f32(i32 20, i32 1, float %37, float undef, float undef, float undef, i1 true, i1 false) #2
+  br label %endif6001
+
+endif6001:                                        ; preds = %if6001, %endif5020
+  %38 = and i32 %3, 255
+  %39 = icmp ult i32 %35, %38
+  br i1 %39, label %if11500, label %endif6002
+
+if11500:                                          ; preds = %endif6001
+  %40 = ptrtoint float addrspace(6)* %10 to i32
+  %41 = insertelement <4 x i32> <i32 undef, i32 32768, i32 80, i32 822177708>, i32 %40, i32 0
+  %42 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 0, i32 0) #3
+  %43 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 4, i32 0) #3
+  %44 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 8, i32 0) #3
+  %45 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 12, i32 0) #3
+  %46 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 16, i32 0) #3
+  %47 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 20, i32 0) #3
+  %48 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 24, i32 0) #3
+  %49 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 28, i32 0) #3
+  %50 = fmul nsz arcp contract float %42, %46
+  %51 = fmul nsz arcp contract float %42, %47
+  %52 = fmul nsz arcp contract float %42, %48
+  %53 = fmul nsz arcp contract float %42, %49
+  %54 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 32, i32 0) #3
+  %55 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 36, i32 0) #3
+  %56 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 40, i32 0) #3
+  %57 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 44, i32 0) #3
+  %58 = call nsz arcp contract float @llvm.fma.f32(float %43, float %54, float %50) #3
+  %59 = call nsz arcp contract float @llvm.fma.f32(float %43, float %55, float %51) #3
+  %60 = call nsz arcp contract float @llvm.fma.f32(float %43, float %56, float %52) #3
+  %61 = call nsz arcp contract float @llvm.fma.f32(float %43, float %57, float %53) #3
+  %62 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 48, i32 0) #3
+  %63 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 52, i32 0) #3
+  %64 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 56, i32 0) #3
+  %65 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 60, i32 0) #3
+  %66 = call nsz arcp contract float @llvm.fma.f32(float %44, float %62, float %58) #3
+  %67 = call nsz arcp contract float @llvm.fma.f32(float %44, float %63, float %59) #3
+  %68 = call nsz arcp contract float @llvm.fma.f32(float %44, float %64, float %60) #3
+  %69 = call nsz arcp contract float @llvm.fma.f32(float %44, float %65, float %61) #3
+  %70 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 64, i32 0) #3
+  %71 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 68, i32 0) #3
+  %72 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 72, i32 0) #3
+  %73 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %41, i32 76, i32 0) #3
+  %74 = call nsz arcp contract float @llvm.fma.f32(float %45, float %70, float %66) #3
+  %75 = call nsz arcp contract float @llvm.fma.f32(float %45, float %71, float %67) #3
+  %76 = call nsz arcp contract float @llvm.fma.f32(float %45, float %72, float %68) #3
+  %77 = call nsz arcp contract float @llvm.fma.f32(float %45, float %73, float %69) #3
+  call void @llvm.amdgcn.exp.f32(i32 12, i32 15, float %74, float %75, float %76, float %77, i1 true, i1 true) #2
+  br label %endif6002
+
+endif6002:                                        ; preds = %if11500, %endif6001
+  ret void
+}
+
+; Function Attrs: convergent nounwind
+declare void @llvm.amdgcn.init.exec(i64 immarg) #1
+
+; Function Attrs: nounwind
+declare void @llvm.amdgcn.s.sendmsg(i32 immarg, i32) #2
+
+; Function Attrs: nounwind readnone
+declare i32 @llvm.amdgcn.mbcnt.lo(i32, i32) #3
+
+; Function Attrs: inaccessiblememonly nounwind
+declare void @llvm.amdgcn.exp.f32(i32 immarg, i32 immarg, float, float, float, float, i1 immarg, i1 immarg) #4
+
+; Function Attrs: nounwind readnone
+declare float @llvm.amdgcn.s.buffer.load.f32(<4 x i32>, i32, i32 immarg) #3
+
+; Function Attrs: nounwind readnone speculatable willreturn
+declare float @llvm.fma.f32(float, float, float) #5
+
+attributes #0 = { "amdgpu-32bit-address-high-bits"="0xffff8000" "amdgpu-flat-work-group-size"="128,128" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { convergent nounwind }
+attributes #2 = { nounwind }
+attributes #3 = { nounwind readnone }
+attributes #4 = { inaccessiblememonly nounwind }
+attributes #5 = { nounwind readnone speculatable willreturn }
+
+!0 = !{i32 0, i32 32}
+
+shader: MESA_SHADER_FRAGMENT
+inputs: 1
+outputs: 1
+uniforms: 0
+shared: 0
+decl_var uniform INTERP_MODE_NONE sampler2D sampler (0, 0, 0)
+decl_var shader_in INTERP_MODE_NOPERSPECTIVE vec4 in_0 (VARYING_SLOT_VAR0.xyzw, 0, 0)
+decl_var shader_out INTERP_MODE_FLAT vec4 out_0 (FRAG_RESULT_DATA0.xyzw, 0, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec2 32 ssa_0 = intrinsic load_barycentric_pixel () (3) /* interp_mode=3 */
+	vec1 32 ssa_1 = load_const (0x00000000 /* 0.000000 */)
+	vec4 32 ssa_2 = intrinsic load_interpolated_input (ssa_0, ssa_1) (0, 0) /* base=0 */ /* component=0 */	/* in_0 */
+	vec1 32 ssa_3 = f2i32 ssa_2.x
+	vec1 32 ssa_4 = f2i32 ssa_2.y
+	vec1 32 ssa_5 = deref_var &sampler (uniform sampler2D) 
+	vec2 32 ssa_6 = vec2 ssa_3, ssa_4
+	vec4 32 ssa_7 = txf ssa_5 (texture_deref), ssa_5 (sampler_deref), ssa_6 (coord), ssa_1 (lod)
+	vec1 32 ssa_8 = deref_var &out_0 (shader_out vec4) 
+	intrinsic store_deref (ssa_8, ssa_7) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 3
+Pixel Shader LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_ps <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> @main(<4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %2, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %3, i32 inreg %4, i32 inreg %5, <2 x i32> %6, <2 x i32> %7, <2 x i32> %8, <3 x i32> %9, <2 x i32> %10, <2 x i32> %11, <2 x i32> %12, <3 x float> %13, float %14, float %15, float %16, float %17, i32 %18, i32 %19, float %20, i32 %21) #0 {
+main_body:
+  %22 = bitcast <2 x i32> %11 to <2 x float>
+  %23 = extractelement <2 x float> %22, i32 0
+  %24 = extractelement <2 x float> %22, i32 1
+  %25 = call nsz arcp contract float @llvm.amdgcn.interp.p1(float %23, i32 0, i32 0, i32 %5) #3
+  %26 = call nsz arcp contract float @llvm.amdgcn.interp.p2(float %25, float %24, i32 0, i32 0, i32 %5) #3
+  %27 = call nsz arcp contract float @llvm.amdgcn.interp.p1(float %23, i32 1, i32 0, i32 %5) #3
+  %28 = call nsz arcp contract float @llvm.amdgcn.interp.p2(float %27, float %24, i32 1, i32 0, i32 %5) #3
+  %29 = fptosi float %26 to i32
+  %30 = fptosi float %28 to i32
+  %31 = getelementptr inbounds <8 x i32>, <8 x i32> addrspace(6)* %3, i32 32, !amdgpu.uniform !0
+  %32 = load <8 x i32>, <8 x i32> addrspace(6)* %31, align 32, !invariant.load !0
+  %33 = call nsz arcp contract <4 x float> @llvm.amdgcn.image.load.2d.v4f32.i32(i32 15, i32 %29, i32 %30, <8 x i32> %32, i32 0, i32 0) #3
+  %34 = extractelement <4 x float> %33, i32 0
+  %35 = extractelement <4 x float> %33, i32 1
+  %36 = extractelement <4 x float> %33, i32 2
+  %37 = extractelement <4 x float> %33, i32 3
+  %38 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> undef, i32 %4, 4
+  %39 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %38, float %34, 5
+  %40 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %39, float %35, 6
+  %41 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %40, float %36, 7
+  %42 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %41, float %37, 8
+  %43 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %42, float %20, 19
+  ret <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %43
+}
+
+; Function Attrs: nounwind readnone speculatable
+declare float @llvm.amdgcn.interp.p1(float, i32 immarg, i32 immarg, i32) #1
+
+; Function Attrs: nounwind readnone speculatable
+declare float @llvm.amdgcn.interp.p2(float, float, i32 immarg, i32 immarg, i32) #1
+
+; Function Attrs: nounwind readonly
+declare <4 x float> @llvm.amdgcn.image.load.2d.v4f32.i32(i32 immarg, i32, i32, <8 x i32>, i32 immarg, i32 immarg) #2
+
+attributes #0 = { "InitialPSInputAddr"="0xb077" "amdgpu-32bit-address-high-bits"="0xffff8000" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { nounwind readnone speculatable }
+attributes #2 = { nounwind readonly }
+attributes #3 = { nounwind readnone }
+
+!0 = !{}
+
+shader: MESA_SHADER_VERTEX
+inputs: 2
+outputs: 2
+uniforms: 0
+shared: 0
+decl_var shader_in INTERP_MODE_FLAT vec4 in_0 (VERT_ATTRIB_GENERIC0.xyzw, 0, 0)
+decl_var shader_in INTERP_MODE_FLAT vec4 in_1 (VERT_ATTRIB_GENERIC1.xyzw, 4, 0)
+decl_var shader_out INTERP_MODE_FLAT vec4 out_0 (VARYING_SLOT_POS.xyzw, 0, 0)
+decl_var shader_out INTERP_MODE_FLAT vec4 out_1 (VARYING_SLOT_VAR0.xyzw, 4, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec1 32 ssa_0 = deref_var &in_0 (shader_in vec4) 
+	vec4 32 ssa_1 = intrinsic load_deref (ssa_0) (0) /* access=0 */
+	vec1 32 ssa_2 = deref_var &in_1 (shader_in vec4) 
+	vec4 32 ssa_3 = intrinsic load_deref (ssa_2) (0) /* access=0 */
+	vec1 32 ssa_4 = deref_var &out_0 (shader_out vec4) 
+	intrinsic store_deref (ssa_4, ssa_1) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	vec1 32 ssa_5 = deref_var &out_1 (shader_out vec4) 
+	intrinsic store_deref (ssa_5, ssa_3) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 4
+Vertex Shader as ESGS LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_gs void @main(<4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, i32 inreg %2, i32 inreg %3, i32 inreg %4, i32 inreg %5, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %6, i32 inreg %7, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %8, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %9, i32 inreg %10, i32 inreg %11, float inreg %12, float inreg %13, float inreg %14, float inreg %15, float inreg %16, float inreg %17, float inreg %18, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %19, i32 %20, i32 %21, i32 %22, i32 %23, i32 %24, i32 %25, i32 %26, i32 %27, i32 %28, i32 %29, i32 %30) #0 {
+main_body:
+  call void @llvm.amdgcn.init.exec(i64 -1) #1
+  %31 = and i32 %3, 251658240
+  %32 = icmp eq i32 %31, 0
+  br i1 %32, label %if5020, label %endif5020
+
+if5020:                                           ; preds = %main_body
+  %33 = lshr i32 %2, 12
+  %34 = and i32 %33, 511
+  %35 = lshr i32 %2, 10
+  %36 = and i32 %35, 2093056
+  %37 = or i32 %36, %34
+  call void @llvm.amdgcn.s.sendmsg(i32 9, i32 %37) #2
+  br label %endif5020
+
+endif5020:                                        ; preds = %if5020, %main_body
+  %38 = lshr i32 %3, 8
+  %39 = and i32 %38, 255
+  %40 = call i32 @llvm.amdgcn.mbcnt.lo(i32 -1, i32 0) #3, !range !0
+  %41 = icmp ult i32 %40, %39
+  br i1 %41, label %if6001, label %endif6001
+
+if6001:                                           ; preds = %endif5020
+  %42 = bitcast i32 %20 to float
+  call void @llvm.amdgcn.exp.f32(i32 20, i32 1, float %42, float undef, float undef, float undef, i1 true, i1 false) #2
+  br label %endif6001
+
+endif6001:                                        ; preds = %if6001, %endif5020
+  %43 = and i32 %3, 255
+  %44 = icmp ult i32 %40, %43
+  br i1 %44, label %if11500, label %endif6002
+
+if11500:                                          ; preds = %endif6001
+  %45 = icmp ult i32 %25, 2
+  %46 = icmp ne i32 %25, 1
+  %.v.v = select i1 %45, i32 %10, i32 %11
+  %.v = shl i32 %.v.v, 16
+  %47 = ashr exact i32 %.v, 16
+  %.v2 = select i1 %46, i32 %10, i32 %11
+  %48 = ashr i32 %.v2, 16
+  %49 = sitofp i32 %47 to float
+  %50 = sitofp i32 %48 to float
+  %51 = select nsz arcp contract i1 %45, float %13, float %15
+  %52 = select nsz arcp contract i1 %46, float %14, float %16
+  call void @llvm.amdgcn.exp.f32(i32 12, i32 15, float %49, float %50, float %12, float 1.000000e+00, i1 true, i1 true) #2
+  call void @llvm.amdgcn.exp.f32(i32 32, i32 15, float %51, float %52, float %17, float %18, i1 false, i1 false) #2
+  br label %endif6002
+
+endif6002:                                        ; preds = %if11500, %endif6001
+  ret void
+}
+
+; Function Attrs: convergent nounwind
+declare void @llvm.amdgcn.init.exec(i64 immarg) #1
+
+; Function Attrs: nounwind
+declare void @llvm.amdgcn.s.sendmsg(i32 immarg, i32) #2
+
+; Function Attrs: nounwind readnone
+declare i32 @llvm.amdgcn.mbcnt.lo(i32, i32) #3
+
+; Function Attrs: inaccessiblememonly nounwind
+declare void @llvm.amdgcn.exp.f32(i32 immarg, i32 immarg, float, float, float, float, i1 immarg, i1 immarg) #4
+
+attributes #0 = { "amdgpu-32bit-address-high-bits"="0xffff8000" "amdgpu-flat-work-group-size"="128,128" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { convergent nounwind }
+attributes #2 = { nounwind }
+attributes #3 = { nounwind readnone }
+attributes #4 = { inaccessiblememonly nounwind }
+
+!0 = !{i32 0, i32 32}
+
+SHADER KEY
+  part.vs.prolog.instance_divisor_is_one = 0
+  part.vs.prolog.instance_divisor_is_fetched = 0
+  part.vs.prolog.unpack_instance_id_from_vertex_id = 0
+  part.vs.prolog.ls_vgpr_fix = 0
+  mono.vs.fetch_opencode = 0
+  mono.vs.fix_fetch = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+  as_es = 0
+  as_ls = 0
+  as_ngg = 1
+  mono.u.vs_export_prim_id = 0
+  opt.vs_as_prim_discard_cs = 0
+  opt.cs_prim_type = POINTS
+  opt.cs_indexed = 0
+  opt.cs_instancing = 0
+  opt.cs_primitive_restart = 0
+  opt.cs_provoking_vertex_first = 0
+  opt.cs_need_correct_orientation = 0
+  opt.cs_cull_front = 0
+  opt.cs_cull_back = 0
+  opt.cs_cull_z = 0
+  opt.cs_halfz_clip_space = 0
+  opt.kill_outputs = 0x0
+  opt.clip_disable = 0
+  opt.ngg_culling = 0x0
+
+Vertex Shader as ESGS:
+Shader main disassembly:
+main:
+BB0_0:
+	s_mov_b32 exec_lo, -1                                                               ; BEFE03C1
+	s_and_b32 s0, s3, 0xf000000                                                         ; 8700FF03 0F000000
+	s_cmp_lg_u32 s0, 0                                                                  ; BF078000
+	s_cbranch_scc1 BB0_2                                                                ; BF850000
+	s_lshr_b32 s0, s2, 10                                                               ; 90008A02
+	s_bfe_u32 s1, s2, 0x9000c                                                           ; 9381FF02 0009000C
+	s_and_b32 s0, s0, 0x1ff000                                                          ; 8700FF00 001FF000
+	s_or_b32 m0, s0, s1                                                                 ; 887C0100
+	s_sendmsg sendmsg(MSG_GS_ALLOC_REQ)                                                 ; BF900009
+BB0_2:
+	s_bfe_u32 s0, s3, 0x80008                                                           ; 9380FF03 00080008
+	v_mbcnt_lo_u32_b32_e64 v1, -1, 0                                                    ; D7650001 000100C1
+	v_cmp_gt_u32_e32 vcc_lo, s0, v1                                                     ; 7D880200
+	s_and_saveexec_b32 s0, vcc_lo                                                       ; BE803C6A
+	s_cbranch_execz BB0_4                                                               ; BF880000
+BB0_3:
+	exp prim v0, off, off, off done                                                     ; F8000941 00000000
+BB0_4:
+	s_waitcnt expcnt(0)                                                                 ; BF8CFF0F
+	s_or_b32 exec_lo, exec_lo, s0                                                       ; 887E007E
+	s_and_b32 s0, s3, 0xff                                                              ; 8700FF03 000000FF
+	v_cmp_gt_u32_e32 vcc_lo, s0, v1                                                     ; 7D880200
+	s_and_saveexec_b32 s0, vcc_lo                                                       ; BE803C6A
+	s_cbranch_execz BB0_6                                                               ; BF880000
+BB0_5:
+	v_mov_b32_e32 v0, s10                                                               ; 7E00020A
+	v_cmp_gt_u32_e32 vcc_lo, 2, v5                                                      ; 7D880A82
+	v_cmp_ne_u32_e64 s30, 1, v5                                                         ; D4C5001E 00020A81
+	v_mov_b32_e32 v2, 1.0                                                               ; 7E0402F2
+	v_mov_b32_e32 v3, s12                                                               ; 7E06020C
+	v_cndmask_b32_e32 v1, s11, v0, vcc_lo                                               ; 0202000B
+	v_cndmask_b32_e64 v0, s11, v0, s30                                                  ; D5010000 007A000B
+	v_cvt_f32_i32_sdwa v1, sext(v1) dst_sel:DWORD dst_unused:UNUSED_PAD src0_sel:WORD_0 ; 7E020AF9 000C0601
+	v_cvt_f32_i32_sdwa v0, sext(v0) dst_sel:DWORD dst_unused:UNUSED_PAD src0_sel:WORD_1 ; 7E000AF9 000D0600
+	exp pos0 v1, v0, v3, v2 done vm                                                     ; F80018CF 02030001
+	s_waitcnt expcnt(0)                                                                 ; BF8CFF0F
+	v_mov_b32_e32 v0, s13                                                               ; 7E00020D
+	v_mov_b32_e32 v1, s14                                                               ; 7E02020E
+	v_mov_b32_e32 v2, s17                                                               ; 7E040211
+	v_mov_b32_e32 v3, s18                                                               ; 7E060212
+	v_cndmask_b32_e32 v0, s15, v0, vcc_lo                                               ; 0200000F
+	v_cndmask_b32_e64 v1, s16, v1, s30                                                  ; D5010001 007A0210
+	exp param0 v0, v1, v2, v3                                                           ; F800020F 03020100
+BB0_6:
+	s_endpgm                                                                            ; BF810000
+
+*** SHADER STATS ***
+SGPRS: 40
+VGPRS: 16
+Spilled SGPRs: 0
+Spilled VGPRs: 0
+Private memory VGPRs: 0
+Code Size: 216 bytes
+LDS: 0 blocks
+Scratch: 0 bytes per wave
+Max Waves: 10
+********************
+
+
+radeonsi: Compiling shader 5
+Fragment Shader Epilog LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_ps void @ps_epilog(i32 inreg %0, i32 inreg %1, i32 inreg %2, i32 inreg %3, float inreg %4, float %5, float %6, float %7, float %8, float %9, float %10, float %11, float %12, float %13, float %14, float %15, float %16, float %17, float %18, float %19) #0 {
+main_body:
+  %20 = call nsz arcp contract <2 x half> @llvm.amdgcn.cvt.pkrtz(float %5, float %6) #3
+  %21 = call nsz arcp contract <2 x half> @llvm.amdgcn.cvt.pkrtz(float %7, float %8) #3
+  %22 = bitcast <2 x half> %20 to <2 x i16>
+  %23 = bitcast <2 x half> %21 to <2 x i16>
+  call void @llvm.amdgcn.exp.compr.v2i16(i32 0, i32 15, <2 x i16> %22, <2 x i16> %23, i1 true, i1 true) #4
+  ret void
+}
+
+; Function Attrs: nounwind readnone speculatable
+declare <2 x half> @llvm.amdgcn.cvt.pkrtz(float, float) #1
+
+; Function Attrs: inaccessiblememonly nounwind
+declare void @llvm.amdgcn.exp.compr.v2i16(i32 immarg, i32 immarg, <2 x i16>, <2 x i16>, i1 immarg, i1 immarg) #2
+
+attributes #0 = { "InitialPSInputAddr"="0xffffff" "amdgpu-32bit-address-high-bits"="0xffff8000" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { nounwind readnone speculatable }
+attributes #2 = { inaccessiblememonly nounwind }
+attributes #3 = { nounwind readnone }
+attributes #4 = { nounwind }
+
+SHADER KEY
+  part.ps.prolog.color_two_side = 0
+  part.ps.prolog.flatshade_colors = 0
+  part.ps.prolog.poly_stipple = 0
+  part.ps.prolog.force_persp_sample_interp = 0
+  part.ps.prolog.force_linear_sample_interp = 0
+  part.ps.prolog.force_persp_center_interp = 0
+  part.ps.prolog.force_linear_center_interp = 0
+  part.ps.prolog.bc_optimize_for_persp = 0
+  part.ps.prolog.bc_optimize_for_linear = 0
+  part.ps.prolog.samplemask_log_ps_iter = 0
+  part.ps.epilog.spi_shader_col_format = 0x4
+  part.ps.epilog.color_is_int8 = 0x0
+  part.ps.epilog.color_is_int10 = 0x0
+  part.ps.epilog.last_cbuf = 0
+  part.ps.epilog.alpha_func = 7
+  part.ps.epilog.alpha_to_one = 0
+  part.ps.epilog.poly_line_smoothing = 0
+  part.ps.epilog.clamp_color = 0
+  mono.u.ps.interpolate_at_sample_force_center = 0
+  mono.u.ps.fbfetch_msaa = 0
+  mono.u.ps.fbfetch_is_1D = 0
+  mono.u.ps.fbfetch_layered = 0
+
+Pixel Shader:
+Shader main disassembly:
+main:
+BB0_0:
+	s_mov_b32 m0, s5                                                      ; BEFC0305
+	s_mov_b32 s0, s3                                                      ; BE800303
+	s_movk_i32 s1, 0x8000                                                 ; B0018000
+	v_interp_p1_f32_e32 v0, v8, attr0.x                                   ; C8000008
+	v_interp_p1_f32_e32 v3, v8, attr0.y                                   ; C80C0108
+	s_load_dwordx8 s[8:15], s[0:1], 0x400                                 ; F40C0200 FA000400
+	v_interp_p2_f32_e32 v0, v9, attr0.x                                   ; C8010009
+	v_interp_p2_f32_e32 v3, v9, attr0.y                                   ; C80D0109
+	v_cvt_i32_f32_e32 v0, v0                                              ; 7E001100
+	v_cvt_i32_f32_e32 v1, v3                                              ; 7E021103
+	s_waitcnt lgkmcnt(0)                                                  ; BF8CC07F
+	image_load v[0:3], v[0:1], s[8:15] dmask:0xf dim:SQ_RSRC_IMG_2D unorm ; F0001F08 00020000
+	s_waitcnt vmcnt(0)                                                    ; BF8C3F70
+Shader epilog disassembly:
+ps_epilog:
+BB0_0:
+	v_cvt_pkrtz_f16_f32_e32 v2, v2, v3    ; 5E040702
+	v_cvt_pkrtz_f16_f32_e32 v0, v0, v1    ; 5E000300
+	exp mrt0 v0, v0, v2, v2 done compr vm ; F8001C0F 00000200
+	s_endpgm                              ; BF810000
+
+*** SHADER CONFIG ***
+SPI_PS_INPUT_ADDR = 0xf077
+SPI_PS_INPUT_ENA  = 0x0020
+*** SHADER STATS ***
+SGPRS: 16
+VGPRS: 28
+Spilled SGPRs: 0
+Spilled VGPRs: 0
+Private memory VGPRs: 0
+Code Size: 80 bytes
+LDS: 0 blocks
+Scratch: 0 bytes per wave
+Max Waves: 10
+********************
+
+
+shader: MESA_SHADER_FRAGMENT
+inputs: 1
+outputs: 1
+uniforms: 0
+shared: 0
+decl_var shader_in INTERP_MODE_FLAT vec4 in_0 (VARYING_SLOT_VAR0.xyzw, 0, 0)
+decl_var shader_out INTERP_MODE_FLAT vec4 out_0 (FRAG_RESULT_COLOR.xyzw, 0, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec1 32 ssa_0 = load_const (0x00000000 /* 0.000000 */)
+	vec4 32 ssa_1 = intrinsic load_input (ssa_0) (0, 0, 160) /* base=0 */ /* component=0 */ /* type=float32 */	/* in_0 */
+	vec1 32 ssa_2 = deref_var &out_0 (shader_out vec4) 
+	intrinsic store_deref (ssa_2, ssa_1) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 6
+Pixel Shader LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_ps <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> @main(<4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %2, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %3, i32 inreg %4, i32 inreg %5, <2 x i32> %6, <2 x i32> %7, <2 x i32> %8, <3 x i32> %9, <2 x i32> %10, <2 x i32> %11, <2 x i32> %12, <3 x float> %13, float %14, float %15, float %16, float %17, i32 %18, i32 %19, float %20, i32 %21) #0 {
+main_body:
+  %22 = call nsz arcp contract float @llvm.amdgcn.interp.mov(i32 2, i32 0, i32 0, i32 %5) #2
+  %23 = call nsz arcp contract float @llvm.amdgcn.interp.mov(i32 2, i32 1, i32 0, i32 %5) #2
+  %24 = call nsz arcp contract float @llvm.amdgcn.interp.mov(i32 2, i32 2, i32 0, i32 %5) #2
+  %25 = call nsz arcp contract float @llvm.amdgcn.interp.mov(i32 2, i32 3, i32 0, i32 %5) #2
+  %26 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> undef, i32 %4, 4
+  %27 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %26, float %22, 5
+  %28 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %27, float %23, 6
+  %29 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %28, float %24, 7
+  %30 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %29, float %25, 8
+  %31 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %30, float %20, 19
+  ret <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %31
+}
+
+; Function Attrs: nounwind readnone speculatable
+declare float @llvm.amdgcn.interp.mov(i32, i32 immarg, i32 immarg, i32) #1
+
+attributes #0 = { "InitialPSInputAddr"="0xb077" "amdgpu-32bit-address-high-bits"="0xffff8000" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { nounwind readnone speculatable }
+attributes #2 = { nounwind readnone }
+
+shader: MESA_SHADER_VERTEX
+inputs: 2
+outputs: 2
+uniforms: 0
+shared: 0
+decl_var shader_in INTERP_MODE_FLAT vec4 in_0 (VERT_ATTRIB_GENERIC0.xyzw, 0, 0)
+decl_var shader_in INTERP_MODE_FLAT vec4 in_1 (VERT_ATTRIB_GENERIC1.xyzw, 4, 0)
+decl_var shader_out INTERP_MODE_FLAT vec4 out_0 (VARYING_SLOT_POS.xyzw, 0, 0)
+decl_var shader_out INTERP_MODE_FLAT vec4 out_1 (VARYING_SLOT_VAR0.xyzw, 4, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec1 32 ssa_0 = deref_var &in_0 (shader_in vec4) 
+	vec4 32 ssa_1 = intrinsic load_deref (ssa_0) (0) /* access=0 */
+	vec1 32 ssa_2 = deref_var &in_1 (shader_in vec4) 
+	vec4 32 ssa_3 = intrinsic load_deref (ssa_2) (0) /* access=0 */
+	vec1 32 ssa_4 = deref_var &out_0 (shader_out vec4) 
+	intrinsic store_deref (ssa_4, ssa_1) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	vec1 32 ssa_5 = deref_var &out_1 (shader_out vec4) 
+	intrinsic store_deref (ssa_5, ssa_3) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 7
+Vertex Shader as ESGS LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_gs void @main(<4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, i32 inreg %2, i32 inreg %3, i32 inreg %4, i32 inreg %5, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %6, i32 inreg %7, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %8, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %9, i32 inreg %10, i32 inreg %11, float inreg %12, float inreg %13, float inreg %14, float inreg %15, float inreg %16, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %17, i32 %18, i32 %19, i32 %20, i32 %21, i32 %22, i32 %23, i32 %24, i32 %25, i32 %26, i32 %27, i32 %28) #0 {
+main_body:
+  call void @llvm.amdgcn.init.exec(i64 -1) #1
+  %29 = and i32 %3, 251658240
+  %30 = icmp eq i32 %29, 0
+  br i1 %30, label %if5020, label %endif5020
+
+if5020:                                           ; preds = %main_body
+  %31 = lshr i32 %2, 12
+  %32 = and i32 %31, 511
+  %33 = lshr i32 %2, 10
+  %34 = and i32 %33, 2093056
+  %35 = or i32 %34, %32
+  call void @llvm.amdgcn.s.sendmsg(i32 9, i32 %35) #2
+  br label %endif5020
+
+endif5020:                                        ; preds = %if5020, %main_body
+  %36 = lshr i32 %3, 8
+  %37 = and i32 %36, 255
+  %38 = call i32 @llvm.amdgcn.mbcnt.lo(i32 -1, i32 0) #3, !range !0
+  %39 = icmp ult i32 %38, %37
+  br i1 %39, label %if6001, label %endif6001
+
+if6001:                                           ; preds = %endif5020
+  %40 = bitcast i32 %18 to float
+  call void @llvm.amdgcn.exp.f32(i32 20, i32 1, float %40, float undef, float undef, float undef, i1 true, i1 false) #2
+  br label %endif6001
+
+endif6001:                                        ; preds = %if6001, %endif5020
+  %41 = and i32 %3, 255
+  %42 = icmp ult i32 %38, %41
+  br i1 %42, label %if11500, label %endif6002
+
+if11500:                                          ; preds = %endif6001
+  %43 = icmp ult i32 %23, 2
+  %44 = icmp eq i32 %23, 1
+  %.v.v = select i1 %43, i32 %10, i32 %11
+  %.v = shl i32 %.v.v, 16
+  %45 = ashr exact i32 %.v, 16
+  %.v2 = select i1 %44, i32 %11, i32 %10
+  %46 = ashr i32 %.v2, 16
+  %47 = sitofp i32 %45 to float
+  %48 = sitofp i32 %46 to float
+  call void @llvm.amdgcn.exp.f32(i32 12, i32 15, float %47, float %48, float %12, float 1.000000e+00, i1 true, i1 true) #2
+  call void @llvm.amdgcn.exp.f32(i32 32, i32 15, float %13, float %14, float %15, float %16, i1 false, i1 false) #2
+  br label %endif6002
+
+endif6002:                                        ; preds = %if11500, %endif6001
+  ret void
+}
+
+; Function Attrs: convergent nounwind
+declare void @llvm.amdgcn.init.exec(i64 immarg) #1
+
+; Function Attrs: nounwind
+declare void @llvm.amdgcn.s.sendmsg(i32 immarg, i32) #2
+
+; Function Attrs: nounwind readnone
+declare i32 @llvm.amdgcn.mbcnt.lo(i32, i32) #3
+
+; Function Attrs: inaccessiblememonly nounwind
+declare void @llvm.amdgcn.exp.f32(i32 immarg, i32 immarg, float, float, float, float, i1 immarg, i1 immarg) #4
+
+attributes #0 = { "amdgpu-32bit-address-high-bits"="0xffff8000" "amdgpu-flat-work-group-size"="128,128" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { convergent nounwind }
+attributes #2 = { nounwind }
+attributes #3 = { nounwind readnone }
+attributes #4 = { inaccessiblememonly nounwind }
+
+!0 = !{i32 0, i32 32}
+
+SHADER KEY
+  part.vs.prolog.instance_divisor_is_one = 0
+  part.vs.prolog.instance_divisor_is_fetched = 0
+  part.vs.prolog.unpack_instance_id_from_vertex_id = 0
+  part.vs.prolog.ls_vgpr_fix = 0
+  mono.vs.fetch_opencode = 0
+  mono.vs.fix_fetch = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+  as_es = 0
+  as_ls = 0
+  as_ngg = 1
+  mono.u.vs_export_prim_id = 0
+  opt.vs_as_prim_discard_cs = 0
+  opt.cs_prim_type = POINTS
+  opt.cs_indexed = 0
+  opt.cs_instancing = 0
+  opt.cs_primitive_restart = 0
+  opt.cs_provoking_vertex_first = 0
+  opt.cs_need_correct_orientation = 0
+  opt.cs_cull_front = 0
+  opt.cs_cull_back = 0
+  opt.cs_cull_z = 0
+  opt.cs_halfz_clip_space = 0
+  opt.kill_outputs = 0x0
+  opt.clip_disable = 0
+  opt.ngg_culling = 0x0
+
+Vertex Shader as ESGS:
+Shader main disassembly:
+main:
+BB0_0:
+	s_mov_b32 exec_lo, -1                                                               ; BEFE03C1
+	s_and_b32 s0, s3, 0xf000000                                                         ; 8700FF03 0F000000
+	s_cmp_lg_u32 s0, 0                                                                  ; BF078000
+	s_cbranch_scc1 BB0_2                                                                ; BF850000
+	s_lshr_b32 s0, s2, 10                                                               ; 90008A02
+	s_bfe_u32 s1, s2, 0x9000c                                                           ; 9381FF02 0009000C
+	s_and_b32 s0, s0, 0x1ff000                                                          ; 8700FF00 001FF000
+	s_or_b32 m0, s0, s1                                                                 ; 887C0100
+	s_sendmsg sendmsg(MSG_GS_ALLOC_REQ)                                                 ; BF900009
+BB0_2:
+	s_bfe_u32 s0, s3, 0x80008                                                           ; 9380FF03 00080008
+	v_mbcnt_lo_u32_b32_e64 v1, -1, 0                                                    ; D7650001 000100C1
+	v_cmp_gt_u32_e32 vcc_lo, s0, v1                                                     ; 7D880200
+	s_and_saveexec_b32 s0, vcc_lo                                                       ; BE803C6A
+	s_cbranch_execz BB0_4                                                               ; BF880000
+BB0_3:
+	exp prim v0, off, off, off done                                                     ; F8000941 00000000
+BB0_4:
+	s_waitcnt expcnt(0)                                                                 ; BF8CFF0F
+	s_or_b32 exec_lo, exec_lo, s0                                                       ; 887E007E
+	s_and_b32 s0, s3, 0xff                                                              ; 8700FF03 000000FF
+	v_cmp_gt_u32_e32 vcc_lo, s0, v1                                                     ; 7D880200
+	s_and_saveexec_b32 s0, vcc_lo                                                       ; BE803C6A
+	s_cbranch_execz BB0_6                                                               ; BF880000
+BB0_5:
+	v_mov_b32_e32 v0, s10                                                               ; 7E00020A
+	v_cmp_gt_u32_e32 vcc_lo, 2, v5                                                      ; 7D880A82
+	v_mov_b32_e32 v1, s11                                                               ; 7E02020B
+	v_mov_b32_e32 v2, 1.0                                                               ; 7E0402F2
+	v_mov_b32_e32 v3, s12                                                               ; 7E06020C
+	v_cndmask_b32_e32 v0, s11, v0, vcc_lo                                               ; 0200000B
+	v_cmp_eq_u32_e32 vcc_lo, 1, v5                                                      ; 7D840A81
+	v_cvt_f32_i32_sdwa v0, sext(v0) dst_sel:DWORD dst_unused:UNUSED_PAD src0_sel:WORD_0 ; 7E000AF9 000C0600
+	v_cndmask_b32_e32 v1, s10, v1, vcc_lo                                               ; 0202020A
+	v_cvt_f32_i32_sdwa v1, sext(v1) dst_sel:DWORD dst_unused:UNUSED_PAD src0_sel:WORD_1 ; 7E020AF9 000D0601
+	exp pos0 v0, v1, v3, v2 done vm                                                     ; F80018CF 02030100
+	s_waitcnt expcnt(0)                                                                 ; BF8CFF0F
+	v_mov_b32_e32 v0, s13                                                               ; 7E00020D
+	v_mov_b32_e32 v1, s14                                                               ; 7E02020E
+	v_mov_b32_e32 v2, s15                                                               ; 7E04020F
+	v_mov_b32_e32 v3, s16                                                               ; 7E060210
+	exp param0 v0, v1, v2, v3                                                           ; F800020F 03020100
+BB0_6:
+	s_endpgm                                                                            ; BF810000
+
+*** SHADER STATS ***
+SGPRS: 24
+VGPRS: 16
+Spilled SGPRs: 0
+Spilled VGPRs: 0
+Private memory VGPRs: 0
+Code Size: 200 bytes
+LDS: 0 blocks
+Scratch: 0 bytes per wave
+Max Waves: 10
+********************
+
+
+SHADER KEY
+  part.ps.prolog.color_two_side = 0
+  part.ps.prolog.flatshade_colors = 0
+  part.ps.prolog.poly_stipple = 0
+  part.ps.prolog.force_persp_sample_interp = 0
+  part.ps.prolog.force_linear_sample_interp = 0
+  part.ps.prolog.force_persp_center_interp = 0
+  part.ps.prolog.force_linear_center_interp = 0
+  part.ps.prolog.bc_optimize_for_persp = 0
+  part.ps.prolog.bc_optimize_for_linear = 0
+  part.ps.prolog.samplemask_log_ps_iter = 0
+  part.ps.epilog.spi_shader_col_format = 0x4
+  part.ps.epilog.color_is_int8 = 0x0
+  part.ps.epilog.color_is_int10 = 0x0
+  part.ps.epilog.last_cbuf = 0
+  part.ps.epilog.alpha_func = 7
+  part.ps.epilog.alpha_to_one = 0
+  part.ps.epilog.poly_line_smoothing = 0
+  part.ps.epilog.clamp_color = 0
+  mono.u.ps.interpolate_at_sample_force_center = 0
+  mono.u.ps.fbfetch_msaa = 0
+  mono.u.ps.fbfetch_is_1D = 0
+  mono.u.ps.fbfetch_layered = 0
+
+Pixel Shader:
+Shader main disassembly:
+main:
+BB0_0:
+	s_mov_b32 m0, s5                     ; BEFC0305
+	v_interp_mov_f32_e32 v0, p0, attr0.x ; C8020002
+	v_interp_mov_f32_e32 v1, p0, attr0.y ; C8060102
+	v_interp_mov_f32_e32 v2, p0, attr0.z ; C80A0202
+	v_interp_mov_f32_e32 v3, p0, attr0.w ; C80E0302
+Shader epilog disassembly:
+ps_epilog:
+BB0_0:
+	v_cvt_pkrtz_f16_f32_e32 v2, v2, v3    ; 5E040702
+	v_cvt_pkrtz_f16_f32_e32 v0, v0, v1    ; 5E000300
+	exp mrt0 v0, v0, v2, v2 done compr vm ; F8001C0F 00000200
+	s_endpgm                              ; BF810000
+
+*** SHADER CONFIG ***
+SPI_PS_INPUT_ADDR = 0xf077
+SPI_PS_INPUT_ENA  = 0x0020
+*** SHADER STATS ***
+SGPRS: 8
+VGPRS: 28
+Spilled SGPRs: 0
+Spilled VGPRs: 0
+Private memory VGPRs: 0
+Code Size: 40 bytes
+LDS: 0 blocks
+Scratch: 0 bytes per wave
+Max Waves: 10
+********************
+
+
+shader: MESA_SHADER_VERTEX
+name: GLSL1
+inputs: 2
+outputs: 2
+uniforms: 0
+shared: 0
+decl_var shader_in INTERP_MODE_NONE vec4 pos (VERT_ATTRIB_GENERIC0.xyzw, 0, 0)
+decl_var shader_in INTERP_MODE_NONE vec4 color (VERT_ATTRIB_GENERIC1.xyzw, 4, 0)
+decl_var shader_out INTERP_MODE_NONE vec4 gl_Position (VARYING_SLOT_POS.xyzw, 0, 0)
+decl_var shader_out INTERP_MODE_NONE float out_color (VARYING_SLOT_VAR0.x, 4, 0)
+decl_var shader_out INTERP_MODE_NONE float out_color@0 (VARYING_SLOT_VAR0.y, 4, 0)
+decl_var shader_out INTERP_MODE_NONE float out_color@1 (VARYING_SLOT_VAR0.z, 4, 0)
+decl_var shader_out INTERP_MODE_NONE float out_color@2 (VARYING_SLOT_VAR0.w, 4, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec1 32 ssa_0 = deref_var &pos (shader_in vec4) 
+	vec4 32 ssa_1 = intrinsic load_deref (ssa_0) (0) /* access=0 */
+	vec1 32 ssa_2 = deref_var &color (shader_in vec4) 
+	vec4 32 ssa_3 = intrinsic load_deref (ssa_2) (0) /* access=0 */
+	vec1 32 ssa_4 = deref_var &gl_Position (shader_out vec4) 
+	intrinsic store_deref (ssa_4, ssa_1) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	vec1 32 ssa_5 = deref_var &out_color (shader_out float) 
+	vec1 32 ssa_6 = mov ssa_3.x
+	intrinsic store_deref (ssa_5, ssa_6) (1, 0) /* wrmask=x */ /* access=0 */
+	vec1 32 ssa_7 = deref_var &out_color@0 (shader_out float) 
+	vec1 32 ssa_8 = mov ssa_3.y
+	intrinsic store_deref (ssa_7, ssa_8) (1, 0) /* wrmask=x */ /* access=0 */
+	vec1 32 ssa_9 = deref_var &out_color@1 (shader_out float) 
+	vec1 32 ssa_10 = mov ssa_3.z
+	intrinsic store_deref (ssa_9, ssa_10) (1, 0) /* wrmask=x */ /* access=0 */
+	vec1 32 ssa_11 = deref_var &out_color@2 (shader_out float) 
+	vec1 32 ssa_12 = mov ssa_3.w
+	intrinsic store_deref (ssa_11, ssa_12) (1, 0) /* wrmask=x */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 8
+Vertex Shader as ESGS LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_gs void @main(<4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, i32 inreg %2, i32 inreg %3, i32 inreg %4, i32 inreg %5, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %6, i32 inreg %7, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %8, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %9, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %10, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %11, i32 inreg %12, i32 inreg %13, i32 inreg %14, i32 inreg %15, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %16, i32 inreg %17, i32 inreg %18, i32 inreg %19, <4 x i32> inreg %20, <4 x i32> inreg %21, i32 %22, i32 %23, i32 %24, i32 %25, i32 %26, i32 %27, i32 %28, i32 %29, i32 %30, i32 %31, i32 %32) #0 {
+main_body:
+  call void @llvm.amdgcn.init.exec(i64 -1) #1
+  %33 = and i32 %3, 251658240
+  %34 = icmp eq i32 %33, 0
+  br i1 %34, label %if5020, label %endif5020
+
+if5020:                                           ; preds = %main_body
+  %35 = lshr i32 %2, 12
+  %36 = and i32 %35, 511
+  %37 = lshr i32 %2, 10
+  %38 = and i32 %37, 2093056
+  %39 = or i32 %38, %36
+  call void @llvm.amdgcn.s.sendmsg(i32 9, i32 %39) #2
+  br label %endif5020
+
+endif5020:                                        ; preds = %if5020, %main_body
+  %40 = lshr i32 %3, 8
+  %41 = and i32 %40, 255
+  %42 = call i32 @llvm.amdgcn.mbcnt.lo(i32 -1, i32 0) #3, !range !0
+  %43 = icmp ult i32 %42, %41
+  br i1 %43, label %if6001, label %endif6001
+
+if6001:                                           ; preds = %endif5020
+  %44 = bitcast i32 %22 to float
+  call void @llvm.amdgcn.exp.f32(i32 20, i32 1, float %44, float undef, float undef, float undef, i1 true, i1 false) #2
+  br label %endif6001
+
+endif6001:                                        ; preds = %if6001, %endif5020
+  %45 = and i32 %3, 255
+  %46 = icmp ult i32 %42, %45
+  br i1 %46, label %if11500, label %endif6002
+
+if11500:                                          ; preds = %endif6001
+  %47 = call nsz arcp contract <4 x float> @llvm.amdgcn.struct.buffer.load.format.v4f32(<4 x i32> %20, i32 %31, i32 0, i32 0, i32 0) #3
+  %48 = call nsz arcp contract <4 x float> @llvm.amdgcn.struct.buffer.load.format.v4f32(<4 x i32> %21, i32 %32, i32 0, i32 0, i32 0) #3
+  %49 = extractelement <4 x float> %48, i32 0
+  %50 = extractelement <4 x float> %48, i32 1
+  %51 = extractelement <4 x float> %48, i32 2
+  %52 = extractelement <4 x float> %48, i32 3
+  %53 = extractelement <4 x float> %47, i32 0
+  %54 = extractelement <4 x float> %47, i32 1
+  %55 = extractelement <4 x float> %47, i32 2
+  %56 = extractelement <4 x float> %47, i32 3
+  call void @llvm.amdgcn.exp.f32(i32 12, i32 15, float %53, float %54, float %55, float %56, i1 true, i1 true) #2
+  call void @llvm.amdgcn.exp.f32(i32 32, i32 15, float %49, float %50, float %51, float %52, i1 false, i1 false) #2
+  br label %endif6002
+
+endif6002:                                        ; preds = %if11500, %endif6001
+  ret void
+}
+
+; Function Attrs: convergent nounwind
+declare void @llvm.amdgcn.init.exec(i64 immarg) #1
+
+; Function Attrs: nounwind
+declare void @llvm.amdgcn.s.sendmsg(i32 immarg, i32) #2
+
+; Function Attrs: nounwind readnone
+declare i32 @llvm.amdgcn.mbcnt.lo(i32, i32) #3
+
+; Function Attrs: inaccessiblememonly nounwind
+declare void @llvm.amdgcn.exp.f32(i32 immarg, i32 immarg, float, float, float, float, i1 immarg, i1 immarg) #4
+
+; Function Attrs: nounwind readonly
+declare <4 x float> @llvm.amdgcn.struct.buffer.load.format.v4f32(<4 x i32>, i32, i32, i32, i32 immarg) #5
+
+attributes #0 = { "amdgpu-32bit-address-high-bits"="0xffff8000" "amdgpu-flat-work-group-size"="128,128" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { convergent nounwind }
+attributes #2 = { nounwind }
+attributes #3 = { nounwind readnone }
+attributes #4 = { inaccessiblememonly nounwind }
+attributes #5 = { nounwind readonly }
+
+!0 = !{i32 0, i32 32}
+
+shader: MESA_SHADER_FRAGMENT
+name: GLSL1
+inputs: 1
+outputs: 1
+uniforms: 0
+shared: 0
+decl_var shader_in INTERP_MODE_NONE float out_color (VARYING_SLOT_VAR0.x, 0, 0)
+decl_var shader_in INTERP_MODE_NONE float out_color@0 (VARYING_SLOT_VAR0.y, 0, 0)
+decl_var shader_in INTERP_MODE_NONE float out_color@1 (VARYING_SLOT_VAR0.z, 0, 0)
+decl_var shader_in INTERP_MODE_NONE float out_color@2 (VARYING_SLOT_VAR0.w, 0, 0)
+decl_var shader_out INTERP_MODE_NONE vec4 fragment_color (FRAG_RESULT_DATA0.xyzw, 0, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec2 32 ssa_0 = intrinsic load_barycentric_pixel () (0) /* interp_mode=0 */
+	vec1 32 ssa_1 = load_const (0x00000000 /* 0.000000 */)
+	vec1 32 ssa_2 = intrinsic load_interpolated_input (ssa_0, ssa_1) (0, 0) /* base=0 */ /* component=0 */	/* out_color */
+	vec1 32 ssa_3 = intrinsic load_interpolated_input (ssa_0, ssa_1) (0, 1) /* base=0 */ /* component=1 */	/* out_color */
+	vec1 32 ssa_4 = intrinsic load_interpolated_input (ssa_0, ssa_1) (0, 2) /* base=0 */ /* component=2 */	/* out_color */
+	vec1 32 ssa_5 = intrinsic load_interpolated_input (ssa_0, ssa_1) (0, 3) /* base=0 */ /* component=3 */	/* out_color */
+	vec1 32 ssa_6 = deref_var &fragment_color (shader_out vec4) 
+	vec4 32 ssa_7 = vec4 ssa_2, ssa_3, ssa_4, ssa_5
+	intrinsic store_deref (ssa_6, ssa_7) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 9
+Pixel Shader LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_ps <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> @main(<4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %2, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %3, i32 inreg %4, i32 inreg %5, <2 x i32> %6, <2 x i32> %7, <2 x i32> %8, <3 x i32> %9, <2 x i32> %10, <2 x i32> %11, <2 x i32> %12, <3 x float> %13, float %14, float %15, float %16, float %17, i32 %18, i32 %19, float %20, i32 %21) #0 {
+main_body:
+  %22 = bitcast <2 x i32> %7 to <2 x float>
+  %23 = extractelement <2 x float> %22, i32 0
+  %24 = extractelement <2 x float> %22, i32 1
+  %25 = call nsz arcp contract float @llvm.amdgcn.interp.p1(float %23, i32 0, i32 0, i32 %5) #2
+  %26 = call nsz arcp contract float @llvm.amdgcn.interp.p2(float %25, float %24, i32 0, i32 0, i32 %5) #2
+  %27 = call nsz arcp contract float @llvm.amdgcn.interp.p1(float %23, i32 1, i32 0, i32 %5) #2
+  %28 = call nsz arcp contract float @llvm.amdgcn.interp.p2(float %27, float %24, i32 1, i32 0, i32 %5) #2
+  %29 = call nsz arcp contract float @llvm.amdgcn.interp.p1(float %23, i32 2, i32 0, i32 %5) #2
+  %30 = call nsz arcp contract float @llvm.amdgcn.interp.p2(float %29, float %24, i32 2, i32 0, i32 %5) #2
+  %31 = call nsz arcp contract float @llvm.amdgcn.interp.p1(float %23, i32 3, i32 0, i32 %5) #2
+  %32 = call nsz arcp contract float @llvm.amdgcn.interp.p2(float %31, float %24, i32 3, i32 0, i32 %5) #2
+  %33 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> undef, i32 %4, 4
+  %34 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %33, float %26, 5
+  %35 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %34, float %28, 6
+  %36 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %35, float %30, 7
+  %37 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %36, float %32, 8
+  %38 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %37, float %20, 19
+  ret <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %38
+}
+
+; Function Attrs: nounwind readnone speculatable
+declare float @llvm.amdgcn.interp.p1(float, i32 immarg, i32 immarg, i32) #1
+
+; Function Attrs: nounwind readnone speculatable
+declare float @llvm.amdgcn.interp.p2(float, float, i32 immarg, i32 immarg, i32) #1
+
+attributes #0 = { "InitialPSInputAddr"="0xb077" "amdgpu-32bit-address-high-bits"="0xffff8000" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { nounwind readnone speculatable }
+attributes #2 = { nounwind readnone }
+
+radeonsi: Compiling shader 10
+Vertex Shader Prolog LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_gs <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> @vs_prolog(i32 inreg %0, i32 inreg %1, i32 inreg %2, i32 inreg %3, i32 inreg %4, i32 inreg %5, i32 inreg %6, i32 inreg %7, i32 inreg %8, i32 inreg %9, i32 inreg %10, i32 inreg %11, i32 inreg %12, i32 inreg %13, i32 inreg %14, i32 inreg %15, i32 inreg %16, i32 inreg %17, i32 inreg %18, i32 inreg %19, i32 inreg %20, i32 inreg %21, i32 inreg %22, i32 inreg %23, i32 inreg %24, i32 inreg %25, i32 inreg %26, i32 inreg %27, i32 %28, i32 %29, i32 %30, i32 %31, i32 %32, i32 %33, i32 %34, i32 %35, i32 %36) #0 {
+main_body:
+  call void @llvm.amdgcn.init.exec.from.input(i32 %3, i32 0) #1
+  %37 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> undef, i32 %0, 0
+  %38 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %37, i32 %1, 1
+  %39 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %38, i32 %2, 2
+  %40 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %39, i32 %3, 3
+  %41 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %40, i32 %4, 4
+  %42 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %41, i32 %5, 5
+  %43 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %42, i32 %6, 6
+  %44 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %43, i32 %7, 7
+  %45 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %44, i32 %8, 8
+  %46 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %45, i32 %9, 9
+  %47 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %46, i32 %10, 10
+  %48 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %47, i32 %11, 11
+  %49 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %48, i32 %12, 12
+  %50 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %49, i32 %13, 13
+  %51 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %50, i32 %14, 14
+  %52 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %51, i32 %15, 15
+  %53 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %52, i32 %16, 16
+  %54 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %53, i32 %17, 17
+  %55 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %54, i32 %18, 18
+  %56 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %55, i32 %19, 19
+  %57 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %56, i32 %20, 20
+  %58 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %57, i32 %21, 21
+  %59 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %58, i32 %22, 22
+  %60 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %59, i32 %23, 23
+  %61 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %60, i32 %24, 24
+  %62 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %61, i32 %25, 25
+  %63 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %62, i32 %26, 26
+  %64 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %63, i32 %27, 27
+  %65 = bitcast i32 %28 to float
+  %66 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %64, float %65, 28
+  %67 = bitcast i32 %29 to float
+  %68 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %66, float %67, 29
+  %69 = bitcast i32 %30 to float
+  %70 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %68, float %69, 30
+  %71 = bitcast i32 %31 to float
+  %72 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %70, float %71, 31
+  %73 = bitcast i32 %32 to float
+  %74 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %72, float %73, 32
+  %75 = bitcast i32 %33 to float
+  %76 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %74, float %75, 33
+  %77 = bitcast i32 %34 to float
+  %78 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %76, float %77, 34
+  %79 = bitcast i32 %35 to float
+  %80 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %78, float %79, 35
+  %81 = bitcast i32 %36 to float
+  %82 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %80, float %81, 36
+  %83 = add i32 %33, %13
+  %84 = bitcast i32 %83 to float
+  %85 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %82, float %84, 37
+  %86 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %85, float %84, 38
+  ret <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float }> %86
+}
+
+; Function Attrs: convergent nounwind
+declare void @llvm.amdgcn.init.exec.from.input(i32, i32 immarg) #1
+
+attributes #0 = { "amdgpu-32bit-address-high-bits"="0xffff8000" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { convergent nounwind }
+
+SHADER KEY
+  part.vs.prolog.instance_divisor_is_one = 0
+  part.vs.prolog.instance_divisor_is_fetched = 0
+  part.vs.prolog.unpack_instance_id_from_vertex_id = 0
+  part.vs.prolog.ls_vgpr_fix = 0
+  mono.vs.fetch_opencode = 0
+  mono.vs.fix_fetch = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+  as_es = 0
+  as_ls = 0
+  as_ngg = 1
+  mono.u.vs_export_prim_id = 0
+  opt.vs_as_prim_discard_cs = 0
+  opt.cs_prim_type = POINTS
+  opt.cs_indexed = 0
+  opt.cs_instancing = 0
+  opt.cs_primitive_restart = 0
+  opt.cs_provoking_vertex_first = 0
+  opt.cs_need_correct_orientation = 0
+  opt.cs_cull_front = 0
+  opt.cs_cull_back = 0
+  opt.cs_cull_z = 0
+  opt.cs_halfz_clip_space = 0
+  opt.kill_outputs = 0x0
+  opt.clip_disable = 0
+  opt.ngg_culling = 0x0
+
+Vertex Shader as ESGS:
+Shader prolog disassembly:
+vs_prolog:
+BB0_0:
+	s_bfe_u32 s28, s3, 0x70000   ; 939CFF03 00070000
+	s_bfm_b32 exec_lo, s28, 0    ; 927E801C
+	s_cmp_eq_u32 s28, 32         ; BF06A01C
+	s_cmov_b32 exec_lo, -1       ; BEFE05C1
+	v_add_nc_u32_e32 v9, s13, v5 ; 4A120A0D
+	v_mov_b32_e32 v10, v9        ; 7E140309
+Shader main disassembly:
+main:
+BB0_0:
+	s_mov_b32 exec_lo, -1                                  ; BEFE03C1
+	s_and_b32 s0, s3, 0xf000000                            ; 8700FF03 0F000000
+	s_cmp_lg_u32 s0, 0                                     ; BF078000
+	s_cbranch_scc1 BB0_2                                   ; BF850000
+	s_lshr_b32 s0, s2, 10                                  ; 90008A02
+	s_bfe_u32 s1, s2, 0x9000c                              ; 9381FF02 0009000C
+	s_and_b32 s0, s0, 0x1ff000                             ; 8700FF00 001FF000
+	s_or_b32 m0, s0, s1                                    ; 887C0100
+	s_sendmsg sendmsg(MSG_GS_ALLOC_REQ)                    ; BF900009
+BB0_2:
+	s_bfe_u32 s0, s3, 0x80008                              ; 9380FF03 00080008
+	v_mbcnt_lo_u32_b32_e64 v1, -1, 0                       ; D7650001 000100C1
+	v_cmp_gt_u32_e32 vcc_lo, s0, v1                        ; 7D880200
+	s_and_saveexec_b32 s0, vcc_lo                          ; BE803C6A
+	s_cbranch_execz BB0_4                                  ; BF880000
+BB0_3:
+	exp prim v0, off, off, off done                        ; F8000941 00000000
+BB0_4:
+	s_waitcnt expcnt(0)                                    ; BF8CFF0F
+	s_or_b32 exec_lo, exec_lo, s0                          ; 887E007E
+	s_and_b32 s0, s3, 0xff                                 ; 8700FF03 000000FF
+	v_cmp_gt_u32_e32 vcc_lo, s0, v1                        ; 7D880200
+	s_and_saveexec_b32 s0, vcc_lo                          ; BE803C6A
+	s_cbranch_execz BB0_6                                  ; BF880000
+BB0_5:
+	buffer_load_format_xyzw v[0:3], v9, s[20:23], 0 idxen  ; E00C2000 80050009
+	buffer_load_format_xyzw v[4:7], v10, s[24:27], 0 idxen ; E00C2000 8006040A
+	s_waitcnt vmcnt(1)                                     ; BF8C3F71
+	exp pos0 v0, v1, v2, v3 done vm                        ; F80018CF 03020100
+	s_waitcnt vmcnt(0)                                     ; BF8C3F70
+	exp param0 v4, v5, v6, v7                              ; F800020F 07060504
+BB0_6:
+	s_endpgm                                               ; BF810000
+
+*** SHADER STATS ***
+SGPRS: 32
+VGPRS: 16
+Spilled SGPRs: 0
+Spilled VGPRs: 0
+Private memory VGPRs: 0
+Code Size: 184 bytes
+LDS: 0 blocks
+Scratch: 0 bytes per wave
+Max Waves: 10
+********************
+
+
+SHADER KEY
+  part.ps.prolog.color_two_side = 0
+  part.ps.prolog.flatshade_colors = 0
+  part.ps.prolog.poly_stipple = 0
+  part.ps.prolog.force_persp_sample_interp = 0
+  part.ps.prolog.force_linear_sample_interp = 0
+  part.ps.prolog.force_persp_center_interp = 0
+  part.ps.prolog.force_linear_center_interp = 0
+  part.ps.prolog.bc_optimize_for_persp = 0
+  part.ps.prolog.bc_optimize_for_linear = 0
+  part.ps.prolog.samplemask_log_ps_iter = 0
+  part.ps.epilog.spi_shader_col_format = 0x4
+  part.ps.epilog.color_is_int8 = 0x0
+  part.ps.epilog.color_is_int10 = 0x0
+  part.ps.epilog.last_cbuf = 0
+  part.ps.epilog.alpha_func = 7
+  part.ps.epilog.alpha_to_one = 0
+  part.ps.epilog.poly_line_smoothing = 0
+  part.ps.epilog.clamp_color = 0
+  mono.u.ps.interpolate_at_sample_force_center = 0
+  mono.u.ps.fbfetch_msaa = 0
+  mono.u.ps.fbfetch_is_1D = 0
+  mono.u.ps.fbfetch_layered = 0
+
+Pixel Shader:
+Shader main disassembly:
+main:
+BB0_0:
+	s_mov_b32 m0, s5                    ; BEFC0305
+	v_interp_p1_f32_e32 v4, v2, attr0.z ; C8100202
+	v_interp_p1_f32_e32 v5, v2, attr0.w ; C8140302
+	v_interp_p1_f32_e32 v0, v2, attr0.x ; C8000002
+	v_interp_p1_f32_e32 v1, v2, attr0.y ; C8040102
+	v_interp_p2_f32_e32 v4, v3, attr0.z ; C8110203
+	v_interp_p2_f32_e32 v5, v3, attr0.w ; C8150303
+	v_interp_p2_f32_e32 v0, v3, attr0.x ; C8010003
+	v_interp_p2_f32_e32 v1, v3, attr0.y ; C8050103
+	v_mov_b32_e32 v2, v4                ; 7E040304
+	v_mov_b32_e32 v3, v5                ; 7E060305
+Shader epilog disassembly:
+ps_epilog:
+BB0_0:
+	v_cvt_pkrtz_f16_f32_e32 v2, v2, v3    ; 5E040702
+	v_cvt_pkrtz_f16_f32_e32 v0, v0, v1    ; 5E000300
+	exp mrt0 v0, v0, v2, v2 done compr vm ; F8001C0F 00000200
+	s_endpgm                              ; BF810000
+
+*** SHADER CONFIG ***
+SPI_PS_INPUT_ADDR = 0xf077
+SPI_PS_INPUT_ENA  = 0x0002
+*** SHADER STATS ***
+SGPRS: 8
+VGPRS: 28
+Spilled SGPRs: 0
+Spilled VGPRs: 0
+Private memory VGPRs: 0
+Code Size: 64 bytes
+LDS: 0 blocks
+Scratch: 0 bytes per wave
+Max Waves: 10
+********************
+
+
+shader: MESA_SHADER_FRAGMENT
+name: st/pbo upload FS
+inputs: 1
+outputs: 1
+uniforms: 4
+shared: 0
+decl_var uniform INTERP_MODE_NONE vec4 param (0, 0, 0)
+decl_var uniform INTERP_MODE_NONE samplerBuffer tex (0, 0, 0)
+decl_var shader_in INTERP_MODE_FLAT int gl_Layer (VARYING_SLOT_LAYER.x, 0, 0)
+decl_var shader_out INTERP_MODE_NONE vec4 gl_FragColor (FRAG_RESULT_COLOR.xyzw, 0, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec1 32 ssa_0 = load_const (0x00000000 /* 0.000000 */)
+	vec1 32 ssa_1 = intrinsic load_input (ssa_0) (0, 0, 34) /* base=0 */ /* component=0 */ /* type=int32 */	/* gl_Layer */
+	vec4 32 ssa_2 = intrinsic load_ubo (ssa_0, ssa_0) (0, 4, 0) /* access=0 */ /* align_mul=4 */ /* align_offset=0 */
+	vec4 32 ssa_3 = intrinsic load_frag_coord () ()
+	vec1 32 ssa_4 = f2i32 ssa_3.x
+	vec1 32 ssa_5 = f2i32 ssa_3.y
+	vec1 32 ssa_6 = iadd ssa_2.x, ssa_4
+	vec1 32 ssa_7 = iadd ssa_2.y, ssa_5
+	vec1 32 ssa_8 = imul ssa_7, ssa_2.z
+	vec1 32 ssa_9 = iadd ssa_6, ssa_8
+	vec1 32 ssa_10 = imul ssa_1, ssa_2.w
+	vec1 32 ssa_11 = iadd ssa_9, ssa_10
+	vec1 32 ssa_12 = deref_var &tex (uniform samplerBuffer) 
+	vec4 32 ssa_13 = txf ssa_12 (texture_deref), ssa_12 (sampler_deref), ssa_11 (coord), ssa_0 (lod)
+	vec1 32 ssa_14 = deref_var &gl_FragColor (shader_out vec4) 
+	intrinsic store_deref (ssa_14, ssa_13) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 11
+Pixel Shader LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_ps <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> @main(<4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, float addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %2, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %3, i32 inreg %4, i32 inreg %5, <2 x i32> %6, <2 x i32> %7, <2 x i32> %8, <3 x i32> %9, <2 x i32> %10, <2 x i32> %11, <2 x i32> %12, <3 x float> %13, float %14, float %15, float %16, float %17, i32 %18, i32 %19, float %20, i32 %21) #0 {
+main_body:
+  %22 = call nsz arcp contract float @llvm.amdgcn.interp.mov(i32 2, i32 0, i32 0, i32 %5) #2
+  %23 = bitcast float %22 to i32
+  %24 = ptrtoint float addrspace(6)* %2 to i32
+  %25 = insertelement <4 x i32> <i32 undef, i32 32768, i32 64, i32 822177708>, i32 %24, i32 0
+  %26 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %25, i32 0, i32 0) #2
+  %27 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %25, i32 4, i32 0) #2
+  %28 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %25, i32 8, i32 0) #2
+  %29 = call nsz arcp contract float @llvm.amdgcn.s.buffer.load.f32(<4 x i32> %25, i32 12, i32 0) #2
+  %30 = fptosi float %14 to i32
+  %31 = fptosi float %15 to i32
+  %32 = bitcast float %26 to i32
+  %33 = add i32 %32, %30
+  %34 = bitcast float %27 to i32
+  %35 = add i32 %34, %31
+  %36 = bitcast float %28 to i32
+  %37 = mul i32 %35, %36
+  %38 = add i32 %33, %37
+  %39 = bitcast float %29 to i32
+  %40 = mul i32 %23, %39
+  %41 = add i32 %38, %40
+  %42 = bitcast <8 x i32> addrspace(6)* %3 to <4 x i32> addrspace(6)*
+  %43 = getelementptr inbounds <4 x i32>, <4 x i32> addrspace(6)* %42, i32 65, !amdgpu.uniform !0
+  %44 = load <4 x i32>, <4 x i32> addrspace(6)* %43, align 16, !invariant.load !0
+  %45 = call nsz arcp contract <4 x float> @llvm.amdgcn.struct.buffer.load.format.v4f32(<4 x i32> %44, i32 %41, i32 0, i32 0, i32 0) #2
+  %46 = extractelement <4 x float> %45, i32 0
+  %47 = extractelement <4 x float> %45, i32 1
+  %48 = extractelement <4 x float> %45, i32 2
+  %49 = extractelement <4 x float> %45, i32 3
+  %50 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> undef, i32 %4, 4
+  %51 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %50, float %46, 5
+  %52 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %51, float %47, 6
+  %53 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %52, float %48, 7
+  %54 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %53, float %49, 8
+  %55 = insertvalue <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %54, float %20, 19
+  ret <{ i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float }> %55
+}
+
+; Function Attrs: nounwind readnone speculatable
+declare float @llvm.amdgcn.interp.mov(i32, i32 immarg, i32 immarg, i32) #1
+
+; Function Attrs: nounwind readnone
+declare float @llvm.amdgcn.s.buffer.load.f32(<4 x i32>, i32, i32 immarg) #2
+
+; Function Attrs: nounwind readnone speculatable
+declare float @llvm.amdgcn.rcp.f32(float) #1
+
+; Function Attrs: nounwind readonly
+declare <4 x float> @llvm.amdgcn.struct.buffer.load.format.v4f32(<4 x i32>, i32, i32, i32, i32 immarg) #3
+
+attributes #0 = { "InitialPSInputAddr"="0xb077" "amdgpu-32bit-address-high-bits"="0xffff8000" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { nounwind readnone speculatable }
+attributes #2 = { nounwind readnone }
+attributes #3 = { nounwind readonly }
+
+!0 = !{}
+
+shader: MESA_SHADER_VERTEX
+name: st/pbo VS
+inputs: 1
+outputs: 2
+uniforms: 0
+shared: 0
+decl_var shader_in INTERP_MODE_NONE vec4 in_0 (VERT_ATTRIB_POS.xyzw, 0, 0)
+decl_var shader_out INTERP_MODE_NONE vec4 out_0 (VARYING_SLOT_POS.xyzw, 0, 0)
+decl_var shader_out INTERP_MODE_FLAT int out_22 (VARYING_SLOT_LAYER.x, 4, 0)
+decl_function main (0 params)
+
+impl main {
+	block block_0:
+	/* preds: */
+	vec1 32 ssa_0 = deref_var &in_0 (shader_in vec4) 
+	vec1 32 ssa_1 = deref_var &out_0 (shader_out vec4) 
+	vec4 32 ssa_2 = intrinsic load_deref (ssa_0) (0) /* access=0 */
+	intrinsic store_deref (ssa_1, ssa_2) (15, 0) /* wrmask=xyzw */ /* access=0 */
+	vec1 32 ssa_3 = deref_var &out_22 (shader_out int) 
+	vec1 32 ssa_4 = intrinsic load_instance_id () ()
+	intrinsic store_deref (ssa_3, ssa_4) (1, 0) /* wrmask=x */ /* access=0 */
+	/* succs: block_1 */
+	block block_1:
+}
+
+radeonsi: Compiling shader 12
+Vertex Shader as ESGS LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_gs void @main(<4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %0, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %1, i32 inreg %2, i32 inreg %3, i32 inreg %4, i32 inreg %5, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %6, i32 inreg %7, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %8, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %9, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %10, <8 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %11, i32 inreg %12, i32 inreg %13, i32 inreg %14, i32 inreg %15, <4 x i32> addrspace(6)* inreg noalias dereferenceable(18446744073709551615) %16, i32 inreg %17, i32 inreg %18, i32 inreg %19, <4 x i32> inreg %20, i32 %21, i32 %22, i32 %23, i32 %24, i32 %25, i32 %26, i32 %27, i32 %28, i32 %29, i32 %30) #0 {
+main_body:
+  call void @llvm.amdgcn.init.exec(i64 -1) #1
+  %31 = and i32 %3, 251658240
+  %32 = icmp eq i32 %31, 0
+  br i1 %32, label %if5020, label %endif5020
+
+if5020:                                           ; preds = %main_body
+  %33 = lshr i32 %2, 12
+  %34 = and i32 %33, 511
+  %35 = lshr i32 %2, 10
+  %36 = and i32 %35, 2093056
+  %37 = or i32 %36, %34
+  call void @llvm.amdgcn.s.sendmsg(i32 9, i32 %37) #2
+  br label %endif5020
+
+endif5020:                                        ; preds = %if5020, %main_body
+  %38 = lshr i32 %3, 8
+  %39 = and i32 %38, 255
+  %40 = call i32 @llvm.amdgcn.mbcnt.lo(i32 -1, i32 0) #3, !range !0
+  %41 = icmp ult i32 %40, %39
+  br i1 %41, label %if6001, label %endif6001
+
+if6001:                                           ; preds = %endif5020
+  %42 = bitcast i32 %21 to float
+  call void @llvm.amdgcn.exp.f32(i32 20, i32 1, float %42, float undef, float undef, float undef, i1 true, i1 false) #2
+  br label %endif6001
+
+endif6001:                                        ; preds = %if6001, %endif5020
+  %43 = and i32 %3, 255
+  %44 = icmp ult i32 %40, %43
+  br i1 %44, label %if11500, label %endif6002
+
+if11500:                                          ; preds = %endif6001
+  %45 = call nsz arcp contract <4 x float> @llvm.amdgcn.struct.buffer.load.format.v4f32(<4 x i32> %20, i32 %30, i32 0, i32 0, i32 0) #3
+  %46 = extractelement <4 x float> %45, i32 0
+  %47 = extractelement <4 x float> %45, i32 1
+  %48 = extractelement <4 x float> %45, i32 2
+  %49 = extractelement <4 x float> %45, i32 3
+  %50 = bitcast i32 %29 to float
+  call void @llvm.amdgcn.exp.f32(i32 12, i32 15, float %46, float %47, float %48, float %49, i1 false, i1 true) #2
+  call void @llvm.amdgcn.exp.f32(i32 13, i32 4, float undef, float undef, float %50, float undef, i1 true, i1 false) #2
+  call void @llvm.amdgcn.exp.f32(i32 32, i32 15, float %50, float undef, float undef, float undef, i1 false, i1 false) #2
+  br label %endif6002
+
+endif6002:                                        ; preds = %if11500, %endif6001
+  ret void
+}
+
+; Function Attrs: convergent nounwind
+declare void @llvm.amdgcn.init.exec(i64 immarg) #1
+
+; Function Attrs: nounwind
+declare void @llvm.amdgcn.s.sendmsg(i32 immarg, i32) #2
+
+; Function Attrs: nounwind readnone
+declare i32 @llvm.amdgcn.mbcnt.lo(i32, i32) #3
+
+; Function Attrs: inaccessiblememonly nounwind
+declare void @llvm.amdgcn.exp.f32(i32 immarg, i32 immarg, float, float, float, float, i1 immarg, i1 immarg) #4
+
+; Function Attrs: nounwind readonly
+declare <4 x float> @llvm.amdgcn.struct.buffer.load.format.v4f32(<4 x i32>, i32, i32, i32, i32 immarg) #5
+
+attributes #0 = { "amdgpu-32bit-address-high-bits"="0xffff8000" "amdgpu-flat-work-group-size"="128,128" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { convergent nounwind }
+attributes #2 = { nounwind }
+attributes #3 = { nounwind readnone }
+attributes #4 = { inaccessiblememonly nounwind }
+attributes #5 = { nounwind readonly }
+
+!0 = !{i32 0, i32 32}
+
+radeonsi: Compiling shader 13
+Vertex Shader Prolog LLVM IR:
+
+; ModuleID = 'mesa-shader'
+source_filename = "mesa-shader"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-ni:7"
+target triple = "amdgcn--"
+
+define amdgpu_gs <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> @vs_prolog(i32 inreg %0, i32 inreg %1, i32 inreg %2, i32 inreg %3, i32 inreg %4, i32 inreg %5, i32 inreg %6, i32 inreg %7, i32 inreg %8, i32 inreg %9, i32 inreg %10, i32 inreg %11, i32 inreg %12, i32 inreg %13, i32 inreg %14, i32 inreg %15, i32 inreg %16, i32 inreg %17, i32 inreg %18, i32 inreg %19, i32 inreg %20, i32 inreg %21, i32 inreg %22, i32 inreg %23, i32 %24, i32 %25, i32 %26, i32 %27, i32 %28, i32 %29, i32 %30, i32 %31, i32 %32) #0 {
+main_body:
+  call void @llvm.amdgcn.init.exec.from.input(i32 %3, i32 0) #1
+  %33 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> undef, i32 %0, 0
+  %34 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %33, i32 %1, 1
+  %35 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %34, i32 %2, 2
+  %36 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %35, i32 %3, 3
+  %37 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %36, i32 %4, 4
+  %38 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %37, i32 %5, 5
+  %39 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %38, i32 %6, 6
+  %40 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %39, i32 %7, 7
+  %41 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %40, i32 %8, 8
+  %42 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %41, i32 %9, 9
+  %43 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %42, i32 %10, 10
+  %44 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %43, i32 %11, 11
+  %45 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %44, i32 %12, 12
+  %46 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %45, i32 %13, 13
+  %47 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %46, i32 %14, 14
+  %48 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %47, i32 %15, 15
+  %49 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %48, i32 %16, 16
+  %50 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %49, i32 %17, 17
+  %51 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %50, i32 %18, 18
+  %52 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %51, i32 %19, 19
+  %53 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %52, i32 %20, 20
+  %54 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %53, i32 %21, 21
+  %55 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %54, i32 %22, 22
+  %56 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %55, i32 %23, 23
+  %57 = bitcast i32 %24 to float
+  %58 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %56, float %57, 24
+  %59 = bitcast i32 %25 to float
+  %60 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %58, float %59, 25
+  %61 = bitcast i32 %26 to float
+  %62 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %60, float %61, 26
+  %63 = bitcast i32 %27 to float
+  %64 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %62, float %63, 27
+  %65 = bitcast i32 %28 to float
+  %66 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %64, float %65, 28
+  %67 = bitcast i32 %29 to float
+  %68 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %66, float %67, 29
+  %69 = bitcast i32 %30 to float
+  %70 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %68, float %69, 30
+  %71 = bitcast i32 %31 to float
+  %72 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %70, float %71, 31
+  %73 = bitcast i32 %32 to float
+  %74 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %72, float %73, 32
+  %75 = add i32 %29, %13
+  %76 = bitcast i32 %75 to float
+  %77 = insertvalue <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %74, float %76, 33
+  ret <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, float, float, float, float, float, float, float, float, float, float }> %77
+}
+
+; Function Attrs: convergent nounwind
+declare void @llvm.amdgcn.init.exec.from.input(i32, i32 immarg) #1
+
+attributes #0 = { "amdgpu-32bit-address-high-bits"="0xffff8000" "no-signed-zeros-fp-math"="true" }
+attributes #1 = { convergent nounwind }
+
+SHADER KEY
+  part.vs.prolog.instance_divisor_is_one = 0
+  part.vs.prolog.instance_divisor_is_fetched = 0
+  part.vs.prolog.unpack_instance_id_from_vertex_id = 0
+  part.vs.prolog.ls_vgpr_fix = 0
+  mono.vs.fetch_opencode = 0
+  mono.vs.fix_fetch = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+  as_es = 0
+  as_ls = 0
+  as_ngg = 1
+  mono.u.vs_export_prim_id = 0
+  opt.vs_as_prim_discard_cs = 0
+  opt.cs_prim_type = POINTS
+  opt.cs_indexed = 0
+  opt.cs_instancing = 0
+  opt.cs_primitive_restart = 0
+  opt.cs_provoking_vertex_first = 0
+  opt.cs_need_correct_orientation = 0
+  opt.cs_cull_front = 0
+  opt.cs_cull_back = 0
+  opt.cs_cull_z = 0
+  opt.cs_halfz_clip_space = 0
+  opt.kill_outputs = 0x0
+  opt.clip_disable = 0
+  opt.ngg_culling = 0x0
+
+Vertex Shader as ESGS:
+Shader prolog disassembly:
+vs_prolog:
+BB1_0:
+	s_bfe_u32 s24, s3, 0x70000   ; 9398FF03 00070000
+	s_bfm_b32 exec_lo, s24, 0    ; 927E8018
+	s_cmp_eq_u32 s24, 32         ; BF06A018
+	s_cmov_b32 exec_lo, -1       ; BEFE05C1
+	v_add_nc_u32_e32 v9, s13, v5 ; 4A120A0D
+Shader main disassembly:
+main:
+BB0_0:
+	s_mov_b32 exec_lo, -1                                 ; BEFE03C1
+	s_and_b32 s0, s3, 0xf000000                           ; 8700FF03 0F000000
+	s_cmp_lg_u32 s0, 0                                    ; BF078000
+	s_cbranch_scc1 BB0_2                                  ; BF850000
+	s_lshr_b32 s0, s2, 10                                 ; 90008A02
+	s_bfe_u32 s1, s2, 0x9000c                             ; 9381FF02 0009000C
+	s_and_b32 s0, s0, 0x1ff000                            ; 8700FF00 001FF000
+	s_or_b32 m0, s0, s1                                   ; 887C0100
+	s_sendmsg sendmsg(MSG_GS_ALLOC_REQ)                   ; BF900009
+BB0_2:
+	s_bfe_u32 s0, s3, 0x80008                             ; 9380FF03 00080008
+	v_mbcnt_lo_u32_b32_e64 v1, -1, 0                      ; D7650001 000100C1
+	v_cmp_gt_u32_e32 vcc_lo, s0, v1                       ; 7D880200
+	s_and_saveexec_b32 s0, vcc_lo                         ; BE803C6A
+	s_cbranch_execz BB0_4                                 ; BF880000
+BB0_3:
+	exp prim v0, off, off, off done                       ; F8000941 00000000
+BB0_4:
+	s_waitcnt expcnt(0)                                   ; BF8CFF0F
+	s_or_b32 exec_lo, exec_lo, s0                         ; 887E007E
+	s_and_b32 s0, s3, 0xff                                ; 8700FF03 000000FF
+	v_cmp_gt_u32_e32 vcc_lo, s0, v1                       ; 7D880200
+	s_and_saveexec_b32 s0, vcc_lo                         ; BE803C6A
+	s_cbranch_execz BB0_6                                 ; BF880000
+BB0_5:
+	buffer_load_format_xyzw v[0:3], v9, s[20:23], 0 idxen ; E00C2000 80050009
+	s_waitcnt vmcnt(0)                                    ; BF8C3F70
+	exp pos0 v0, v1, v2, v3 vm                            ; F80010CF 03020100
+	exp pos1 off, off, v8, off done                       ; F80008D4 00080000
+	exp param0 v8, v0, v0, v0                             ; F800020F 00000008
+BB0_6:
+	s_endpgm                                              ; BF810000
+
+*** SHADER STATS ***
+SGPRS: 32
+VGPRS: 16
+Spilled SGPRs: 0
+Spilled VGPRs: 0
+Private memory VGPRs: 0
+Code Size: 176 bytes
+LDS: 0 blocks
+Scratch: 0 bytes per wave
+Max Waves: 10
+********************
+
+
+SHADER KEY
+  part.ps.prolog.color_two_side = 0
+  part.ps.prolog.flatshade_colors = 0
+  part.ps.prolog.poly_stipple = 0
+  part.ps.prolog.force_persp_sample_interp = 0
+  part.ps.prolog.force_linear_sample_interp = 0
+  part.ps.prolog.force_persp_center_interp = 0
+  part.ps.prolog.force_linear_center_interp = 0
+  part.ps.prolog.bc_optimize_for_persp = 0
+  part.ps.prolog.bc_optimize_for_linear = 0
+  part.ps.prolog.samplemask_log_ps_iter = 0
+  part.ps.epilog.spi_shader_col_format = 0x4
+  part.ps.epilog.color_is_int8 = 0x0
+  part.ps.epilog.color_is_int10 = 0x0
+  part.ps.epilog.last_cbuf = 0
+  part.ps.epilog.alpha_func = 7
+  part.ps.epilog.alpha_to_one = 0
+  part.ps.epilog.poly_line_smoothing = 0
+  part.ps.epilog.clamp_color = 0
+  mono.u.ps.interpolate_at_sample_force_center = 0
+  mono.u.ps.fbfetch_msaa = 0
+  mono.u.ps.fbfetch_is_1D = 0
+  mono.u.ps.fbfetch_layered = 0
+
+Pixel Shader:
+Shader main disassembly:
+main:
+BB0_0:
+	s_mov_b32 s0, s2                                     ; BE800302
+	s_mov_b32 s6, s3                                     ; BE860303
+	s_mov_b32 s3, 0x31016fac                             ; BE8303FF 31016FAC
+	s_mov_b32 s2, 64                                     ; BE8203C0
+	s_mov_b32 s1, 0x8000                                 ; BE8103FF 00008000
+	s_movk_i32 s7, 0x8000                                ; B0078000
+	v_cvt_i32_f32_e32 v0, v13                            ; 7E00110D
+	s_mov_b32 m0, s5                                     ; BEFC0305
+	v_cvt_i32_f32_e32 v2, v12                            ; 7E04110C
+	s_buffer_load_dwordx4 s[0:3], s[0:3], 0x0            ; F4280000 FA000000
+	s_load_dwordx4 s[8:11], s[6:7], 0x410                ; F4080203 FA000410
+	v_mov_b32_e32 v14, v16                               ; 7E1C0310
+	v_interp_mov_f32_e32 v1, p0, attr0.x                 ; C8060002
+	s_waitcnt lgkmcnt(0)                                 ; BF8CC07F
+	v_add_nc_u32_e32 v0, s1, v0                          ; 4A000001
+	v_mul_lo_u32 v1, v1, s3                              ; D5690001 00000701
+	v_add_nc_u32_e32 v2, s0, v2                          ; 4A040400
+	v_mul_lo_u32 v0, v0, s2                              ; D5690000 00000500
+	v_add3_u32 v0, v2, v0, v1                            ; D76D0000 04060102
+	buffer_load_format_xyzw v[0:3], v0, s[8:11], 0 idxen ; E00C2000 80020000
+	s_waitcnt vmcnt(0)                                   ; BF8C3F70
+Shader epilog disassembly:
+ps_epilog:
+BB0_0:
+	v_cvt_pkrtz_f16_f32_e32 v2, v2, v3    ; 5E040702
+	v_cvt_pkrtz_f16_f32_e32 v0, v0, v1    ; 5E000300
+	exp mrt0 v0, v0, v2, v2 done compr vm ; F8001C0F 00000200
+	s_endpgm                              ; BF810000
+
+*** SHADER CONFIG ***
+SPI_PS_INPUT_ADDR = 0xf377
+SPI_PS_INPUT_ENA  = 0x0320
+*** SHADER STATS ***
+SGPRS: 16
+VGPRS: 28
+Spilled SGPRs: 0
+Spilled VGPRs: 0
+Private memory VGPRs: 0
+Code Size: 136 bytes
+LDS: 0 blocks
+Scratch: 0 bytes per wave
+Max Waves: 10
+********************
+
+
+RecordSteamInterfaceCreation (PID 10677): SteamUtils007 / Utils
+mesa: for the --simplifycfg-sink-common option: may only occur zero or one times!
+mesa: for the --global-isel-abort option: may only occur zero or one times!
+mesa: for the --amdgpu-atomic-optimizations option: may only occur zero or one times!
+Unable to read VR Path Registry from C:\users\steamuser\Local Settings\Application Data\openvr\openvrpaths.vrpath
+Setting breakpad minidump AppID = 41070
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561198237582120 [API loaded no]
+pid 10636 != 10635, skipping destruction (fork without exec?)
+Game removed: AppID 41070 "", ProcID 10677 
+Game 41070 created interface STEAMAPPLIST_INTERFACE_VERSION001 / AppList
+Game 41070 created interface STEAMAPPS_INTERFACE_VERSION007 / Apps
+Game 41070 created interface STEAMHTMLSURFACE_INTERFACE_VERSION_003 / HTMLSurface
+Game 41070 created interface STEAMHTTP_INTERFACE_VERSION002 / HTTP
+Game 41070 created interface STEAMINVENTORY_INTERFACE_V001 / Inventory
+Game 41070 created interface STEAMMUSICREMOTE_INTERFACE_VERSION001 / MusicRemote
+Game 41070 created interface STEAMMUSIC_INTERFACE_VERSION001 / Music
+Game 41070 created interface STEAMREMOTESTORAGE_INTERFACE_VERSION013 / RemoteStorage
+Game 41070 created interface STEAMSCREENSHOTS_INTERFACE_VERSION002 / Screenshots
+Game 41070 created interface STEAMUGC_INTERFACE_VERSION007 / UGC
+Game 41070 created interface STEAMUNIFIEDMESSAGES_INTERFACE_VERSION001 / UnifiedMessages
+Game 41070 created interface STEAMUSERSTATS_INTERFACE_VERSION011 / UserStats
+Game 41070 created interface STEAMVIDEO_INTERFACE_V001 / Video
+Game 41070 created interface SteamController003 / Controller
+Game 41070 created interface SteamFriends015 / Friends
+Game 41070 created interface SteamMatchMaking009 / Matchmaking
+Game 41070 created interface SteamMatchMakingServers002 / MatchmakingServers
+Game 41070 created interface SteamNetworking005 / Networking
+Game 41070 created interface SteamUser018 / User
+Game 41070 created interface SteamUtils007 / Utils
+Game 41070 method call count for IClientUser::BLoggedOn : 10
+Game 41070 method call count for IClientUser::BIsSubscribedApp : 116311
+Game 41070 method call count for IClientUser::GetUserDataFolder : 89
+Game 41070 method call count for IClientUser::GetSteamID : 8
+Game 41070 method call count for IClientFriends::GetFriendPersonaName_Public : 2
+Game 41070 method call count for IClientUtils::GetImageRGBA : 62
+Game 41070 method call count for IClientUtils::GetServerRealTime : 6
+Game 41070 method call count for IClientUtils::GetImageSize : 62
+Game 41070 method call count for IClientUtils::GetAppID : 174369
+Game 41070 method call count for IClientUtils::GetAPICallResult : 6
+Game 41070 method call count for IClientUtils::RecordSteamInterfaceCreation : 21
+Game 41070 method call count for IClientAppManager::BIsDlcEnabled : 116308
+Game 41070 method call count for IClientAppManager::GetCurrentLanguage : 1
+Game 41070 method call count for IClientUserStats::GetAchievementDisplayAttribute : 124
+Game 41070 method call count for IClientUserStats::RequestCurrentStats : 1
+Game 41070 method call count for IClientUserStats::DownloadLeaderboardEntries : 2
+Game 41070 method call count for IClientUserStats::GetAchievementIcon : 124
+Game 41070 method call count for IClientUserStats::FindOrCreateLeaderboard : 2
+Game 41070 method call count for IClientUserStats::GetAchievement : 62
+Game 41070 method call count for IClientRemoteStorage::EnumerateUserSubscribedFiles : 1
+Game 41070 method call count for IClientRemoteStorage::FileWrite : 2
+Game 41070 method call count for IClientRemoteStorage::FileRead : 1
+Game 41070 method call count for IClientRemoteStorage::GetFileSize : 1
+Game 41070 method call count for IClientRemoteStorage::FileExists : 1
+Game 41070 method call count for IClientHTTP::SetHTTPRequestRequiresVerifiedCertificate : 1
+Game 41070 method call count for IClientHTTP::PrioritizeHTTPRequest : 1
+Game 41070 method call count for IClientHTTP::GetHTTPResponseBodyData : 1
+Game 41070 method call count for IClientHTTP::ReleaseHTTPRequest : 1
+Game 41070 method call count for IClientHTTP::SendHTTPRequest : 1
+Game 41070 method call count for IClientHTTP::GetHTTPResponseBodySize : 1
+Game 41070 method call count for IClientHTTP::CreateHTTPRequest : 1
+Game 41070 method call count for IClientAudio::StopVoiceRecording : 7
+Uploaded AppInterfaceStats to Steam
+Exiting app 41070
+No cached sticky mapping in ActivateActionSet.Exiting workitem thread

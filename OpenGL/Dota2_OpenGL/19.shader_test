@@ -1,0 +1,100 @@
+[require]
+GLSL >= 4.10
+GL_ARB_separate_shader_objects
+SSO ENABLED
+
+[vertex shader]
+//ATTRIBMAP-00-50-51-52-53-54-55-56-57-xx
+#version 410 core
+// LunarGOO output
+#extension GL_ARB_gpu_shader5 : enable
+#extension GL_ARB_shading_language_420pack : enable
+#extension GL_ARB_tessellation_shader : enable
+struct PS_INPUT {
+	vec4 member0;
+	vec4 member1;
+	vec4 member2;
+	vec4 member3;
+	vec4 member4;
+	vec4 member5;
+	vec4 member6;
+	vec4 member7;
+	vec4 member8;
+};
+struct VS_INPUT {
+	vec4 member0;
+	vec4 member1;
+	vec4 member2;
+	vec4 member3;
+	vec4 member4;
+	vec4 member5;
+	vec4 member6;
+	vec4 member7;
+	vec4 member8;
+};
+layout(location=0) in vec4 VS_INPUT_gl_vPositionSs;
+layout(location=1) in vec4 VS_INPUT_gl_vTexcoordgradientcoord;
+layout(location=2) in vec4 VS_INPUT_gl_vOutercornercoord0;
+layout(location=3) in vec4 VS_INPUT_gl_vOutercornercoord1;
+layout(location=4) in vec4 VS_INPUT_gl_vColor0;
+layout(location=5) in vec4 VS_INPUT_gl_vColor1;
+layout(location=6) in vec4 VS_INPUT_gl_vInnercornercoord0;
+layout(location=7) in vec4 VS_INPUT_gl_vInnercornercoord1;
+layout(location=8) in vec4 VS_INPUT_gl_vOpacitytexcoord;
+out gl_PerVertex {
+	vec4 gl_Position;
+	float gl_ClipDistance[1];
+} ;
+layout(location=0) out vec4 PS_INPUT_gl_vTexcoordgradientcoord;
+layout(location=1) out vec4 PS_INPUT_gl_vOutercornercoord0;
+layout(location=2) out vec4 PS_INPUT_gl_vOutercornercoord1;
+layout(location=3) out vec4 PS_INPUT_gl_vColor0;
+layout(location=4) out vec4 PS_INPUT_gl_vColor1;
+layout(location=5) out vec4 PS_INPUT_gl_vInnercornercoord0;
+layout(location=6) out vec4 PS_INPUT_gl_vInnercornercoord1;
+layout(location=7) out vec4 PS_INPUT_gl_vOpacitytexcoord;
+const float C_0d0 = 0.0;
+const float C_2d0 = 2.0;
+void main()
+{
+	PS_INPUT o;
+	VS_INPUT param;
+	PS_INPUT mainOut;
+	VS_INPUT mainIn;
+	mainIn.member0 = VS_INPUT_gl_vPositionSs;
+	mainIn.member1 = VS_INPUT_gl_vTexcoordgradientcoord;
+	mainIn.member2 = VS_INPUT_gl_vOutercornercoord0;
+	mainIn.member3 = VS_INPUT_gl_vOutercornercoord1;
+	mainIn.member4 = VS_INPUT_gl_vColor0;
+	mainIn.member5 = VS_INPUT_gl_vColor1;
+	mainIn.member6 = VS_INPUT_gl_vInnercornercoord0;
+	mainIn.member7 = VS_INPUT_gl_vInnercornercoord1;
+	mainIn.member8 = VS_INPUT_gl_vOpacitytexcoord;
+	gl_ClipDistance[0] = C_0d0;
+	vec4 H_rgugco1 = mainIn.member0;
+	H_rgugco1.z = C_0d0;
+	o.member8 = H_rgugco1;
+	o.member0 = mainIn.member1;
+	o.member1 = mainIn.member2;
+	o.member2 = mainIn.member3;
+	o.member3 = mainIn.member4;
+	o.member4 = mainIn.member5;
+	o.member5 = mainIn.member6;
+	o.member6 = mainIn.member7;
+	o.member7 = mainIn.member8;
+	PS_INPUT_gl_vTexcoordgradientcoord = o.member0;
+	PS_INPUT_gl_vOutercornercoord0 = o.member1;
+	PS_INPUT_gl_vOutercornercoord1 = o.member2;
+	PS_INPUT_gl_vColor0 = o.member3;
+	PS_INPUT_gl_vColor1 = o.member4;
+	PS_INPUT_gl_vInnercornercoord0 = o.member5;
+	PS_INPUT_gl_vInnercornercoord1 = o.member6;
+	PS_INPUT_gl_vOpacitytexcoord = o.member7;
+	float H_2fljzx1 = C_0d0 - o.member8.y;
+	float H_kcpsgv = o.member8.z * C_2d0;
+	float H_jkxto51 = H_kcpsgv - o.member8.w;
+	vec4 H_6imyf81 = o.member8;
+	H_6imyf81.yz = vec2(H_2fljzx1, H_jkxto51);
+	gl_Position = H_6imyf81;
+}
+

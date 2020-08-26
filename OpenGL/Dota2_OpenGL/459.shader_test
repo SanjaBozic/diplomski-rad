@@ -1,0 +1,186 @@
+[require]
+GLSL >= 4.10
+GL_ARB_separate_shader_objects
+SSO ENABLED
+
+[fragment shader]
+#version 410 core
+// LunarGOO output
+#extension GL_ARB_gpu_shader5 : enable
+#extension GL_ARB_shading_language_420pack : enable
+#extension GL_ARB_tessellation_shader : enable
+layout(binding=0) uniform sampler2D g_tTexture0;
+layout(std140, binding=0) uniform FancyQuadCoreConstants_t {
+	vec4 g_vOutercornerradii0;
+	vec4 g_vOutercornerradii1;
+	vec4 g_vInnercornerradii0;
+	vec4 g_vInnercornerradii1;
+	vec4 g_vBordercolor;
+	float g_flHueShift;
+	float g_flSaturation;
+	float g_flBrightness;
+	float g_flContrast;
+	vec2 g_vGradientradialoffset;
+	float g_flOpacityMaskOpacity;
+} ;
+layout(std140, binding=1) uniform FancyQuadRadialClipConstants_t {
+	float g_flRadialClipCenterX;
+	float g_flRadialClipCenterY;
+	float g_flRadialClipBlendStepX;
+	float g_flRadialClipBlendStepY;
+	float g_flRadialClipStartAngle;
+	float g_flRadialClipSectorAngle;
+} ;
+layout(location=0) in vec4 PS_INPUT_gl_vTexcoordgradientcoord;
+layout(location=1) in vec4 PS_INPUT_gl_vOutercornercoord0;
+layout(location=2) in vec4 PS_INPUT_gl_vOutercornercoord1;
+layout(location=3) in vec4 PS_INPUT_gl_vColor0;
+layout(location=4) in vec4 PS_INPUT_gl_vColor1;
+layout(location=5) in vec4 PS_INPUT_gl_vInnercornercoord0;
+layout(location=6) in vec4 PS_INPUT_gl_vInnercornercoord1;
+layout(location=7) in vec4 PS_INPUT_gl_vOpacitytexcoord;
+layout(location=0) out vec4 PS_OUTPUT_gl_vColor;
+const vec4 C_vec4p0d0p = vec4(0.0);
+const vec4 C_vec4p1ea06p = vec4(1e-06);
+const vec4 C_vec4p1d0p = vec4(1.0);
+const float C_1ea06 = 1e-06;
+const float C_1d0 = 1.0;
+const float C_0d0 = 0.0;
+const float C_a1d0 = -1.0;
+const float C_0d125 = 0.125;
+const float C_a0d375 = -0.375;
+const float C_0d375 = 0.375;
+const float C_a0d125 = -0.125;
+const float C_0d5 = 0.5;
+const float C_3d14159 = 3.14159;
+const float C_6d28319 = 6.28319;
+const float C_0d25 = 0.25;
+void main()
+{
+	vec4 outercorners = max(PS_INPUT_gl_vOutercornercoord0, C_vec4p0d0p);
+	vec4 outercorners1 = max(PS_INPUT_gl_vOutercornercoord1, C_vec4p0d0p);
+	float outercornerslength = length(outercorners.xy);
+	float outercornerslength1 = length(outercorners.zw);
+	float outercornerslength2 = length(outercorners1.xy);
+	float outercornerslength3 = length(outercorners1.zw);
+	vec4 H_soghho = vec4(outercornerslength, outercornerslength1, outercornerslength2, outercornerslength3);
+	vec4 outercornerslength4 = max(H_soghho, C_vec4p1ea06p);
+	vec4 outercornerslengthmin = min(outercornerslength4, C_vec4p1d0p);
+	vec4 outercornersscale = outercornerslengthmin / outercornerslength4;
+	vec4 outercorners0nearest = outercorners * outercornersscale.xxyy;
+	vec4 outercorners1nearest = outercorners1 * outercornersscale.zzww;
+	vec4 H_m1519a = outercorners - outercorners0nearest;
+	vec4 outercorners0screen = H_m1519a * g_vOutercornerradii0;
+	vec4 H_a949c6 = outercorners1 - outercorners1nearest;
+	vec4 outercorners1screen = H_a949c6 * g_vOutercornerradii1;
+	float outercornerdists = length(outercorners0screen.xy);
+	float outercornerdists1 = length(outercorners0screen.zw);
+	float outercornerdists2 = length(outercorners1screen.xy);
+	float outercornerdists3 = length(outercorners1screen.zw);
+	vec4 H_gl8ppb = vec4(outercornerdists, outercornerdists1, outercornerdists2, outercornerdists3);
+	vec4 outercorneropacities = clamp(H_gl8ppb, C_1ea06, C_1d0);
+	vec4 outercorneropacities1 = C_vec4p1d0p - outercorneropacities;
+	float H_em47b7 = outercorneropacities1.x * outercorneropacities1.y;
+	float H_8yqzei1 = H_em47b7 * outercorneropacities1.z;
+	float outercorneropacity = H_8yqzei1 * outercorneropacities1.w;
+	vec4 H_dwiubm = vec4(outercorneropacity);
+	float angleSector = abs(g_flRadialClipSectorAngle);
+	bool H_nl54uc = g_flRadialClipSectorAngle < C_0d0;
+	float ternary = H_nl54uc ? C_a1d0 : C_1d0;
+	float H_xfo9k11 = g_flRadialClipBlendStepX * C_0d125;
+	float H_w934s01 = g_flRadialClipBlendStepY * C_a0d375;
+	vec2 H_gs0n1f1 = vec2(H_xfo9k11, H_w934s01);
+	float H_i3a38q1 = g_flRadialClipBlendStepX * C_0d375;
+	float H_a8aux1 = C_0d125 * g_flRadialClipBlendStepY;
+	vec2 H_wfwm9d1 = vec2(H_i3a38q1, H_a8aux1);
+	float H_muayie = g_flRadialClipBlendStepX * C_a0d125;
+	float H_jvsvh6 = C_0d375 * g_flRadialClipBlendStepY;
+	vec2 H_h0156n1 = vec2(H_muayie, H_jvsvh6);
+	float H_xubl5t1 = C_a0d375 * g_flRadialClipBlendStepX;
+	float H_b578p51 = C_a0d125 * g_flRadialClipBlendStepY;
+	vec2 H_fc7b96 = vec2(H_xubl5t1, H_b578p51);
+	float H_8o2612 = PS_INPUT_gl_vTexcoordgradientcoord.x - g_flRadialClipCenterX;
+	float H_oy6c5c = g_flRadialClipBlendStepX * C_0d5;
+	float dx = H_8o2612 + H_oy6c5c;
+	float H_02i5tm1 = PS_INPUT_gl_vTexcoordgradientcoord.y - g_flRadialClipCenterY;
+	float H_5n6ec1 = C_0d5 * g_flRadialClipBlendStepY;
+	float dy = H_02i5tm1 + H_5n6ec1;
+	float sdx = H_gs0n1f1.x + dx;
+	float sdy = H_gs0n1f1.y + dy;
+	bool H_65y01f = sdx == C_0d0;
+	bool H_bd0z9t1 = sdy == C_0d0;
+	bool H_qms6y41 = H_65y01f && H_bd0z9t1;
+	float misc2a = atan(sdx, sdy);
+	float H_x9inbd1 = misc2a * ternary;
+	float angle = C_3d14159 - H_x9inbd1;
+	float delta = angle - g_flRadialClipStartAngle;
+	float H_12l15l1 = delta / C_6d28319;
+	float delta1 = floor(H_12l15l1);
+	float H_p4ojkl1 = C_6d28319 * delta1;
+	float delta2 = delta - H_p4ojkl1;
+	float param = angleSector - delta2;
+	bool H_st1uj41 = param < C_0d0;
+	float H_mmg8wk = H_st1uj41 ? C_0d0 : C_0d25;
+	float select = H_qms6y41 ? C_0d25 : H_mmg8wk;
+	float sdx1 = H_wfwm9d1.x + dx;
+	float sdy1 = H_wfwm9d1.y + dy;
+	bool H_fh6ik41 = sdx1 == C_0d0;
+	bool H_ctlwwm1 = sdy1 == C_0d0;
+	bool H_zas5v1 = H_fh6ik41 && H_ctlwwm1;
+	float misc2a1 = atan(sdx1, sdy1);
+	float H_q52do71 = misc2a1 * ternary;
+	float angle1 = C_3d14159 - H_q52do71;
+	float delta3 = angle1 - g_flRadialClipStartAngle;
+	float H_e7vfw81 = delta3 / C_6d28319;
+	float delta4 = floor(H_e7vfw81);
+	float H_m7hiem1 = C_6d28319 * delta4;
+	float delta5 = delta3 - H_m7hiem1;
+	float param1 = angleSector - delta5;
+	bool H_3bdo8r = param1 < C_0d0;
+	float _L = H_3bdo8r ? C_0d0 : C_0d25;
+	float select1 = H_zas5v1 ? C_0d25 : _L;
+	float select2 = select + select1;
+	float sdx2 = H_h0156n1.x + dx;
+	float sdy2 = H_h0156n1.y + dy;
+	bool H_4mju2t1 = sdx2 == C_0d0;
+	bool H_viayz6 = sdy2 == C_0d0;
+	bool H_xkaori1 = H_4mju2t1 && H_viayz6;
+	float misc2a2 = atan(sdx2, sdy2);
+	float H_jibycy1 = misc2a2 * ternary;
+	float angle2 = C_3d14159 - H_jibycy1;
+	float delta6 = angle2 - g_flRadialClipStartAngle;
+	float H_1nx9x61 = delta6 / C_6d28319;
+	float delta7 = floor(H_1nx9x61);
+	float H_nivi4m1 = C_6d28319 * delta7;
+	float delta8 = delta6 - H_nivi4m1;
+	float param2 = angleSector - delta8;
+	bool H_m4x45s = param2 < C_0d0;
+	float _L1 = H_m4x45s ? C_0d0 : C_0d25;
+	float select3 = H_xkaori1 ? C_0d25 : _L1;
+	float select4 = select2 + select3;
+	float sdx3 = H_fc7b96.x + dx;
+	float sdy3 = H_fc7b96.y + dy;
+	bool H_53vcvk = sdx3 == C_0d0;
+	bool H_amqokr = sdy3 == C_0d0;
+	bool H_6pqv4a = H_53vcvk && H_amqokr;
+	float misc2a3 = atan(sdx3, sdy3);
+	float H_4se81s1 = misc2a3 * ternary;
+	float angle3 = C_3d14159 - H_4se81s1;
+	float delta9 = angle3 - g_flRadialClipStartAngle;
+	float H_wds90f1 = delta9 / C_6d28319;
+	float deltaa = floor(H_wds90f1);
+	float H_dfl0wy1 = C_6d28319 * deltaa;
+	float deltab = delta9 - H_dfl0wy1;
+	float param3 = angleSector - deltab;
+	bool H_5z6bjd = param3 < C_0d0;
+	float _L2 = H_5z6bjd ? C_0d0 : C_0d25;
+	float select5 = H_6pqv4a ? C_0d25 : _L2;
+	float select6 = select4 + select5;
+	vec4 H_wrikze = vec4(select6);
+	vec4 vTexCol = texture(g_tTexture0, PS_INPUT_gl_vTexcoordgradientcoord.xy);
+	vec4 vTexCol1 = PS_INPUT_gl_vColor0 * vTexCol;
+	vec4 vTexCol2 = H_dwiubm * vTexCol1;
+	vec4 vTexCol3 = H_wrikze * vTexCol2;
+	PS_OUTPUT_gl_vColor = vTexCol3;
+}
+

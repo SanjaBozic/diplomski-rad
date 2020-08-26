@@ -1,0 +1,48 @@
+Running Steam on arch rolling 64-bit
+STEAM_RUNTIME is enabled automatically
+Pins up-to-date!
+Steam client's requirements are satisfied
+/home/marijan/.local/share/Steam/ubuntu12_32/steam steam://run/41070
+STEAM_RUNTIME_HEAVY: ./steam-runtime-heavy
+INF:  GameEnv API: Steam
+INF:  Encoded user ID = dab4f613:8d55de54
+INF:   
+INF:   * Desktop settings...
+INF:   Color depth: 32-bit
+INF:   Desktop resolution: 2560 x 1440
+INF:   Virtual screen: 2560 x 1440
+INF:   Monitors attached: 1
+ERROR: Could Not Get Primary Adapter Handle
+INF:   
+INF:   Gfx API: Direct3D 9.0c
+INF:   Resolution: 2560 x 1440
+INF:   Vendor: ATI (0x1002)
+INF:   Driver: aticfx32.dll (0x731F)
+INF:   Renderer: AMD RADV NAVI10 (LLVM 10.0.1)
+INF:   Version: 32767.65535.65535.65535
+INF:   Video memory size: 4096 MB
+INF:   Available for textures: 4065 MB
+INF:   Active GPU(s): 1
+INF:   Driver version: 65535 (required: 1100)
+INF:   
+INF:   Sfx API: XAudio2
+INF:   Device: Pulseaudio
+INF:   Mixer frequency: 48000 Hz
+INF:   Mixer voices: 2
+INF:   Max sound sources: 35
+INF:   Max total volume: 3
+INF:   Speaker config: stereo
+INF:   Environment FX: enabled
+INF:   Current environment: Padded cell
+INF:   
+INF:   Using cheats will invalidate your score for this level and achievements won't be awarded for the remainder of the game.
+INF:   AutoDetect: Hardware values unchanged, nothing to do.
+INF:   Started simulation on 'Content/SeriousSam3/Levels/Menu/Intro.wld' in 0.53 seconds.
+INF:   Started simulation on 'Content/SeriousSam3/Levels/Menu/MenuLevel.wld' in 0.31 seconds.
+INF:   Started simulation on 'Content/SeriousSam3/Levels/01_BFE/01_CairoSquare/01_CairoSquare.wld' in 11.96 seconds.
+ERR:   Failed to precache texture Content/SeriousSam3/Models/Vehicles/UH_60_BlackHawk_cutscenes/Textures/OuterParts_CM.tex; it doesn't exist in memory
+ERR:   Failed to precache texture Content/SeriousSam3/Models/NPCS/Soldiers/Textures/Clothing/Spa/Uniform_AO.tex; it doesn't exist in memory
+[2020-08-26 17:31:51] Startup - updater built Jul 31 2020 09:12:07
+[2020-08-26 17:31:51] Verifying installation...
+[2020-08-26 17:31:51] Verification complete
+[2020-08-26 17:38:36] Shutdown

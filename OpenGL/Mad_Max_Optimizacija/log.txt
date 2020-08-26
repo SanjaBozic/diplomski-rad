@@ -1,0 +1,13 @@
+Running Steam on arch rolling 64-bit
+STEAM_RUNTIME is enabled automatically
+Pins up-to-date!
+Steam client's requirements are satisfied
+/home/marijan/.local/share/Steam/ubuntu12_32/steam steam://run/234140
+STEAM_RUNTIME_HEAVY: ./steam-runtime-heavy
+MadMax: crash reporter initialised with path "/home/marijan/.local/share/feral-interactive/Mad Max/crashes"
+MadMax: crash reporter initialised with path "/home/marijan/.local/share/feral-interactive/Mad Max/crashes"
+MadMax: crash reporter initialised with path "/home/marijan/.local/share/feral-interactive/Mad Max/crashes"
+[2020-08-26 17:53:24] Startup - updater built Jul 31 2020 09:12:07
+[2020-08-26 17:53:24] Verifying installation...
+[2020-08-26 17:53:24] Verification complete
+[2020-08-26 18:02:36] Shutdown

@@ -1,0 +1,126 @@
+#version 460 core
+// ps_5_0
+// Checksum: d2960bd7_54b2999a_7dca1074_ffd36921
+// Name: fogvolumeapplycloudshadows
+
+vec4 v0 = vec4(gl_FragCoord.xyz, 1.0 / gl_FragCoord.w);
+layout(location = 1) in idx_Varying1 { vec4 v; } v1;
+layout(location = 0) out vec4 o0;
+vec4 r0, r1, r2, r3, r4, r5, r6, r7, r8;
+
+// Uniform buffer declarations (dcl_constant_buffer)
+
+layout (std140) uniform cb_ps0 { vec4 cb0[5]; } idx_uniforms0_ps;
+
+layout (std140) uniform cb_ps1 { vec4 cb1[22]; } idx_uniforms1_ps;
+
+
+// Sampler/resource pairs
+
+uniform sampler2D resourceSamplerPair_0_ps; // res0, s0
+
+uniform sampler2D resourceSamplerPair_1_ps; // res3, s3
+
+uniform sampler2DArrayShadow resourceSamplerPair_2_ps; // res14, s14
+
+
+void Initialise()
+{
+}
+
+
+#define saturate(rhs)  clamp(rhs, float(0), float(1))
+void main()
+{
+	Initialise();
+	r0.xy = v1.v.zw * v1.v.xy;
+	r0.x = ((texture(resourceSamplerPair_0_ps, r0.xy))).x;
+	r1 = v1.v.yyyy * idx_uniforms1_ps.cb1[13];
+	r1 = fma(v1.v.xxxx, idx_uniforms1_ps.cb1[12], r1);
+	r0 = fma(r0.xxxx, idx_uniforms1_ps.cb1[14], r1);
+	r0 = r0 + idx_uniforms1_ps.cb1[15];
+	r0.xyz = r0.xyz / r0.www;
+	r1.xyz = r0.xyz + -idx_uniforms0_ps.cb0[4].xyz;
+	r0.w = dot(r1.xyz, r1.xyz);
+	r1.w = sqrt(r0.w);
+	r1.w = max(r1.w, float(9.99999975e-05f));
+	r2.xyz = -r1.xyz / r1.www;
+	r2.w = saturate(-1.f * r2.y);
+	r2.w = r2.w * r2.w;
+	r2.w = fma(r2.w, idx_uniforms1_ps.cb1[16].x, float(1.00000000f));
+	r3.x = r1.w * float(0.0500000007f);
+	r3.x = min(r3.x, idx_uniforms1_ps.cb1[16].z);
+	r2.xyz = r2.xyz * r3.xxx;
+	r1.w = r1.w / r3.x;
+	r3.y = intBitsToFloat(int(r1.w));
+	r3.y = intBitsToFloat(min(floatBitsToInt(r3.y), int(20)));
+	r3.z = dot(v0.xy, vec2(0.467943996f, -0.703647971f));
+	r3.z = fract(r3.z);
+	r3.y = float(floatBitsToInt(r3.y));
+	r1.w = r1.w + -r3.y;
+	r0.xyz = fma(r2.xyz, r1.www, r0.xyz);
+	r0.xyz = fma(r3.zzz, r2.xyz, r0.xyz);
+	r3.yzw = r2.yyy * idx_uniforms1_ps.cb1[9].xyz;
+	r3.yzw = fma(r2.xxx, idx_uniforms1_ps.cb1[8].xyz, r3.yzw);
+	r3.yzw = fma(r2.zzz, idx_uniforms1_ps.cb1[10].xyz, r3.yzw);
+	r4.xyz = r0.xyz + -idx_uniforms0_ps.cb0[4].xyz;
+	r5.xyz = r4.yyy * idx_uniforms1_ps.cb1[9].xyz;
+	r4.xyw = fma(r4.xxx, idx_uniforms1_ps.cb1[8].xyz, r5.xyz);
+	r4.xyz = fma(r4.zzz, idx_uniforms1_ps.cb1[10].xyz, r4.xyw);
+	r4.xyz = r4.xyz + idx_uniforms1_ps.cb1[11].xyz;
+	r0.xz = r0.xz + idx_uniforms1_ps.cb1[21].yz;
+	r0.xyz = r0.xyz * idx_uniforms1_ps.cb1[21].www;
+	r5.z = uintBitsToFloat(uint(0x40000000));
+	r6.xyz = r0.xyz;
+	r7.xyz = r4.xyz;
+	r1.w = uintBitsToFloat(uint(0x00000000));
+	r4.w = uintBitsToFloat(uint(0x00000000));
+	while (true)
+	{
+		r5.w = intBitsToFloat(floatBitsToInt(r4.w) >= int(20) ? int(0xffffffff) : int(0x00000000));
+		if (floatBitsToUint(r5.w) != uint(0))
+			break;
+		r8.x = r6.y * idx_uniforms0_ps.cb0[1].w;
+		r8.y = r6.y * idx_uniforms0_ps.cb0[3].w;
+		r8.xy = r6.xz + -r8.xy;
+		r5.w = ((texture(resourceSamplerPair_1_ps, r8.xy)).yzwx).w;
+		r5.w = saturate(r5.w + idx_uniforms1_ps.cb1[21].x);
+		r6.w = saturate(r7.z);
+		r5.xy = r7.xy;
+		r5.x = texture(resourceSamplerPair_2_ps, vec4(r5.xyz, r6.w));
+		r1.w = fma(r5.w, r5.x, r1.w);
+		r6.xyz = fma(r2.xyz, idx_uniforms1_ps.cb1[21].www, r6.xyz);
+		r7.xyz = r3.yzw + r7.xyz;
+		r4.w = intBitsToFloat(floatBitsToInt(r4.w) + int(1));
+	}
+	r0.x = r1.w * float(0.0500000007f);
+	r0.y = r3.x / idx_uniforms1_ps.cb1[16].z;
+	r0.x = r0.y * r0.x;
+	r0.x = r0.x / r2.w;
+	r0.x = r0.x + float(-0.0500000007f);
+	r0.x = r0.x * float(1.05299997f);
+	r0.x = max(r0.x, float(0.00000000f));
+	r0.x = log2(r0.x);
+	r0.x = r0.x * idx_uniforms1_ps.cb1[20].w;
+	r0.z = exp2(r0.x);
+	r0.y = inversesqrt(r0.w);
+	r1.xyz = r0.yyy * r1.xyz;
+	r0.y = dot(r1.xyz, -idx_uniforms0_ps.cb0[3].xyz);
+	r0.y = r0.y + float(1.00000000f);
+	r0.y = r0.y * float(0.500000000f);
+	r0.w = idx_uniforms1_ps.cb1[16].y * idx_uniforms1_ps.cb1[16].y;
+	r0.w = fma(r0.w, float(25.0000000f), float(0.00100000005f));
+	r0.y = log2(r0.y);
+	r0.y = r0.y * r0.w;
+	r0.y = exp2(r0.y);
+	r0.y = r0.y + float(-1.00000000f);
+	r0.y = fma(idx_uniforms1_ps.cb1[16].y, r0.y, float(1.00000000f));
+	r0.x = uintBitsToFloat(uint(0x00000000));
+	r0.xw = r0.yy * r0.xz;
+	r0.y = fma(r0.z, r0.y, float(-1.00000000f));
+	o0.w = saturate(r0.y * float(0.125000000f));
+	o0.y = uintBitsToFloat(uint(0x00000000));
+	o0.xz = r0.xw;
+	return;
+}
+

@@ -1,0 +1,123 @@
+#version 410 core
+// LunarGOO output
+#extension GL_ARB_gpu_shader5 : enable
+#extension GL_ARB_shading_language_420pack : enable
+#extension GL_ARB_tessellation_shader : enable
+layout(binding=0) uniform sampler2D g_tTexture0;
+layout(std140, binding=0) uniform FancyQuadCoreConstants_t {
+	vec4 g_vOutercornerradii0;
+	vec4 g_vOutercornerradii1;
+	vec4 g_vInnercornerradii0;
+	vec4 g_vInnercornerradii1;
+	vec4 g_vBordercolor;
+	float g_flHueShift;
+	float g_flSaturation;
+	float g_flBrightness;
+	float g_flContrast;
+	vec2 g_vGradientradialoffset;
+	float g_flOpacityMaskOpacity;
+} ;
+layout(location=0) in vec4 PS_INPUT_gl_vTexcoordgradientcoord;
+layout(location=1) in vec4 PS_INPUT_gl_vOutercornercoord0;
+layout(location=2) in vec4 PS_INPUT_gl_vOutercornercoord1;
+layout(location=3) in vec4 PS_INPUT_gl_vColor0;
+layout(location=4) in vec4 PS_INPUT_gl_vColor1;
+layout(location=5) in vec4 PS_INPUT_gl_vInnercornercoord0;
+layout(location=6) in vec4 PS_INPUT_gl_vInnercornercoord1;
+layout(location=7) in vec4 PS_INPUT_gl_vOpacitytexcoord;
+layout(location=0) out vec4 PS_OUTPUT_gl_vColor;
+const vec3 C_3ivpjf1 = vec3(0.0, 0.0, 0.0);
+const float C_0d0 = 0.0;
+const vec2 C_0rznsf = vec2(2.0, 4.0);
+const float C_6d0 = 6.0;
+const float C_1d0 = 1.0;
+const float C_0d5 = 0.5;
+const float C_2d0 = 2.0;
+const float C_3d0 = 3.0;
+const float C_4d0 = 4.0;
+void main()
+{
+	vec3 vHSV;
+	vec3 vRGB;
+	vec4 vTexCol = texture(g_tTexture0, PS_INPUT_gl_vTexcoordgradientcoord.xy);
+	float minVal = min(vTexCol.y, vTexCol.z);
+	float minVal1 = min(vTexCol.x, minVal);
+	float maxVal = max(vTexCol.y, vTexCol.z);
+	float maxVal1 = max(vTexCol.x, maxVal);
+	vec3 H_9o45e91 = vec3(maxVal1);
+	float delta = maxVal1 - minVal1;
+	vec3 H_ba9l051 = vec3(delta);
+	vec3 H_0jsavh = C_3ivpjf1;
+	H_0jsavh.z = maxVal1;
+	bool H_r1ts391 = delta == C_0d0;
+	vHSV = H_0jsavh;
+	if (! H_r1ts391) {
+		float H_02mgks1 = delta / maxVal1;
+		vec3 H_t3dazj = H_9o45e91 - vTexCol.xyz;
+		vec3 H_m28rtt = H_t3dazj / H_ba9l051;
+		vec3 H_pq6icw1 = H_m28rtt - H_m28rtt.zxy;
+		vec2 H_6dzhc41 = H_pq6icw1.xy + C_0rznsf;
+		bool H_qg0rqd = vTexCol.x < maxVal1;
+		bool H_hvovog = vTexCol.y < maxVal1;
+		vec3 H_0tjgpo = H_0jsavh;
+		H_0tjgpo.xy = vec2(H_6dzhc41.y, H_02mgks1);
+		vec3 H_0tjgpor = H_0jsavh;
+		H_0tjgpor.xy = vec2(H_6dzhc41.x, H_02mgks1);
+		vec3 select = H_hvovog ? H_0tjgpo : H_0tjgpor;
+		vec3 H_u7x2tv1 = vec3(H_pq6icw1.z, H_02mgks1, H_0jsavh.z);
+		vec3 select1 = H_qg0rqd ? select : H_u7x2tv1;
+		float param = select1.x / C_6d0;
+		float H_l5pql91 = fract(param);
+		vec3 H_kgk2q4 = select1;
+		H_kgk2q4.x = H_l5pql91;
+		vHSV = H_kgk2q4;
+	}
+	float param1 = g_flHueShift + vHSV.x;
+	float H_cb84n3 = fract(param1);
+	float H_bnfbt5 = g_flSaturation * vHSV.y;
+	float H_vohfou = g_flBrightness * vHSV.z;
+	vec3 H_y3f148 = vec3(H_cb84n3, H_bnfbt5, H_vohfou);
+	bool H_v36i0t = vTexCol.w > C_0d0;
+	bool H_ool3yv1 = g_flContrast > C_1d0;
+	bool H_m1h34n = H_v36i0t || H_ool3yv1;
+	float vHSV1 = mix(C_0d5, H_vohfou, g_flContrast);
+	vec3 H_29rcpz = vec3(H_cb84n3, H_bnfbt5, vHSV1);
+	vec3 select2 = H_m1h34n ? H_29rcpz : H_y3f148;
+	bool H_0c6mky = select2.y == C_0d0;
+	vRGB = select2.zzz;
+	if (! H_0c6mky) {
+		float var_h = C_6d0 * select2.x;
+		float var_i = floor(var_h);
+		float H_qpidlu = C_1d0 - select2.y;
+		float var_ = H_qpidlu * select2.z;
+		float H_jnl6uy = var_h - var_i;
+		float H_9y5k591 = H_jnl6uy * select2.y;
+		float H_12s1s = C_1d0 - H_9y5k591;
+		float var_1 = H_12s1s * select2.z;
+		float H_austyp1 = C_1d0 - H_jnl6uy;
+		float H_2taxo61 = H_austyp1 * select2.y;
+		float H_va7bsu1 = C_1d0 - H_2taxo61;
+		float var_2 = H_va7bsu1 * select2.z;
+		bool H_6h0jcf1 = var_i == C_0d0;
+		vec3 H_p9xhcd = vec3(select2.z, var_2, var_);
+		bool H_5yfbga1 = var_i == C_1d0;
+		vec3 H_wltxk91 = vec3(var_1, select2.z, var_);
+		bool H_o10iwj1 = var_i == C_2d0;
+		vec3 H_dg7o1x1 = vec3(var_, select2.z, var_2);
+		bool H_78ez2k = var_i == C_3d0;
+		vec3 H_0w9scv = vec3(var_, var_1, select2.z);
+		bool H_q1ah4r1 = var_i == C_4d0;
+		vec3 H_xfdo211 = vec3(var_2, var_, select2.z);
+		vec3 H_ej0hck1 = vec3(select2.z, var_, var_1);
+		vec3 select3 = H_q1ah4r1 ? H_xfdo211 : H_ej0hck1;
+		vec3 select4 = H_78ez2k ? H_0w9scv : select3;
+		vec3 select5 = H_o10iwj1 ? H_dg7o1x1 : select4;
+		vec3 select6 = H_5yfbga1 ? H_wltxk91 : select5;
+		vec3 select7 = H_6h0jcf1 ? H_p9xhcd : select6;
+		vRGB = select7;
+	}
+	vec4 H_g061dr1 = vTexCol;
+	H_g061dr1.xyz = vRGB.xyz;
+	vec4 vTexCol1 = H_g061dr1 * PS_INPUT_gl_vColor0;
+	PS_OUTPUT_gl_vColor = vTexCol1;
+}

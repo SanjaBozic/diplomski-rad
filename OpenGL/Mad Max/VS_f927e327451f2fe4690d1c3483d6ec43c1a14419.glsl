@@ -1,0 +1,81 @@
+#version 460 core
+// vs_5_0
+// Checksum: 15ef9424_a44d29f9_81f6e92e_fc728f2b
+// Name: bouncelight
+
+layout(location = 0) in vec4 v0;
+layout(location = 1) in vec4 v1;
+layout(location = 2) in vec4 v2;
+// gl_Position
+layout(location = 1) out idx_Varying1 { vec4 v; } o1;
+layout(location = 2) out idx_Varying2 { vec4 v; } o2;
+layout(location = 3) out idx_Varying3 { vec4 v; } o3;
+layout(location = 4) out idx_Varying4 { vec4 v; } o4;
+layout(location = 5) out idx_Varying5 { vec4 v; } o5;
+vec4 r0, r1;
+
+// Uniform buffer declarations (dcl_constant_buffer)
+
+layout (std140) uniform cb_vs0 { vec4 cb0[24]; } idx_uniforms0_vs;
+
+layout (std140) uniform cb_vs1 { vec4 cb1[1]; } idx_uniforms1_vs;
+
+
+out gl_PerVertex {
+	vec4 gl_Position;
+};
+uniform vec4 idx_Viewport_vs;
+vec4 D3DtoGL(in vec4 pos)
+{
+	pos.xy += idx_Viewport_vs.xy * vec2(pos.w, -pos.w);
+	return pos;
+}
+vec4 GLtoD3D(in vec4 pos)
+{
+	pos.xy -= idx_Viewport_vs.xy * vec2(pos.w, -pos.w);
+	return pos;
+}
+
+
+void Initialise()
+{
+}
+
+
+void VertexEpilog()
+{
+	gl_Position = D3DtoGL(gl_Position);
+}
+
+void main()
+{
+	Initialise();
+	gl_Position.xy = fma(v1.xy, vec2(1.99218750f, -1.99218750f), vec2(-0.998046875f, 0.998046875f));
+	gl_Position.zw = uintBitsToFloat(uvec2(0x3f800000, 0x3f800000));
+	o1.v.y = v0.x;
+	o1.v.w = v2.w;
+	r0.xy = idx_uniforms1_vs.cb1[0].zw + vec2(-384.000000f, -384.000000f);
+	r0.xz = fma(v1.xy, vec2(765.000000f, 765.000000f), r0.xy);
+	o1.v.xz = r0.xz;
+	r1.xy = -r0.xz + idx_uniforms0_vs.cb0[9].xz;
+	r0.w = dot(r1.xy, r1.xy);
+	r0.w = fma(-r0.w, float(0.00249999994f), idx_uniforms0_vs.cb0[9].y);
+	r1.x = v0.x + float(1.79999995f);
+	r0.y = max(r0.w, r1.x);
+	r0.xyz = r0.xyz + -idx_uniforms0_vs.cb0[9].xyz;
+	r1.xyz = fma(idx_uniforms0_vs.cb0[20].xyz, r0.xxx, idx_uniforms0_vs.cb0[23].xyz);
+	r0.xyw = fma(idx_uniforms0_vs.cb0[21].xyz, r0.yyy, r1.xyz);
+	r0.xyz = fma(idx_uniforms0_vs.cb0[22].xyz, r0.zzz, r0.xyw);
+	o2.v.xyz = r0.xyz;
+	r1.x = idx_uniforms0_vs.cb0[16].w;
+	r1.z = uintBitsToFloat(uint(0x3f800000));
+	o3.v.xyz = fma(r0.xyz, r1.xxz, idx_uniforms0_vs.cb0[16].xyz);
+	r1.x = idx_uniforms0_vs.cb0[17].w;
+	r1.z = uintBitsToFloat(uint(0x3f800000));
+	o4.v.xyz = fma(r0.xyz, r1.xxz, idx_uniforms0_vs.cb0[17].xyz);
+	o5.v.xyz = fma(v2.xyz, vec3(2.00787401f, 2.00787401f, 2.00787401f), vec3(-1.00787401f, -1.00787401f, -1.00787401f));
+	o5.v.w = v0.x * float(0.00781250000f);
+	VertexEpilog();
+	return;
+}
+

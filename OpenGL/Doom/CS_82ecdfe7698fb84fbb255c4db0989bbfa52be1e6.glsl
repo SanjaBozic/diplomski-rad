@@ -1,0 +1,106 @@
+#version 430 core
+#extension GL_ARB_shader_clock : enable
+//This is a compute Shader
+
+float saturate( float v ) { return clamp( v, 0.0, 1.0 ); }
+vec2 saturate( vec2 v ) { return clamp( v, 0.0, 1.0 ); }
+vec3 saturate( vec3 v ) { return clamp( v, 0.0, 1.0 ); }
+vec4 saturate( vec4 v ) { return clamp( v, 0.0, 1.0 ); }
+
+vec4 tex2D( sampler2D image, vec2 texcoord ) { return texture( image, texcoord.xy ); }
+vec4 tex2D( sampler2DShadow image, vec3 texcoord ) { return vec4( texture( image, texcoord.xyz ) ); }
+vec4 tex2DARRAY( sampler2DArray image, vec3 texcoord ) { return texture( image, texcoord.xyz ); }
+
+vec4 tex2D( sampler2D image, vec2 texcoord, vec2 dx, vec2 dy ) { return textureGrad( image, texcoord.xy, dx, dy ); }
+vec4 tex2D( sampler2DShadow image, vec3 texcoord, vec2 dx, vec2 dy ) { return vec4( textureGrad( image, texcoord.xyz, dx, dy ) ); }
+vec4 tex2DARRAY( sampler2DArray image, vec3 texcoord, vec2 dx, vec2 dy ) { return textureGrad( image, texcoord.xyz, dx, dy ); }
+
+vec4 texCUBE( samplerCube image, vec3 texcoord ) { return texture( image, texcoord.xyz ); }
+vec4 texCUBE( samplerCubeShadow image, vec4 texcoord ) { return vec4( texture( image, texcoord.xyzw ) ); }
+vec4 texCUBEARRAY( samplerCubeArray image, vec4 texcoord ) { return texture( image, texcoord.xyzw ); }
+
+vec4 tex1Dproj( sampler1D image, vec2 texcoord ) { return textureProj( image, texcoord ); }
+vec4 tex2Dproj( sampler2D image, vec3 texcoord ) { return textureProj( image, texcoord ); }
+vec4 tex3Dproj( sampler3D image, vec4 texcoord ) { return textureProj( image, texcoord ); }
+
+vec4 tex1Dlod( sampler1D image, vec4 texcoord ) { return textureLod( image, texcoord.x, texcoord.w ); }
+vec4 tex2Dlod( sampler2D image, vec4 texcoord ) { return textureLod( image, texcoord.xy, texcoord.w ); }
+vec4 tex2DARRAYlod( sampler2DArray image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 tex3Dlod( sampler3D image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBElod( samplerCube image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBEARRAYlod( samplerCubeArray image, vec4 texcoord, float lod ) { return textureLod( image, texcoord.xyzw, lod ); }
+
+vec4 tex2DGatherRed( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 0 ); }
+vec4 tex2DGatherGreen( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 1 ); }
+vec4 tex2DGatherBlue( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 2 ); }
+vec4 tex2DGatherAlpha( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 3 ); }
+
+vec4 tex2DGatherOffsetRed( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 0 ); }
+vec4 tex2DGatherOffsetGreen( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 1 ); }
+vec4 tex2DGatherOffsetBlue( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 2 ); }
+vec4 tex2DGatherOffsetAlpha( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 3 ); }
+
+#define tex2DGatherOffsetsRed( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 0 )
+#define tex2DGatherOffsetsGreen( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 1 )
+#define tex2DGatherOffsetsBlue( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 2 )
+#define tex2DGatherOffsetsAlpha( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 3 )
+
+uniform vec4 _ca_freqHigh [1];
+layout( local_size_x = 16, local_size_y = 8, local_size_z = 1 ) in ;
+struct clusternumlights_t {
+	int offset ;
+	int numItems ;
+};
+layout( std430 ) buffer clusteritemparms_b {
+	restrict readonly uint clusteritemparms[ ];
+};
+layout( std430 ) buffer clusterlightsid_b {
+	restrict uint clusterlightsid[ ];
+};
+layout( std430 ) buffer clusternumlights_b {
+	restrict clusternumlights_t clusternumlights[ ];
+};
+shared uint packedItemLDS [ 256 ];
+ivec3 unpackItemMinBounds ( uint value ) {
+	return ivec3( ( value >> 23 ) & 0x1F, ( value >> 19 ) & 0xF , ( value >> 14 ) & 0x1F );
+}
+ivec3 unpackItemMaxBounds ( uint value ) {
+	return ivec3( ( value >> 9 ) & 0x1F, ( value >> 5 ) & 0xF, ( value ) & 0x1F ) ;
+}
+uint unpackItemParms ( uint value ) {
+	return int( ( value >> 28 ) & 0x3 );
+}
+void main() {
+	{
+		int NUM_CLUSTERS_X = 16;
+		int NUM_CLUSTERS_Y = 8;
+		int NUM_CLUSTERS_Z = 24;
+		int max_num_lights = int( _ca_freqHigh[0 ].x );
+		ivec3 clusterGroup = ivec3( 1, 1, 8 );
+		int max_cluster_items = min( 256, max_num_lights ); if (gl_LocalInvocationID.x == 0 &&gl_LocalInvocationID.y == 0 &&gl_LocalInvocationID.z == 0 ) { for ( int idx = 0; idx < max_num_lights; idx++ ) {
+				packedItemLDS[ idx ] = clusteritemparms[ idx ];
+			}
+		}
+		memoryBarrier(); barrier(); for ( int z = 0; z < 8; ++z ) {
+			ivec3 cluster_xyz = ivec3(gl_WorkGroupID.xyz * clusterGroup.xyz + ivec3(gl_LocalInvocationID.xy, z ) );
+			int cluster_base_index = int( cluster_xyz.x + cluster_xyz.y * NUM_CLUSTERS_X + cluster_xyz.z * NUM_CLUSTERS_X * NUM_CLUSTERS_Y );
+			int ids_cluster_base_index = cluster_base_index * 256;
+			int lights = 0;
+			int probes = 0; for ( int l = 0; l < max_num_lights; ++l ) {
+				ivec3 bounds0 = unpackItemMinBounds( packedItemLDS[ l ] ); if ( cluster_xyz.z < bounds0.z || cluster_xyz.x < bounds0.x || cluster_xyz.y < bounds0.y ) {
+					continue;
+				}
+				ivec3 bounds1 = unpackItemMaxBounds( packedItemLDS[ l ] ); if ( cluster_xyz.z >= bounds1.z || cluster_xyz.x >= bounds1.x || cluster_xyz.y >= bounds1.y ) {
+					continue;
+				}
+				uint itemParms = unpackItemParms( packedItemLDS[ l ] ); if ( ( itemParms & ( 1 << 0 ) ) > 0 ) {
+					uint idx = ( ( clusterlightsid[ ids_cluster_base_index + lights ].x ) & ~0x00000FFF ) | ( l << 0 ) & 0x00000FFF; clusterlightsid[ ids_cluster_base_index + lights++ ].x = idx;
+				}
+				else
+				if ( ( itemParms & ( 1 << 1 ) ) > 0 ) {
+					uint idx = ( ( clusterlightsid[ ids_cluster_base_index + probes ].x ) & ~0xFF000000 ) | ( l << 24 ) & 0xFF000000; clusterlightsid[ ids_cluster_base_index + probes++ ].x = idx;
+				}
+			} clusternumlights[ cluster_base_index ].numItems = ( ( ( lights & 0xFF ) << 0 ) | ( ( probes & 0xFF ) << 16 ) );
+		}
+	}
+}

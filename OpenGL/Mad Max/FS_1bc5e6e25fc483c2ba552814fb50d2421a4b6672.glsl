@@ -1,0 +1,58 @@
+#version 460 core
+// ps_5_0
+// Checksum: 42c4fec2_478246fe_b3e90276_39c4533e
+// Name: outline
+
+layout(location = 1) in idx_Varying1 { vec4 v; } v1;
+layout(location = 2) in idx_Varying2 { vec4 v; } v2;
+layout(location = 0) out vec4 o0;
+vec4 r0, r1;
+
+// Uniform buffer declarations (dcl_constant_buffer)
+
+layout (std140) uniform cb_ps0 { vec4 cb0[5]; } idx_uniforms0_ps;
+
+layout (std140) uniform cb_ps1 { vec4 cb1[2]; } idx_uniforms1_ps;
+
+
+void Initialise()
+{
+}
+
+
+#define saturate(rhs)  clamp(rhs, float(0), float(1))
+void main()
+{
+	Initialise();
+	r0.xyz = -v2.v.xyz + idx_uniforms0_ps.cb0[4].xyz;
+	r0.w = dot(r0.xyz, r0.xyz);
+	r0.w = inversesqrt(r0.w);
+	r0.xyz = r0.www * r0.xyz;
+	r0.w = dot(v1.v.yzw, v1.v.yzw);
+	r0.w = inversesqrt(r0.w);
+	r1.xyz = r0.www * v1.v.yzw;
+	r0.x = saturate(dot(r1.xyz, r0.xyz));
+	r0.y = fract(v1.v.x);
+	r0.y = r0.y * float(1.50000000f);
+	r0.y = min(r0.y, float(1.00000000f));
+	r0.z = fma(-r0.y, float(3.79999995f), float(3.79999995f));
+	r0.y = r0.z * r0.y;
+	r0.y = r0.y * r0.y;
+	r0.y = min(r0.y, float(1.00000000f));
+	r0.y = r0.y + float(-0.300000012f);
+	r0.yz = fma(idx_uniforms1_ps.cb1[0].ww, r0.yy, vec2(-0.200000003f, 0.300000012f));
+	r0.w = r0.z + idx_uniforms1_ps.cb1[1].z;
+	r0.x = saturate(-r0.x + r0.w);
+	r0.x = log2(r0.x);
+	r0.z = -r0.z + float(2.00000000f);
+	r0.y = saturate(r0.y);
+	r0.z = max(r0.z, float(0.00000000f));
+	r0.x = r0.x * r0.z;
+	r0.x = exp2(r0.x);
+	o0.w = r0.x * idx_uniforms1_ps.cb1[1].x;
+	r0.xzw = -idx_uniforms1_ps.cb1[0].xyz + vec3(0.500000000f, 0.500000000f, 0.500000000f);
+	r0.xyz = fma(r0.yyy, r0.xzw, idx_uniforms1_ps.cb1[0].xyz);
+	o0.xyz = r0.xyz * idx_uniforms1_ps.cb1[1].yyy;
+	return;
+}
+

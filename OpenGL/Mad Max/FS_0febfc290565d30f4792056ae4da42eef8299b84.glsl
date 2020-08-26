@@ -1,0 +1,42 @@
+#version 460 core
+// ps_5_0
+// Checksum: 4ab77a09_01ddd119_16d64d22_aa676e03
+// Name: foggradientshader
+
+layout(location = 1) in idx_Varying1 { vec4 v; } v1;
+layout(location = 2) in idx_Varying2 { vec4 v; } v2;
+layout(location = 0) out vec4 o0;
+vec4 r0;
+
+// Uniform buffer declarations (dcl_constant_buffer)
+
+layout (std140) uniform cb_ps0 { vec4 cb0[16]; } idx_uniforms0_ps;
+
+
+// Sampler/resource pairs
+
+uniform sampler2D resourceSamplerPair_0_ps; // res0, s0
+
+
+void Initialise()
+{
+}
+
+
+void main()
+{
+	Initialise();
+	r0.x = dot(v2.v.xyz, v2.v.xyz);
+	r0.x = inversesqrt(r0.x);
+	r0.xy = r0.xx * v2.v.xz;
+	r0.x = dot(r0.xy, v1.v.zw);
+	r0.x = r0.x + float(1.00000000f);
+	r0.x = r0.x * float(0.500000000f);
+	r0.y = r0.x * r0.x;
+	r0.x = r0.x * r0.y;
+	o0.xyz = fma(r0.xxx, idx_uniforms0_ps.cb0[14].xyz, idx_uniforms0_ps.cb0[15].xyz);
+	r0.x = ((texture(resourceSamplerPair_0_ps, v1.v.xy)).wxyz).x;
+	o0.w = r0.x;
+	return;
+}
+

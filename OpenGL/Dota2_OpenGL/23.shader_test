@@ -1,0 +1,68 @@
+[require]
+GLSL >= 4.10
+GL_ARB_separate_shader_objects
+SSO ENABLED
+
+[fragment shader]
+#version 410 core
+// LunarGOO output
+#extension GL_ARB_gpu_shader5 : enable
+#extension GL_ARB_shading_language_420pack : enable
+#extension GL_ARB_tessellation_shader : enable
+layout(std140, binding=0) uniform FancyQuadCoreConstants_t {
+	vec4 g_vOutercornerradii0;
+	vec4 g_vOutercornerradii1;
+	vec4 g_vInnercornerradii0;
+	vec4 g_vInnercornerradii1;
+	vec4 g_vBordercolor;
+	float g_flHueShift;
+	float g_flSaturation;
+	float g_flBrightness;
+	float g_flContrast;
+	vec2 g_vGradientradialoffset;
+	float g_flOpacityMaskOpacity;
+} ;
+layout(location=0) in vec4 PS_INPUT_gl_vTexcoordgradientcoord;
+layout(location=1) in vec4 PS_INPUT_gl_vOutercornercoord0;
+layout(location=2) in vec4 PS_INPUT_gl_vOutercornercoord1;
+layout(location=3) in vec4 PS_INPUT_gl_vColor0;
+layout(location=4) in vec4 PS_INPUT_gl_vColor1;
+layout(location=5) in vec4 PS_INPUT_gl_vInnercornercoord0;
+layout(location=6) in vec4 PS_INPUT_gl_vInnercornercoord1;
+layout(location=7) in vec4 PS_INPUT_gl_vOpacitytexcoord;
+layout(location=0) out vec4 PS_OUTPUT_gl_vColor;
+const float C_a1d0 = -1.0;
+const float C_a2d0 = -2.0;
+const float C_4d0 = 4.0;
+const float C_0d0 = 0.0;
+const float C_2d0 = 2.0;
+const float C_1d0 = 1.0;
+void main()
+{
+	float H_5exgua = g_vGradientradialoffset.x * g_vGradientradialoffset.x;
+	float H_phuzml1 = g_vGradientradialoffset.y * g_vGradientradialoffset.y;
+	float H_m8lxti1 = H_5exgua + H_phuzml1;
+	float H_s25zk9 = H_m8lxti1 + C_a1d0;
+	float H_dw845z = PS_INPUT_gl_vTexcoordgradientcoord.z * g_vGradientradialoffset.x;
+	float H_hqocka = PS_INPUT_gl_vTexcoordgradientcoord.w * g_vGradientradialoffset.y;
+	float H_l0zm07 = H_dw845z + H_hqocka;
+	float H_3u7wht = H_l0zm07 * C_a2d0;
+	float H_5qoqv1 = PS_INPUT_gl_vTexcoordgradientcoord.z * PS_INPUT_gl_vTexcoordgradientcoord.z;
+	float H_jp1vrf = PS_INPUT_gl_vTexcoordgradientcoord.w * PS_INPUT_gl_vTexcoordgradientcoord.w;
+	float H_i1aosh = H_5qoqv1 + H_jp1vrf;
+	float H_37d2241 = H_3u7wht * H_3u7wht;
+	float H_easxvw = H_s25zk9 * C_4d0;
+	float H_wjpdo11 = H_easxvw * H_i1aosh;
+	float H_1b2wr6 = H_37d2241 - H_wjpdo11;
+	float det = max(H_1b2wr6, C_0d0);
+	float gradientposition = sign(H_s25zk9);
+	float gradientposition1 = sqrt(det);
+	float H_m95h5v = gradientposition * gradientposition1;
+	float H_yv52sr = H_m95h5v - H_3u7wht;
+	float H_ghsljy = H_s25zk9 * C_2d0;
+	float gradientposition2 = H_yv52sr / H_ghsljy;
+	float vTexCol = clamp(gradientposition2, C_0d0, C_1d0);
+	vec4 vTexCol1 = mix(PS_INPUT_gl_vColor0, PS_INPUT_gl_vColor1, vTexCol);
+	PS_OUTPUT_gl_vColor = vTexCol1;
+}
+

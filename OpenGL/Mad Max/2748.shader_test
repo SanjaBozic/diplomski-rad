@@ -1,0 +1,10 @@
+[require]
+GLSL >= 4.60
+GL_ARB_separate_shader_objects
+SSO ENABLED
+
+[fragment shader]
+#version 460
+
+void main() {}
+

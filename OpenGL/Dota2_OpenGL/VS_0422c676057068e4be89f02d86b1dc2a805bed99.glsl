@@ -1,0 +1,131 @@
+//ATTRIBMAP-00-90-50-xx
+#version 330 core
+// LunarGOO output
+#extension GL_ARB_separate_shader_objects : enable
+#extension GL_ARB_shading_language_420pack : enable
+layout(std140, binding = 12 ) uniform _Globals_ {
+	vec4 g_vViewport;
+} ;
+layout(std140) uniform PerViewConstantBuffer_t {
+	layout(row_major) mat4 g_matWorldToProjection;
+	layout(row_major) mat4 g_matProjectionToWorld;
+	layout(row_major) mat4 g_matWorldToView;
+	layout(row_major) mat4 g_matViewToProjection;
+	vec4 g_vInvProjRow3;
+	vec4 g_vClipPlane0;
+	float g_flToneMapScalarLinear;
+	float g_flLightMapScalar;
+	float g_flEnvMapScalar;
+	float g_flToneMapScalarGamma;
+	vec3 g_vCameraPositionWs;
+	float g_flViewportMinZ;
+	vec3 g_vCameraDirWs;
+	float g_flViewportMaxZ;
+	vec3 g_vCameraUpDirWs;
+	float g_flTime;
+	vec3 g_vDepthPsToVsConversion;
+	float g_flNearPlane;
+	float g_flFarPlane;
+	float g_flLightBinnerFarPlane;
+	vec2 g_vInvViewportSize;
+	vec2 g_vViewportToGBufferRatio;
+	vec2 g_vMorphTextureAtlasSize;
+	vec4 g_vInvGBufferSize;
+	vec2 g_vViewportOffset;
+	vec2 g_vViewportSize;
+	vec2 g_vRenderTargetSize;
+	float g_flFogBlendToBackground;
+	float g_flHenyeyGreensteinCoeff;
+	vec3 g_vFogColor;
+	float g_flNegFogStartOverFogRange;
+	float g_flInvFogRange;
+	float g_flFogMaxDensity;
+	float g_flFogExponent;
+	float g_flMod2xIdentity;
+	vec2 g_bRoughnessParams;
+	float g_bStereoEnabled;
+	float g_flStereoCameraIndex;
+	vec3 g_vMiddleEyePositionWs;
+	float g_flPad2;
+	layout(row_major) mat4 g_matWorldToProjectionMultiview[2];
+	vec4 g_vCameraPositionWsMultiview[2];
+	vec4 g_vFrameBufferCopyInvSizeAndUvScale;
+	vec4 g_vCameraAngles;
+	vec4 g_vWorldToCameraOffset;
+	vec4 g_vWorldToCameraOffsetMultiview[2];
+	vec4 g_vPerViewConstantExtraData0;
+	vec4 g_vPerViewConstantExtraData1;
+	vec4 g_vPerViewConstantExtraData2;
+	vec4 g_vPerViewConstantExtraData3;
+} ;
+layout(std140) uniform PerViewLightingConstantBuffer_t {
+	vec4 g_vInvLightTextureDims;
+	vec4 g_vLightBinCounts;
+	vec2 g_vLowResDeferredLightingTextureDim;
+	vec2 g_vLowResDeferredLightingTextureInvDim;
+	vec3 g_vToolsAmbientLighting;
+	float g_flSSAOEnabled;
+	vec3 g_vIrradAtlasInvSize;
+	float g_flIrradGlobalLightingFactor;
+	vec4 g_vGlobalLightingSHRed;
+	vec4 g_vGlobalLightingSHGreen;
+	vec4 g_vGlobalLightingSHBlue;
+	vec3 g_vRayleighScatteringCoeff;
+	float g_flMieScatteringEccentricity;
+	vec3 g_vMieScatteringCoeff;
+	float g_flMieForwardScatteringRatio;
+	vec3 g_vSpecularCubeMapScale;
+	float g_flDefaultEnvMapIndex;
+	vec4 g_vLightCookieSheetSequenceAndSizes;
+	vec3 g_vLpvBoxMinCascade0;
+	float g_flLpvBrightnessScale;
+	vec3 g_vLpvInvBoxDimCascade0;
+	vec2 g_vLpvInvCoeffTextureDim;
+} ;
+layout(std140) uniform PerLayerConstantBuffer_t {
+	vec4 g_vWireframeColor;
+} ;
+layout(location=0) in vec2 VS_INPUT_gl_vPositionPs;
+layout(location=1) in vec4 VS_INPUT_gl_vColor;
+layout(location=2) in vec2 VS_INPUT_gl_vTexCoord;
+out gl_PerVertex {
+	vec4 gl_Position;
+	float gl_ClipDistance[1];
+} ;
+layout(location=0) out vec2 PS_INPUT_gl_vTexCoord;
+layout(location=1) out vec4 PS_INPUT_gl_vColor;
+const float C_0d0 = 0.0;
+const vec2 C_vec2p2d0p = vec2(2.0);
+const vec2 C_vec2pa1d0p = vec2(-1.0);
+const float C_a1d0 = -1.0;
+const vec3 C_vec3p12d92p = vec3(12.92);
+const vec3 C_vec3p1d055p = vec3(1.055);
+const vec3 C_bw96as = vec3(0.0521327);
+const vec3 C_vec3p2d4p = vec3(2.4);
+const float C_0d04045 = 0.04045;
+const float C_1d0 = 1.0;
+void main()
+{
+	gl_ClipDistance[0] = C_0d0;
+	vec2 H_wx2uof = VS_INPUT_gl_vPositionPs - g_vViewport.xy;
+	vec2 H_dmpa351 = H_wx2uof * C_vec2p2d0p;
+	vec2 H_5nrnl4 = H_dmpa351 / g_vViewport.zw;
+	vec2 H_6i23jn1 = H_5nrnl4 + C_vec2pa1d0p;
+	float H_afss6i = H_6i23jn1.y * C_a1d0;
+	vec3 vLinearSegment = VS_INPUT_gl_vColor.xyz / C_vec3p12d92p;
+	vec3 H_3fa77x1 = VS_INPUT_gl_vColor.xyz / C_vec3p1d055p;
+	vec3 H_avlvsp1 = H_3fa77x1 + C_bw96as;
+	vec3 vExpSegment = pow(H_avlvsp1, C_vec3p2d4p);
+	bool H_qjlc451 = VS_INPUT_gl_vColor.x > C_0d04045;
+	float select = H_qjlc451 ? vExpSegment.x : vLinearSegment.x;
+	bool H_1ocnu01 = VS_INPUT_gl_vColor.y > C_0d04045;
+	float select1 = H_1ocnu01 ? vExpSegment.y : vLinearSegment.y;
+	bool H_8draww1 = VS_INPUT_gl_vColor.z > C_0d04045;
+	float select2 = H_8draww1 ? vExpSegment.z : vLinearSegment.z;
+	vec4 H_6t7a2k1 = vec4(select, select1, select2, VS_INPUT_gl_vColor.w);
+	PS_INPUT_gl_vTexCoord = VS_INPUT_gl_vTexCoord;
+	PS_INPUT_gl_vColor = H_6t7a2k1;
+	float H_b17zkh = C_0d0 - H_afss6i;
+	vec4 H_2dusne = vec4(H_6i23jn1.x, H_b17zkh, C_1d0, C_1d0);
+	gl_Position = H_2dusne;
+}

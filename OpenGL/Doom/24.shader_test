@@ -1,0 +1,376 @@
+[require]
+GLSL >= 4.30
+
+[vertex shader]
+#version 430 core
+#extension GL_ARB_shader_clock : enable
+float saturate( float v ) { return clamp( v, 0.0, 1.0 ); }
+vec2 saturate( vec2 v ) { return clamp( v, 0.0, 1.0 ); }
+vec3 saturate( vec3 v ) { return clamp( v, 0.0, 1.0 ); }
+vec4 saturate( vec4 v ) { return clamp( v, 0.0, 1.0 ); }
+vec4 tex2Dlod( sampler2D image, vec4 texcoord ) { return textureLod( image, texcoord.xy, texcoord.w ); }
+vec4 tex3Dlod( sampler3D image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBElod( samplerCube image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 tex2DARRAYlod( sampler2DArray image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBEARRAYlod( samplerCubeArray image, vec4 texcoord, float lod ) { return textureLod( image, texcoord.xyzw, lod ); }
+
+uniform vec4 _va_freqHigh [34];
+uniform vec4 _va_freqLow [4];
+uniform matrices_ubo { vec4 matrices[768]; };
+
+in vec4 in_Position;
+in vec4 in_Normal;
+in vec4 in_Tangent;
+in vec4 in_Color;
+in vec2 in_TexCoord;
+
+out vec4 vofi_TexCoord8;
+out vec4 vofi_TexCoord7;
+out vec4 vofi_TexCoord0;
+out vec4 vofi_TexCoord5;
+out vec4 vofi_TexCoord6;
+out vec4 vofi_TexCoord1;
+out vec4 vofi_TexCoord2;
+out vec4 vofi_TexCoord3;
+out vec4 vofi_TexCoord4;
+
+float dot3 ( vec3 a, vec3 b ) { return dot( a, b ); }
+float dot3 ( vec3 a, vec4 b ) { return dot( a, b.xyz ); }
+float dot3 ( vec4 a, vec3 b ) { return dot( a.xyz, b ); }
+float dot3 ( vec4 a, vec4 b ) { return dot( a.xyz, b.xyz ); }
+float dot4 ( vec4 a, vec4 b ) { return dot( a, b ); }
+float dot4 ( vec2 a, vec4 b ) { return dot( vec4( a, 0.0, 1.0 ), b ); }
+void main() {
+	{
+		vec4 localPosition;
+		vec4 localNormal;
+		vec4 localTangent;
+		vec4 localBitangent;
+		vec4 globalPosition;
+		float morphScale;
+		{
+			localPosition = in_Position * _va_freqLow[0 ] + _va_freqLow[1 ];
+			localNormal = in_Normal * 2.0 - 1.0;
+			localTangent = in_Tangent * 2.0 - 1.0;
+			localTangent.w = floor( in_Tangent.w * 255.1 / 128.0 ) * 2.0 - 1.0;
+		};
+		vec3 eyePos = localPosition.xyz;
+		eyePos.xy = abs( eyePos.xy );
+		vec3 eyeNormal = normalize( eyePos.xyz - _va_freqHigh[0 ].xyz );
+		{
+			morphScale = 0.0; if ( _va_freqHigh[1 ].x != 0.0 ) {
+				vec4 tempPosition = localPosition;
+				vec4 matX = vec4( 0 ), matY = vec4( 0 ), matZ = vec4( 0 );
+				{
+					vec4 weights;
+					{
+						float hiweight = in_Tangent.w * 255.1;
+						weights[ 1 ] = hiweight - floor( hiweight / 128.0 ) * 128.0;
+						float packedWeights = in_Normal.w * 255.1;
+						weights[ 2 ] = floor( packedWeights / 16.0 );
+						weights[ 3 ] = packedWeights - ( weights[ 2 ] * 16.0 );
+						weights[ 1 ] *= 1.0 / 254.0;
+						weights[ 2 ] *= 1.0 / 45.0;
+						weights[ 3 ] *= 1.0 / 60.0;
+						weights[ 0 ] = 1 - ( weights[ 1 ] + weights[ 2 ] + weights[ 3 ] );
+					};
+					uvec4 indices = uvec4( in_Color * 255.0 ); for( uint i = 0; i < 4; i++ ) {
+						matX += matrices[ indices[ i ] * 3 + 0 ] * weights[ i ];
+					} for( uint i = 0; i < 4; i++ ) {
+						matY += matrices[ indices[ i ] * 3 + 1 ] * weights[ i ];
+					} for( uint i = 0; i < 4; i++ ) {
+						matZ += matrices[ indices[ i ] * 3 + 2 ] * weights[ i ];
+					}
+				};
+				localPosition.x = dot4( tempPosition, matX );
+				localPosition.y = dot4( tempPosition, matY );
+				localPosition.z = dot4( tempPosition, matZ );
+				localPosition.w = 1.0;
+				vec4 tempNormal = localNormal;
+				localNormal.x = dot3( tempNormal, matX );
+				localNormal.y = dot3( tempNormal, matY );
+				localNormal.z = dot3( tempNormal, matZ );
+				vec4 tempTangent = localTangent;
+				localTangent.x = dot3( tempTangent, matX );
+				localTangent.y = dot3( tempTangent, matY );
+				localTangent.z = dot3( tempTangent, matZ );
+			}
+		};
+		{
+			localBitangent.xyz = cross( localNormal.xyz, localTangent.xyz ) * localTangent.w;
+			localBitangent.w = 0.0;
+		};
+		{
+			gl_Position.x = dot4( localPosition, _va_freqHigh[2 ] );
+			gl_Position.y = dot4( localPosition, _va_freqHigh[3 ] );
+			gl_Position.z = dot4( localPosition, _va_freqHigh[4 ] );
+			gl_Position.w = dot4( localPosition, _va_freqHigh[5 ] );
+			vofi_TexCoord1.x = dot3( localTangent, _va_freqHigh[6 ] );
+			vofi_TexCoord1.y = dot3( localBitangent, _va_freqHigh[6 ] );
+			vofi_TexCoord1.z = dot3( localNormal, _va_freqHigh[6 ] );
+			vofi_TexCoord1.w = morphScale;
+			vofi_TexCoord2.x = dot3( localTangent, _va_freqHigh[7 ] );
+			vofi_TexCoord2.y = dot3( localBitangent, _va_freqHigh[7 ] );
+			vofi_TexCoord2.z = dot3( localNormal, _va_freqHigh[7 ] );
+			vofi_TexCoord2.w = 0.0;
+			vofi_TexCoord3.x = dot3( localTangent, _va_freqHigh[8 ] );
+			vofi_TexCoord3.y = dot3( localBitangent, _va_freqHigh[8 ] );
+			vofi_TexCoord3.z = dot3( localNormal, _va_freqHigh[8 ] );
+			vofi_TexCoord3.w = 0.0;
+		};
+		{
+			globalPosition.x = dot4( localPosition, _va_freqHigh[6 ] );
+			globalPosition.y = dot4( localPosition, _va_freqHigh[7 ] );
+			globalPosition.z = dot4( localPosition, _va_freqHigh[8 ] );
+			globalPosition.w = 1.0;
+		};
+		{
+			vofi_TexCoord0 = ( in_TexCoord.xy * _va_freqLow[2 ].xy + _va_freqLow[2 ].zw ).xyxy;
+		};
+		vofi_TexCoord4 = globalPosition - _va_freqLow[3 ];
+		vec2 shadowTC = ( eyeNormal.xz - _va_freqHigh[9 ].zw ) * _va_freqHigh[9 ].xy;
+		shadowTC = shadowTC * 0.5 + 0.5;
+		shadowTC = saturate( shadowTC );
+		shadowTC.y = 1.0 - shadowTC.y;
+		vofi_TexCoord5.xy = shadowTC;
+		vec3 globalNormal = vec3( vofi_TexCoord1.z, vofi_TexCoord2.z, vofi_TexCoord3.z );
+		globalNormal = normalize( globalNormal );
+		vec3 toViewer = normalize( _va_freqLow[3 ].xyz - globalPosition.xyz );
+		float falloff = saturate( abs( dot( globalNormal, toViewer ) ) );
+		vofi_TexCoord5.w = 1.0 - falloff;
+		vec3 localToViewer;
+		localToViewer.x = dot3( toViewer, _va_freqHigh[10 ].xyz );
+		localToViewer.y = dot3( toViewer, _va_freqHigh[11 ].xyz );
+		localToViewer.z = dot3( toViewer, _va_freqHigh[12 ].xyz );
+		vofi_TexCoord6.x = dot3( localToViewer, localTangent.xyz );
+		vofi_TexCoord6.y = dot3( localToViewer, localBitangent.xyz );
+		{
+			vec3 vertexPos = in_Position.xyz;
+			vofi_TexCoord7 = vec4( 0.0 );
+			vec3 wound3A =( _va_freqHigh[13 ].xyz - vertexPos.xyz ) * _va_freqHigh[13 ].w;
+			vec3 wound3B =( _va_freqHigh[14 ].xyz - vertexPos.xyz ) * _va_freqHigh[14 ].w;
+			vec3 wound3C =( _va_freqHigh[15 ].xyz - vertexPos.xyz ) * _va_freqHigh[15 ].w;
+			vec3 wound3D =( _va_freqHigh[16 ].xyz - vertexPos.xyz ) * _va_freqHigh[16 ].w;
+			vec3 wound3E =( _va_freqHigh[17 ].xyz - vertexPos.xyz ) * _va_freqHigh[17 ].w;
+			vec3 wound3F =( _va_freqHigh[18 ].xyz - vertexPos.xyz ) * _va_freqHigh[18 ].w;
+			vec3 wound3G =( _va_freqHigh[19 ].xyz - vertexPos.xyz ) * _va_freqHigh[19 ].w;
+			vec3 wound3H =( _va_freqHigh[20 ].xyz - vertexPos.xyz ) * _va_freqHigh[20 ].w;
+			vec3 wound3I =( _va_freqHigh[21 ].xyz - vertexPos.xyz ) * _va_freqHigh[21 ].w;
+			vec3 wound3J =( _va_freqHigh[22 ].xyz - vertexPos.xyz ) * _va_freqHigh[22 ].w;
+			vec3 wound3K =( _va_freqHigh[23 ].xyz - vertexPos.xyz ) * _va_freqHigh[23 ].w;
+			vec3 wound3L =( _va_freqHigh[24 ].xyz - vertexPos.xyz ) * _va_freqHigh[24 ].w;
+			vec3 wound3M =( _va_freqHigh[25 ].xyz - vertexPos.xyz ) * _va_freqHigh[25 ].w;
+			vec3 wound3N =( _va_freqHigh[26 ].xyz - vertexPos.xyz ) * _va_freqHigh[26 ].w;
+			vec3 wound3O =( _va_freqHigh[27 ].xyz - vertexPos.xyz ) * _va_freqHigh[27 ].w;
+			vec3 wound3P =( _va_freqHigh[28 ].xyz - vertexPos.xyz ) * _va_freqHigh[28 ].w;
+			vec3 wound3Q =( _va_freqHigh[29 ].xyz - vertexPos.xyz ) * _va_freqHigh[29 ].w;
+			vec3 wound3R =( _va_freqHigh[30 ].xyz - vertexPos.xyz ) * _va_freqHigh[30 ].w;
+			vec3 wound3S =( _va_freqHigh[31 ].xyz - vertexPos.xyz ) * _va_freqHigh[31 ].w;
+			vec3 wound3T =( _va_freqHigh[32 ].xyz - vertexPos.xyz ) * _va_freqHigh[32 ].w;
+			float wound3A_DOT = dot3( wound3A,wound3A );
+			float wound3B_DOT = dot3( wound3B,wound3B );
+			float wound3C_DOT = dot3( wound3C,wound3C );
+			float wound3D_DOT = dot3( wound3D,wound3D );
+			float wound3E_DOT = dot3( wound3E,wound3E );
+			float wound3F_DOT = dot3( wound3F,wound3F );
+			float wound3G_DOT = dot3( wound3G,wound3G );
+			float wound3H_DOT = dot3( wound3H,wound3H );
+			float wound3I_DOT = dot3( wound3I,wound3I );
+			float wound3J_DOT = dot3( wound3J,wound3J );
+			float wound3K_DOT = dot3( wound3K,wound3K );
+			float wound3L_DOT = dot3( wound3L,wound3L );
+			float wound3M_DOT = dot3( wound3M,wound3M );
+			float wound3N_DOT = dot3( wound3N,wound3N );
+			float wound3O_DOT = dot3( wound3O,wound3O );
+			float wound3P_DOT = dot3( wound3P,wound3P );
+			float wound3Q_DOT = dot3( wound3Q,wound3Q );
+			float wound3R_DOT = dot3( wound3R,wound3R );
+			float wound3S_DOT = dot3( wound3S,wound3S );
+			float wound3T_DOT = dot3( wound3T,wound3T );
+			float mask;
+			mask = min( wound3A_DOT, wound3B_DOT );
+			mask = min( mask, wound3C_DOT );
+			mask = min( mask, wound3D_DOT );
+			mask = min( mask, wound3E_DOT );
+			mask = min( mask, wound3F_DOT );
+			mask = min( mask, wound3G_DOT );
+			mask = min( mask, wound3H_DOT );
+			mask = min( mask, wound3K_DOT );
+			mask = min( mask, wound3L_DOT );
+			mask = min( mask, wound3M_DOT );
+			mask = min( mask, wound3N_DOT );
+			mask = min( mask, wound3O_DOT );
+			mask = min( mask, wound3P_DOT );
+			mask = min( mask, wound3Q_DOT );
+			mask = min( mask, wound3R_DOT );
+			float bloodSphereMask = sqrt( min( mask, min( min( wound3S_DOT, wound3T_DOT ), min( wound3I_DOT, wound3J_DOT ) ) ) ) - 1.0;
+			float woundMask = sqrt( mask ) - 1.0;
+			vofi_TexCoord7 = vec4( bloodSphereMask, 0.0, 0.0, woundMask );
+		};
+		vofi_TexCoord8.xy = vofi_TexCoord0.xy * _va_freqHigh[33 ].xy;
+		vofi_TexCoord8.zw = vec2( 0.0 );
+	}
+}
+[fragment shader]
+#version 430 core
+#extension GL_ARB_shader_clock : enable
+void clip( float v ) { if ( v < 0.0 ) { discard; } }
+void clip( vec2 v ) { if ( any( lessThan( v, vec2( 0.0 ) ) ) ) { discard; } }
+void clip( vec3 v ) { if ( any( lessThan( v, vec3( 0.0 ) ) ) ) { discard; } }
+void clip( vec4 v ) { if ( any( lessThan( v, vec4( 0.0 ) ) ) ) { discard; } }
+
+float saturate( float v ) { return clamp( v, 0.0, 1.0 ); }
+vec2 saturate( vec2 v ) { return clamp( v, 0.0, 1.0 ); }
+vec3 saturate( vec3 v ) { return clamp( v, 0.0, 1.0 ); }
+vec4 saturate( vec4 v ) { return clamp( v, 0.0, 1.0 ); }
+
+vec4 tex2D( sampler2D image, vec2 texcoord ) { return texture( image, texcoord.xy ); }
+vec4 tex2D( sampler2DShadow image, vec3 texcoord ) { return vec4( texture( image, texcoord.xyz ) ); }
+vec4 tex2DARRAY( sampler2DArray image, vec3 texcoord ) { return texture( image, texcoord.xyz ); }
+
+vec4 tex2D( sampler2D image, vec2 texcoord, vec2 dx, vec2 dy ) { return textureGrad( image, texcoord.xy, dx, dy ); }
+vec4 tex2D( sampler2DShadow image, vec3 texcoord, vec2 dx, vec2 dy ) { return vec4( textureGrad( image, texcoord.xyz, dx, dy ) ); }
+vec4 tex2DARRAY( sampler2DArray image, vec3 texcoord, vec2 dx, vec2 dy ) { return textureGrad( image, texcoord.xyz, dx, dy ); }
+
+vec4 texCUBE( samplerCube image, vec3 texcoord ) { return texture( image, texcoord.xyz ); }
+vec4 texCUBE( samplerCubeShadow image, vec4 texcoord ) { return vec4( texture( image, texcoord.xyzw ) ); }
+vec4 texCUBEARRAY( samplerCubeArray image, vec4 texcoord ) { return texture( image, texcoord.xyzw ); }
+
+vec4 tex1Dproj( sampler1D image, vec2 texcoord ) { return textureProj( image, texcoord ); }
+vec4 tex2Dproj( sampler2D image, vec3 texcoord ) { return textureProj( image, texcoord ); }
+vec4 tex3Dproj( sampler3D image, vec4 texcoord ) { return textureProj( image, texcoord ); }
+
+vec4 tex1Dbias( sampler1D image, vec4 texcoord ) { return texture( image, texcoord.x, texcoord.w ); }
+vec4 tex2Dbias( sampler2D image, vec4 texcoord ) { return texture( image, texcoord.xy, texcoord.w ); }
+vec4 tex2DARRAYbias( sampler2DArray image, vec4 texcoord ) { return texture( image, texcoord.xyz, texcoord.w ); }
+vec4 tex3Dbias( sampler3D image, vec4 texcoord ) { return texture( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBEbias( samplerCube image, vec4 texcoord ) { return texture( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBEARRAYbias( samplerCubeArray image, vec4 texcoord, float bias ) { return texture( image, texcoord.xyzw, bias); }
+
+vec4 tex1Dlod( sampler1D image, vec4 texcoord ) { return textureLod( image, texcoord.x, texcoord.w ); }
+vec4 tex2Dlod( sampler2D image, vec4 texcoord ) { return textureLod( image, texcoord.xy, texcoord.w ); }
+vec4 tex2DARRAYlod( sampler2DArray image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 tex3Dlod( sampler3D image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBElod( samplerCube image, vec4 texcoord ) { return textureLod( image, texcoord.xyz, texcoord.w ); }
+vec4 texCUBEARRAYlod( samplerCubeArray image, vec4 texcoord, float lod ) { return textureLod( image, texcoord.xyzw, lod ); }
+
+vec4 tex2DGatherRed( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 0 ); }
+vec4 tex2DGatherGreen( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 1 ); }
+vec4 tex2DGatherBlue( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 2 ); }
+vec4 tex2DGatherAlpha( sampler2D image, vec2 texcoord ) { return textureGather( image, texcoord, 3 ); }
+
+vec4 tex2DGatherOffsetRed( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 0 ); }
+vec4 tex2DGatherOffsetGreen( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 1 ); }
+vec4 tex2DGatherOffsetBlue( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 2 ); }
+vec4 tex2DGatherOffsetAlpha( sampler2D image, vec2 texcoord, const ivec2 v0 ) { return textureGatherOffset( image, texcoord, v0, 3 ); }
+
+#define tex2DGatherOffsetsRed( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 0 )
+#define tex2DGatherOffsetsGreen( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 1 )
+#define tex2DGatherOffsetsBlue( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 2 )
+#define tex2DGatherOffsetsAlpha( image, texcoord, v0, v1, v2, v3 ) textureGatherOffsets( image, texcoord, ivec2[]( v0, v1, v2, v3 ), 3 )
+
+uniform vec4 _fa_freqHigh [4];
+uniform sampler2D samp_dither256map;
+uniform sampler2D samp_woundtexture;
+uniform sampler2D samp_transmap1;
+uniform sampler2D samp_transmap2;
+uniform sampler2D samp_transmap;
+uniform samplerCube samp_dynamicenvmap;
+uniform samplerCube samp_dynamicdiffuseenvmap;
+
+in vec4 vofi_TexCoord8;
+in vec4 vofi_TexCoord7;
+in vec4 vofi_TexCoord0;
+in vec4 vofi_TexCoord5;
+in vec4 vofi_TexCoord6;
+in vec4 vofi_TexCoord1;
+in vec4 vofi_TexCoord2;
+in vec4 vofi_TexCoord3;
+in vec4 vofi_TexCoord4;
+in vec4 gl_FragCoord;
+
+out vec4 out_FragColor0;
+out vec4 out_FragColor1;
+out vec4 out_FragColor2;
+
+float dot3 ( vec3 a, vec3 b ) { return dot( a, b ); }
+float dot3 ( vec3 a, vec4 b ) { return dot( a, b.xyz ); }
+float dot3 ( vec4 a, vec3 b ) { return dot( a.xyz, b ); }
+float dot3 ( vec4 a, vec4 b ) { return dot( a.xyz, b.xyz ); }
+float SRGBlinearApprox ( float value ) {
+	return value * ( value * ( value * 0.305306011 + 0.682171111 ) + 0.012522878 );
+}
+vec3 SRGBlinearApprox ( vec3 sRGB ) {
+	vec3 outLinear;
+	outLinear.r = SRGBlinearApprox( sRGB.r );
+	outLinear.g = SRGBlinearApprox( sRGB.g );
+	outLinear.b = SRGBlinearApprox( sRGB.b );
+	return outLinear;
+}
+vec4 SRGBlinearApprox ( vec4 sRGBA ) {
+	vec4 outLinear = vec4( SRGBlinearApprox( sRGBA.rgb ), 1 );
+	outLinear.a = SRGBlinearApprox( sRGBA.a );
+	return outLinear;
+}
+vec4 tex2DDeGammaApprox ( sampler2D image, vec2 texcoord ) {
+	vec4 color = tex2D( image, texcoord );
+	color = SRGBlinearApprox( color );
+	return color;
+}
+void main() {
+	{
+		{ if ( _fa_freqHigh[0 ].x < 1.0 ) {
+				vec2 texcoord = gl_FragCoord.xy * ( 1.0 / 256.0 );
+				float dither = tex2Dlod( samp_dither256map, vec4(texcoord.xy, 0, 0 ) ).x;
+				clip( _fa_freqHigh[0 ].x - 0.2 - dither * 0.6 );
+			}
+		};
+		vec4 woundMap3 = tex2D( samp_woundtexture, vofi_TexCoord8.xy );
+		{
+			float clipValue = vofi_TexCoord7.w + ( woundMap3.w - 0.5 ) * 0.1;
+			clip( clipValue );
+		};
+		vec4 normalTex = tex2D( samp_transmap1, vofi_TexCoord0.xy );
+		vec4 shadowTex = tex2DDeGammaApprox( samp_transmap2, vofi_TexCoord5.xy );
+		vec2 texCoords = vofi_TexCoord0.xy - ( vofi_TexCoord6.xy * normalTex.w * 0.15 );
+		texCoords = texCoords - vec2( 0.5 );
+		float pupilDilateClamp = clamp( _fa_freqHigh[1 ].x, -0.3, -0.05 );
+		float dilateMask = saturate( length( texCoords * ( 2.5 / pupilDilateClamp ) ) );
+		float dilateMask2 = 1.0 - saturate( length( vec3( texCoords, 0.0 ) * 5.3 ) );
+		vec2 dilation = normalize( vec3( texCoords, 0.0 ) ).xy * dilateMask * dilateMask2 * pupilDilateClamp;
+		texCoords += dilation;
+		texCoords += 0.5;
+		vec4 diffuseTex = tex2DDeGammaApprox( samp_transmap, texCoords );
+		vec3 eyeColor = diffuseTex.xyz * mix( _fa_freqHigh[2 ].xyz, _fa_freqHigh[3 ].xyz, vec3( diffuseTex.w ) ) * 2.0;
+		vec3 localNormal = normalTex.xyz * 2.0 - 1.0;
+		vec3 specNormal;
+		specNormal.x = dot3( localNormal, vofi_TexCoord1 );
+		specNormal.y = dot3( localNormal, vofi_TexCoord2 );
+		specNormal.z = dot3( localNormal, vofi_TexCoord3 );
+		specNormal = normalize( specNormal );
+		localNormal.xy = mix( localNormal.xy * vec2( -2.0 ), localNormal.xy, vec2( diffuseTex.w ) );
+		localNormal = normalize( localNormal );
+		vec3 globalNormal;
+		globalNormal.x = dot3( localNormal, vofi_TexCoord1 );
+		globalNormal.y = dot3( localNormal, vofi_TexCoord2 );
+		globalNormal.z = dot3( localNormal, vofi_TexCoord3 );
+		globalNormal = normalize( globalNormal );
+		vec3 fromViewer = normalize( vofi_TexCoord4.xyz );
+		vec4 reflection;
+		reflection.xyz = normalize( fromViewer - ( specNormal * dot3( fromViewer, specNormal ) * 2.0 ) );
+		reflection.w = 0.0;
+		vec3 envColor = texCUBElod( samp_dynamicenvmap, reflection ).xyz;
+		float fresnel = 1.0 - saturate( dot( -fromViewer, specNormal ) );
+		envColor *= ( ( 1.0 - diffuseTex.w ) + 0.2 ) * ( vofi_TexCoord5.w + 0.5 ) * fresnel;
+		float specularScale = 16 * saturate( 1.05 - diffuseTex.w );
+		vec4 color;
+		vec3 diffuseProbe = texCUBElod( samp_dynamicdiffuseenvmap, reflection ).xyz;
+		diffuseProbe = SRGBlinearApprox( diffuseProbe );
+		diffuseProbe *= ( ( 1.0 - diffuseTex.w ) + 0.2 ) * ( vofi_TexCoord5.w + 0.5 ) * fresnel;
+		color.xyz = diffuseProbe * shadowTex.xyz;
+		color.w = 1.0;
+		out_FragColor0 = color;
+		out_FragColor1 = color;
+		out_FragColor2 = vec4( 0.0 );
+	}
+}
