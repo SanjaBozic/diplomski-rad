@@ -1,0 +1,544 @@
+16797 shaders in 8455 tests
+Totals:
+SGPRS: 1029142 -> 858257 (-16.60 %)
+VGPRS: 632624 -> 621436 (-1.77 %)
+Spilled SGPRs: 81259 -> 0 (-100.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 30640224 -> 25396264 (-17.11 %) bytes
+LDS: 193 -> 150 (-22.28 %) blocks
+Max Waves: 253587 -> 231575 (-8.68 %)
+Wait states: 0 -> 0 (0.00 %)
+
+Totals from affected shaders:
+SGPRS: 1029142 -> 858257 (-16.60 %)
+VGPRS: 632624 -> 621436 (-1.77 %)
+Spilled SGPRs: 81259 -> 0 (-100.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 30640224 -> 25396264 (-17.11 %) bytes
+LDS: 193 -> 150 (-22.28 %) blocks
+Max Waves: 253587 -> 231575 (-8.68 %)
+Wait states: 0 -> 0 (0.00 %)
+
+Increases:
+SGPRS: 3039 (0.18 %)
+VGPRS: 8401 (0.50 %)
+Spilled SGPRs: 0 (0.00 %)
+Spilled VGPRs: 0 (0.00 %)
+Private memory VGPRs: 0 (0.00 %)
+Scratch size: 0 (0.00 %)
+Code Size: 386 (0.02 %)
+LDS: 61 (0.00 %)
+Max Waves: 3951 (0.24 %)
+Wait states: 0 (0.00 %)
+
+Decreases:
+SGPRS: 9617 (0.57 %)
+VGPRS: 5541 (0.33 %)
+Spilled SGPRs: 3847 (0.23 %)
+Spilled VGPRs: 0 (0.00 %)
+Private memory VGPRs: 0 (0.00 %)
+Scratch size: 0 (0.00 %)
+Code Size: 16027 (0.95 %)
+LDS: 5 (0.00 %)
+Max Waves: 8389 (0.50 %)
+Wait states: 0 (0.00 %)
+
+*** BY PERCENTAGE ***
+
+Max Increase:
+
+SGPRS: 32 -> 104 (225.00 %) (in 53.pipeline_test)
+VGPRS: 24 -> 40 (66.67 %) (in 3073.pipeline_test)
+Spilled SGPRs: 0 -> 0 (0.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 12 -> 16 (33.33 %) bytes (in 151.pipeline_test)
+LDS: 0 -> 1 (0.00 %) blocks (in 6290.pipeline_test)
+Max Waves: 3 -> 8 (166.67 %) (in 2143.pipeline_test)
+Wait states: 0 -> 0 (0.00 %)
+
+Max Decrease:
+
+SGPRS: 88 -> 24 (-72.73 %) (in 24.pipeline_test)
+VGPRS: 24 -> 4 (-83.33 %) (in 5054.pipeline_test)
+Spilled SGPRs: 22 -> 0 (-100.00 %) (in 6809.pipeline_test)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 7428 -> 3360 (-54.77 %) bytes (in 2658.pipeline_test)
+LDS: 29 -> 6 (-79.31 %) blocks (in 3461.pipeline_test)
+Max Waves: 20 -> 12 (-40.00 %) (in 3073.pipeline_test)
+Wait states: 0 -> 0 (0.00 %)
+
+*** BY UNIT ***
+
+Max Increase:
+
+SGPRS: 32 -> 104 (225.00 %) (in 53.pipeline_test)
+VGPRS: 32 -> 48 (50.00 %) (in 2121.pipeline_test)
+Spilled SGPRs: 0 -> 0 (0.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 17996 -> 18376 (2.11 %) bytes (in 1910.pipeline_test)
+LDS: 0 -> 1 (0.00 %) blocks (in 6290.pipeline_test)
+Max Waves: 10 -> 20 (100.00 %) (in 3028.pipeline_test)
+Wait states: 0 -> 0 (0.00 %)
+
+Max Decrease:
+
+SGPRS: 112 -> 40 (-64.29 %) (in 4781.pipeline_test)
+VGPRS: 256 -> 172 (-32.81 %) (in 893.pipeline_test)
+Spilled SGPRs: 199 -> 0 (-100.00 %) (in 2658.pipeline_test)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 11116 -> 6852 (-38.36 %) bytes (in 6633.pipeline_test)
+LDS: 29 -> 6 (-79.31 %) blocks (in 3461.pipeline_test)
+Max Waves: 20 -> 12 (-40.00 %) (in 3073.pipeline_test)
+Wait states: 0 -> 0 (0.00 %)
+
+ WORST VGPR SPILLS (not deltas)                                        VGPRs SpillVGPR  PrivVGPR ScratchSize
+
+ VGPR SPILLING APPS   Shaders SpillVGPR  PrivVGPR ScratchSize
+
+ WORST SGPR SPILLS (not deltas)                                        SGPRs SpillSGPR
+
+ SGPR SPILLING APPS   Shaders SpillSGPR AvgPerSh
+
+ WORST REGRESSIONS - SGPRS                                            Before     After     Delta Percentage
+ 53.pipeline_test [0]                                                     32       104        72  225.00 %
+ 49.pipeline_test [0]                                                     32       104        72  225.00 %
+ 28.pipeline_test [0]                                                     32        88        56  175.00 %
+ 41.pipeline_test [0]                                                     32        88        56  175.00 %
+ 37.pipeline_test [0]                                                     32        88        56  175.00 %
+ 33.pipeline_test [0]                                                     32        88        56  175.00 %
+ 701.pipeline_test [1]                                                    64        96        32   50.00 %
+ 7425.pipeline_test [0]                                                   56        80        24   42.86 %
+ 6523.pipeline_test [0]                                                   32        56        24   75.00 %
+ 7557.pipeline_test [0]                                                   64        88        24   37.50 %
+ 1463.pipeline_test [0]                                                   48        72        24   50.00 %
+ 720.pipeline_test [0]                                                    56        80        24   42.86 %
+ 549.pipeline_test [0]                                                    56        80        24   42.86 %
+ 5846.pipeline_test [1]                                                   88       112        24   27.27 %
+ 3491.pipeline_test [1]                                                   48        72        24   50.00 %
+ 3490.pipeline_test [1]                                                   48        72        24   50.00 %
+ 848.pipeline_test [0]                                                    56        80        24   42.86 %
+ 1464.pipeline_test [0]                                                   48        72        24   50.00 %
+ 7100.pipeline_test [0]                                                   56        80        24   42.86 %
+ 1642.pipeline_test [0]                                                   40        64        24   60.00 %
+ 8252.pipeline_test [0]                                                   64        88        24   37.50 %
+ 2450.pipeline_test [0]                                                   56        80        24   42.86 %
+ 797.pipeline_test [0]                                                    48        72        24   50.00 %
+ 3909.pipeline_test [0]                                                   56        80        24   42.86 %
+ 3493.pipeline_test [1]                                                   48        72        24   50.00 %
+ 7523.pipeline_test [0]                                                   64        88        24   37.50 %
+ 1534.pipeline_test [0]                                                   56        80        24   42.86 %
+ 1465.pipeline_test [0]                                                   48        72        24   50.00 %
+ 3846.pipeline_test [0]                                                   56        80        24   42.86 %
+ 768.pipeline_test [0]                                                    56        80        24   42.86 %
+ 779.pipeline_test [0]                                                    48        72        24   50.00 %
+ 1644.pipeline_test [0]                                                   40        64        24   60.00 %
+ 8311.pipeline_test [1]                                                   80       104        24   30.00 %
+ 632.pipeline_test [0]                                                    56        80        24   42.86 %
+ 860.pipeline_test [0]                                                    56        80        24   42.86 %
+ 3038.pipeline_test [0]                                                   32        48        16   50.00 %
+ 8320.pipeline_test [0]                                                   40        56        16   40.00 %
+ 1540.pipeline_test [0]                                                   32        48        16   50.00 %
+ 4829.pipeline_test [0]                                                   32        48        16   50.00 %
+ 7078.pipeline_test [0]                                                   32        48        16   50.00 %
+
+ WORST REGRESSIONS - VGPRS                                            Before     After     Delta Percentage
+ 2572.pipeline_test [0]                                                   32        48        16   50.00 %
+ 4054.pipeline_test [0]                                                   32        48        16   50.00 %
+ 4816.pipeline_test [0]                                                   32        48        16   50.00 %
+ 2112.pipeline_test [0]                                                   32        48        16   50.00 %
+ 7618.pipeline_test [1]                                                   32        48        16   50.00 %
+ 705.pipeline_test [1]                                                    32        48        16   50.00 %
+ 4815.pipeline_test [0]                                                   32        48        16   50.00 %
+ 2920.pipeline_test [0]                                                   32        48        16   50.00 %
+ 2121.pipeline_test [0]                                                   32        48        16   50.00 %
+ 3863.pipeline_test [0]                                                   32        48        16   50.00 %
+ 6526.pipeline_test [0]                                                   32        48        16   50.00 %
+ 2930.pipeline_test [0]                                                   32        48        16   50.00 %
+ 2665.pipeline_test [1]                                                   24        40        16   66.67 %
+ 2933.pipeline_test [0]                                                   32        48        16   50.00 %
+ 2079.pipeline_test [0]                                                   32        48        16   50.00 %
+ 2801.pipeline_test [0]                                                   32        48        16   50.00 %
+ 1984.pipeline_test [1]                                                   32        48        16   50.00 %
+ 3073.pipeline_test [1]                                                   24        40        16   66.67 %
+ 41.pipeline_test [0]                                                     32        48        16   50.00 %
+ 2132.pipeline_test [0]                                                   32        48        16   50.00 %
+ 53.pipeline_test [0]                                                     32        48        16   50.00 %
+ 6524.pipeline_test [0]                                                   32        48        16   50.00 %
+ 2736.pipeline_test [1]                                                   32        48        16   50.00 %
+ 2081.pipeline_test [0]                                                   32        48        16   50.00 %
+ 866.pipeline_test [0]                                                    32        48        16   50.00 %
+ 6705.pipeline_test [0]                                                   32        48        16   50.00 %
+ 7357.pipeline_test [0]                                                   32        48        16   50.00 %
+ 7287.pipeline_test [0]                                                   32        48        16   50.00 %
+ 179.pipeline_test [1]                                                    32        48        16   50.00 %
+ 6270.pipeline_test [1]                                                   32        48        16   50.00 %
+ 6204.pipeline_test [0]                                                   32        48        16   50.00 %
+ 783.pipeline_test [0]                                                    32        48        16   50.00 %
+ 2628.pipeline_test [0]                                                   32        48        16   50.00 %
+ 7155.pipeline_test [0]                                                   32        48        16   50.00 %
+ 6964.pipeline_test [0]                                                   32        48        16   50.00 %
+ 8080.pipeline_test [0]                                                   32        48        16   50.00 %
+ 1965.pipeline_test [0]                                                   32        48        16   50.00 %
+ 702.pipeline_test [1]                                                    32        48        16   50.00 %
+ 6253.pipeline_test [0]                                                   32        48        16   50.00 %
+ 6254.pipeline_test [0]                                                   32        48        16   50.00 %
+
+ WORST REGRESSIONS - Code Size                                        Before     After     Delta Percentage
+ 1325.pipeline_test [0]                                                17996     18376       380    2.11 %
+ 1910.pipeline_test [0]                                                17996     18376       380    2.11 %
+ 46.pipeline_test [0]                                                   2132      2336       204    9.57 %
+ 6431.pipeline_test [0]                                                 2924      3096       172    5.88 %
+ 284.pipeline_test [0]                                                   756       924       168   22.22 %
+ 6250.pipeline_test [0]                                                 2928      3096       168    5.74 %
+ 6251.pipeline_test [0]                                                 2496      2660       164    6.57 %
+ 1699.pipeline_test [1]                                                 1664      1816       152    9.13 %
+ 1674.pipeline_test [1]                                                 1664      1816       152    9.13 %
+ 319.pipeline_test [0]                                                  1048      1192       144   13.74 %
+ 196.pipeline_test [0]                                                  1048      1192       144   13.74 %
+ 6433.pipeline_test [0]                                                 2964      3096       132    4.45 %
+ 6252.pipeline_test [0]                                                 2964      3096       132    4.45 %
+ 6702.pipeline_test [0]                                                 3196      3320       124    3.88 %
+ 1346.pipeline_test [1]                                                 1044      1168       124   11.88 %
+ 264.pipeline_test [0]                                                  1144      1260       116   10.14 %
+ 6084.pipeline_test [0]                                                 2776      2892       116    4.18 %
+ 6089.pipeline_test [0]                                                 2776      2892       116    4.18 %
+ 6166.pipeline_test [0]                                                 3256      3368       112    3.44 %
+ 6167.pipeline_test [0]                                                 3256      3368       112    3.44 %
+ 6194.pipeline_test [0]                                                 3216      3324       108    3.36 %
+ 6192.pipeline_test [0]                                                 3228      3324        96    2.97 %
+ 6086.pipeline_test [0]                                                 3188      3284        96    3.01 %
+ 6087.pipeline_test [0]                                                 3188      3284        96    3.01 %
+ 7535.pipeline_test [0]                                                 3208      3300        92    2.87 %
+ 8436.pipeline_test [0]                                                 3208      3300        92    2.87 %
+ 8244.pipeline_test [0]                                                 3208      3300        92    2.87 %
+ 6291.pipeline_test [0]                                                 3208      3300        92    2.87 %
+ 8097.pipeline_test [0]                                                 3208      3300        92    2.87 %
+ 6371.pipeline_test [0]                                                 3208      3300        92    2.87 %
+ 8329.pipeline_test [0]                                                 3212      3300        88    2.74 %
+ 7951.pipeline_test [0]                                                 3212      3300        88    2.74 %
+ 7735.pipeline_test [0]                                                 3200      3284        84    2.62 %
+ 7730.pipeline_test [0]                                                 3200      3284        84    2.62 %
+ 7894.pipeline_test [0]                                                 3200      3284        84    2.62 %
+ 6195.pipeline_test [0]                                                 3228      3308        80    2.48 %
+ 6197.pipeline_test [0]                                                 3228      3308        80    2.48 %
+ 6702.pipeline_test [1]                                                 2196      2272        76    3.46 %
+ 6088.pipeline_test [0]                                                 2800      2876        76    2.71 %
+ 7645.pipeline_test [0]                                                 2804      2876        72    2.57 %
+
+ WORST REGRESSIONS - LDS                                              Before     After     Delta Percentage
+ 8437.pipeline_test [0]                                                    0         1         1     inf %
+ 8329.pipeline_test [0]                                                    0         1         1     inf %
+ 6433.pipeline_test [0]                                                    0         1         1     inf %
+ 6166.pipeline_test [0]                                                    0         1         1     inf %
+ 6290.pipeline_test [0]                                                    0         1         1     inf %
+ 7735.pipeline_test [0]                                                    0         1         1     inf %
+ 7730.pipeline_test [0]                                                    0         1         1     inf %
+ 6194.pipeline_test [0]                                                    0         1         1     inf %
+ 8295.pipeline_test [0]                                                    0         1         1     inf %
+ 6171.pipeline_test [0]                                                    0         1         1     inf %
+ 6574.pipeline_test [0]                                                    0         1         1     inf %
+ 6091.pipeline_test [0]                                                    0         1         1     inf %
+ 6167.pipeline_test [0]                                                    0         1         1     inf %
+ 7535.pipeline_test [0]                                                    0         1         1     inf %
+ 6170.pipeline_test [0]                                                    0         1         1     inf %
+ 6092.pipeline_test [0]                                                    0         1         1     inf %
+ 6192.pipeline_test [0]                                                    0         1         1     inf %
+ 1609.pipeline_test [0]                                                    0         1         1     inf %
+ 7645.pipeline_test [0]                                                    0         1         1     inf %
+ 7951.pipeline_test [0]                                                    0         1         1     inf %
+ 6193.pipeline_test [0]                                                    0         1         1     inf %
+ 8321.pipeline_test [0]                                                    0         1         1     inf %
+ 1674.pipeline_test [0]                                                    0         1         1     inf %
+ 6251.pipeline_test [0]                                                    0         1         1     inf %
+ 7894.pipeline_test [0]                                                    0         1         1     inf %
+ 6084.pipeline_test [0]                                                    0         1         1     inf %
+ 8328.pipeline_test [0]                                                    0         1         1     inf %
+ 6702.pipeline_test [0]                                                    0         1         1     inf %
+ 8095.pipeline_test [0]                                                    0         1         1     inf %
+ 8436.pipeline_test [0]                                                    0         1         1     inf %
+ 6168.pipeline_test [0]                                                    0         1         1     inf %
+ 8244.pipeline_test [0]                                                    0         1         1     inf %
+ 7962.pipeline_test [0]                                                    0         1         1     inf %
+ 6372.pipeline_test [0]                                                    0         1         1     inf %
+ 6080.pipeline_test [0]                                                    0         1         1     inf %
+ 7364.pipeline_test [0]                                                    0         1         1     inf %
+ 6195.pipeline_test [0]                                                    0         1         1     inf %
+ 6291.pipeline_test [0]                                                    0         1         1     inf %
+ 8097.pipeline_test [0]                                                    0         1         1     inf %
+ 8420.pipeline_test [0]                                                    0         1         1     inf %
+
+ WORST REGRESSIONS - Max Waves                                        Before     After     Delta Percentage
+ 2665.pipeline_test [1]                                                   20        12        -8  -40.00 %
+ 3073.pipeline_test [1]                                                   20        12        -8  -40.00 %
+ 2561.pipeline_test [1]                                                   20        12        -8  -40.00 %
+ 3033.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 2443.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 2572.pipeline_test [0]                                                   16        10        -6  -37.50 %
+ 1388.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 7604.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 6789.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 8249.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 3362.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 7608.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 7420.pipeline_test [1]                                                   18        12        -6  -33.33 %
+ 7012.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 1555.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 3457.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 4829.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 8332.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 4909.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 7078.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 8003.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 7228.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 146.pipeline_test [0]                                                    20        14        -6  -30.00 %
+ 6281.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 2932.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 2227.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 7756.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 7542.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 2876.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 8082.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 7395.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 6783.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 4054.pipeline_test [0]                                                   16        10        -6  -37.50 %
+ 2629.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 1820.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 926.pipeline_test [0]                                                    20        14        -6  -30.00 %
+ 2857.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 8368.pipeline_test [0]                                                   20        14        -6  -30.00 %
+ 2528.pipeline_test [0]                                                   18        12        -6  -33.33 %
+ 2287.pipeline_test [0]                                                   20        14        -6  -30.00 %
+
+ BIGGEST IMPROVEMENTS - SGPRS                                            
+ Before After     Delta Percentage
+ 8173.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 7783.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 4492.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 272.pipeline_test [1]                                                   112        48       -64  -57.14 %
+ 5207.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 5734.pipeline_test [1]                                                  104        40       -64  -61.54 %
+ 8181.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 7666.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 2580.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 8182.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 269.pipeline_test [1]                                                   112        48       -64  -57.14 %
+ 2117.pipeline_test [1]                                                  104        40       -64  -61.54 %
+ 182.pipeline_test [1]                                                   112        48       -64  -57.14 %
+ 3591.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 5019.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 275.pipeline_test [1]                                                   112        48       -64  -57.14 %
+ 198.pipeline_test [1]                                                   112        48       -64  -57.14 %
+ 4848.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 2287.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 365.pipeline_test [1]                                                   112        48       -64  -57.14 %
+ 2523.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 4392.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 4720.pipeline_test [0]                                                  112        48       -64  -57.14 %
+ 267.pipeline_test [1]                                                   112        48       -64  -57.14 %
+ 8180.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 3974.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 4388.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 7772.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 4528.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 2606.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 2030.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 2277.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 2028.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 2331.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 2249.pipeline_test [1]                                                  112        48       -64  -57.14 %
+ 5520.pipeline_test [1]                                                  104        48       -56  -53.85 %
+ 6814.pipeline_test [1]                                                  104        48       -56  -53.85 %
+ 4479.pipeline_test [1]                                                  104        48       -56  -53.85 %
+ 2225.pipeline_test [1]                                                  104        48       -56  -53.85 %
+ 5774.pipeline_test [1]                                                  104        48       -56  -53.85 %
+
+ BIGGEST IMPROVEMENTS - VGPRS                                            
+ Before After     Delta Percentage
+ 5986.pipeline_test [1]                                                  128        64       -64  -50.00 %
+ 2968.pipeline_test [1]                                                  128        64       -64  -50.00 %
+ 5985.pipeline_test [1]                                                  128        64       -64  -50.00 %
+ 4207.pipeline_test [1]                                                  128        64       -64  -50.00 %
+ 6052.pipeline_test [1]                                                  132        84       -48  -36.36 %
+ 6055.pipeline_test [1]                                                  132        84       -48  -36.36 %
+ 3010.pipeline_test [1]                                                  128        84       -44  -34.38 %
+ 2932.pipeline_test [1]                                                  128        84       -44  -34.38 %
+ 3009.pipeline_test [1]                                                  128        84       -44  -34.38 %
+ 2850.pipeline_test [1]                                                  128        84       -44  -34.38 %
+ 2135.pipeline_test [1]                                                  128        84       -44  -34.38 %
+ 2188.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 8338.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 5241.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 6022.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 3004.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 2633.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 2232.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 6016.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 3012.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 2693.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 4179.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 6023.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 6015.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 1937.pipeline_test [1]                                                  104        64       -40  -38.46 %
+ 2857.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 187.pipeline_test [1]                                                   100        64       -36  -36.00 %
+ 1399.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 5183.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 525.pipeline_test [1]                                                   100        64       -36  -36.00 %
+ 213.pipeline_test [1]                                                   100        64       -36  -36.00 %
+ 7542.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 3675.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 6018.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 290.pipeline_test [1]                                                   100        64       -36  -36.00 %
+ 2368.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 7310.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 5184.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 6019.pipeline_test [1]                                                  100        64       -36  -36.00 %
+ 173.pipeline_test [1]                                                   100        64       -36  -36.00 %
+
+ BIGGEST IMPROVEMENTS - Spilled SGPRs                                    
+ Before After     Delta Percentage
+ 2746.pipeline_test [1]                                                  140         0      -140 -100.00 %
+ 7819.pipeline_test [1]                                                   62         0       -62 -100.00 %
+ 6467.pipeline_test [1]                                                   56         0       -56 -100.00 %
+ 6468.pipeline_test [1]                                                   56         0       -56 -100.00 %
+ 4397.pipeline_test [1]                                                   54         0       -54 -100.00 %
+ 4203.pipeline_test [1]                                                   54         0       -54 -100.00 %
+ 4010.pipeline_test [1]                                                   52         0       -52 -100.00 %
+ 3245.pipeline_test [1]                                                   52         0       -52 -100.00 %
+ 3244.pipeline_test [1]                                                   52         0       -52 -100.00 %
+ 7135.pipeline_test [1]                                                   50         0       -50 -100.00 %
+ 8238.pipeline_test [1]                                                   50         0       -50 -100.00 %
+ 8254.pipeline_test [1]                                                   50         0       -50 -100.00 %
+ 1714.pipeline_test [1]                                                   46         0       -46 -100.00 %
+ 1713.pipeline_test [1]                                                   46         0       -46 -100.00 %
+ 4550.pipeline_test [1]                                                   42         0       -42 -100.00 %
+ 4655.pipeline_test [1]                                                   42         0       -42 -100.00 %
+ 4711.pipeline_test [1]                                                   42         0       -42 -100.00 %
+ 5516.pipeline_test [1]                                                   42         0       -42 -100.00 %
+ 5517.pipeline_test [1]                                                   42         0       -42 -100.00 %
+ 6014.pipeline_test [1]                                                   42         0       -42 -100.00 %
+ 3223.pipeline_test [1]                                                   40         0       -40 -100.00 %
+ 8381.pipeline_test [1]                                                   40         0       -40 -100.00 %
+ 5227.pipeline_test [1]                                                   38         0       -38 -100.00 %
+ 6363.pipeline_test [1]                                                   38         0       -38 -100.00 %
+ 6660.pipeline_test [1]                                                   38         0       -38 -100.00 %
+ 6365.pipeline_test [1]                                                   38         0       -38 -100.00 %
+ 6364.pipeline_test [1]                                                   38         0       -38 -100.00 %
+ 3261.pipeline_test [1]                                                   36         0       -36 -100.00 %
+ 5470.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 5474.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 6444.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 5469.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 7858.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 5472.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 5467.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 5471.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 5473.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 5468.pipeline_test [1]                                                   34         0       -34 -100.00 %
+ 5500.pipeline_test [1]                                                   32         0       -32 -100.00 %
+ 5502.pipeline_test [1]                                                   32         0       -32 -100.00 %
+
+ BIGGEST IMPROVEMENTS - Code Size                                        
+ Before After     Delta Percentage
+ 2746.pipeline_test [1]                                                 6060      3116     -2944  -48.58 %
+ 6014.pipeline_test [1]                                                16376     13700     -2676  -16.34 %
+ 6547.pipeline_test [1]                                                10752      8944     -1808  -16.82 %
+ 590.pipeline_test [1]                                                 10856      9076     -1780  -16.40 %
+ 6858.pipeline_test [1]                                                11284      9512     -1772  -15.70 %
+ 4891.pipeline_test [1]                                                11284      9512     -1772  -15.70 %
+ 6199.pipeline_test [1]                                                11284      9512     -1772  -15.70 %
+ 6897.pipeline_test [1]                                                11284      9512     -1772  -15.70 %
+ 6198.pipeline_test [1]                                                11284      9512     -1772  -15.70 %
+ 7819.pipeline_test [1]                                                 5080      3324     -1756  -34.57 %
+ 6467.pipeline_test [1]                                                 4888      3272     -1616  -33.06 %
+ 6468.pipeline_test [1]                                                 4888      3272     -1616  -33.06 %
+ 4397.pipeline_test [1]                                                 5292      3712     -1580  -29.86 %
+ 4203.pipeline_test [1]                                                 5292      3712     -1580  -29.86 %
+ 8238.pipeline_test [1]                                                 5108      3556     -1552  -30.38 %
+ 8254.pipeline_test [1]                                                 5108      3556     -1552  -30.38 %
+ 3245.pipeline_test [1]                                                 5160      3612     -1548  -30.00 %
+ 3244.pipeline_test [1]                                                 5160      3612     -1548  -30.00 %
+ 1714.pipeline_test [1]                                                 4868      3336     -1532  -31.47 %
+ 1713.pipeline_test [1]                                                 4868      3336     -1532  -31.47 %
+ 4010.pipeline_test [1]                                                 4960      3432     -1528  -30.81 %
+ 7135.pipeline_test [1]                                                 5036      3512     -1524  -30.26 %
+ 8381.pipeline_test [1]                                                 5192      3692     -1500  -28.89 %
+ 6660.pipeline_test [1]                                                 4916      3512     -1404  -28.56 %
+ 6052.pipeline_test [1]                                                 7548      6164     -1384  -18.34 %
+ 6055.pipeline_test [1]                                                 7548      6164     -1384  -18.34 %
+ 1620.pipeline_test [1]                                                 9676      8336     -1340  -13.85 %
+ 1622.pipeline_test [1]                                                 9676      8336     -1340  -13.85 %
+ 6363.pipeline_test [1]                                                 4708      3388     -1320  -28.04 %
+ 6365.pipeline_test [1]                                                 4708      3388     -1320  -28.04 %
+ 6364.pipeline_test [1]                                                 4708      3388     -1320  -28.04 %
+ 3223.pipeline_test [1]                                                 4204      2912     -1292  -30.73 %
+ 4655.pipeline_test [1]                                                 3796      2516     -1280  -33.72 %
+ 4711.pipeline_test [1]                                                 3796      2516     -1280  -33.72 %
+ 5516.pipeline_test [1]                                                 3796      2516     -1280  -33.72 %
+ 5517.pipeline_test [1]                                                 3796      2516     -1280  -33.72 %
+ 4550.pipeline_test [1]                                                 3792      2524     -1268  -33.44 %
+ 4207.pipeline_test [1]                                                 6384      5124     -1260  -19.74 %
+ 2173.pipeline_test [1]                                                 8420      7188     -1232  -14.63 %
+ 1600.pipeline_test [1]                                                 6340      5112     -1228  -19.37 %
+
+ BIGGEST IMPROVEMENTS - Max Waves                                        
+ Before After     Delta Percentage
+ 3028.pipeline_test [0]                                                   10        20        10  100.00 %
+ 51.pipeline_test [0]                                                     11        20         9   81.82 %
+ 1346.pipeline_test [1]                                                    8        14         6   75.00 %
+ 4826.pipeline_test [1]                                                    9        14         5   55.56 %
+ 5215.pipeline_test [1]                                                    9        14         5   55.56 %
+ 2188.pipeline_test [1]                                                    4         8         4  100.00 %
+ 4397.pipeline_test [1]                                                    6        10         4   66.67 %
+ 8338.pipeline_test [1]                                                    4         8         4  100.00 %
+ 6478.pipeline_test [1]                                                    6        10         4   66.67 %
+ 5241.pipeline_test [1]                                                    4         8         4  100.00 %
+ 3245.pipeline_test [1]                                                    6        10         4   66.67 %
+ 4203.pipeline_test [1]                                                    6        10         4   66.67 %
+ 6022.pipeline_test [1]                                                    4         8         4  100.00 %
+ 3004.pipeline_test [1]                                                    4         8         4  100.00 %
+ 1600.pipeline_test [1]                                                    6        10         4   66.67 %
+ 2633.pipeline_test [1]                                                    4         8         4  100.00 %
+ 5986.pipeline_test [1]                                                    4         8         4  100.00 %
+ 3285.pipeline_test [1]                                                   12        16         4   33.33 %
+ 6479.pipeline_test [1]                                                    6        10         4   66.67 %
+ 8135.pipeline_test [1]                                                   16        20         4   25.00 %
+ 8238.pipeline_test [1]                                                    6        10         4   66.67 %
+ 6320.pipeline_test [1]                                                    6        10         4   66.67 %
+ 8128.pipeline_test [1]                                                   16        20         4   25.00 %
+ 2232.pipeline_test [1]                                                    4         8         4  100.00 %
+ 6477.pipeline_test [1]                                                    6        10         4   66.67 %
+ 3244.pipeline_test [1]                                                    6        10         4   66.67 %
+ 3278.pipeline_test [1]                                                   12        16         4   33.33 %
+ 1588.pipeline_test [1]                                                    6        10         4   66.67 %
+ 6016.pipeline_test [1]                                                    4         8         4  100.00 %
+ 3012.pipeline_test [1]                                                    4         8         4  100.00 %
+ 8130.pipeline_test [1]                                                   16        20         4   25.00 %
+ 7808.pipeline_test [1]                                                    6        10         4   66.67 %
+ 8254.pipeline_test [1]                                                    6        10         4   66.67 %
+ 6321.pipeline_test [1]                                                    6        10         4   66.67 %
+ 7809.pipeline_test [1]                                                    6        10         4   66.67 %
+ 2693.pipeline_test [1]                                                    4         8         4  100.00 %
+ 4179.pipeline_test [1]                                                    4         8         4  100.00 %
+ 7819.pipeline_test [1]                                                    6        10         4   66.67 %
+ 2968.pipeline_test [1]                                                    4         8         4  100.00 %
+ 8132.pipeline_test [1]                                                   16        20         4   25.00 %
+
+ PERCENTAGE DELTAS    Shaders     SGPRs     VGPRs SpillSGPR SpillVGPR  PrivVGPR   Scratch  CodeSize  MaxWaves     Waits
+ (unknown)              16797  -16.60 %   -1.77 % -100.00 %     .         .         .      -17.11 %   -8.68 %     .    
+ ----------------------------------------------------------------------------------------------------------------------
+ All affected           16797  -16.60 %   -1.77 % -100.00 %     .         .         .      -17.11 %   -8.68 %     .    
+ ----------------------------------------------------------------------------------------------------------------------
+ Total                  16797  -16.60 %   -1.77 % -100.00 %     .         .         .      -17.11 %   -8.68 %     .     

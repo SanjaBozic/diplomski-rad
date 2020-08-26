@@ -1,0 +1,179 @@
+ 
+60 shaders in 31 tests
+Totals:
+SGPRS: 1840 -> 1786 (-2.93 %)
+VGPRS: 1248 -> 688 (-44.87 %)
+Spilled SGPRs: 0 -> 0 (0.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 16996 -> 16368 (-3.69 %) bytes
+LDS: 0 -> 0 (0.00 %) blocks
+Max Waves: 1200 -> 1200 (0.00 %)
+Wait states: 0 -> 0 (0.00 %)
+
+Totals from affected shaders:
+SGPRS: 1840 -> 1786 (-2.93 %)
+VGPRS: 1248 -> 688 (-44.87 %)
+Spilled SGPRs: 0 -> 0 (0.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 16996 -> 16368 (-3.69 %) bytes
+LDS: 0 -> 0 (0.00 %) blocks
+Max Waves: 1200 -> 1200 (0.00 %)
+Wait states: 0 -> 0 (0.00 %)
+
+Increases:
+SGPRS: 12 (0.20 %)
+VGPRS: 0 (0.00 %)
+Spilled SGPRs: 0 (0.00 %)
+Spilled VGPRs: 0 (0.00 %)
+Private memory VGPRs: 0 (0.00 %)
+Scratch size: 0 (0.00 %)
+Code Size: 17 (0.28 %)
+LDS: 0 (0.00 %)
+Max Waves: 0 (0.00 %)
+Wait states: 0 (0.00 %)
+
+Decreases:
+SGPRS: 8 (0.13 %)
+VGPRS: 57 (0.95 %)
+Spilled SGPRs: 0 (0.00 %)
+Spilled VGPRs: 0 (0.00 %)
+Private memory VGPRs: 0 (0.00 %)
+Scratch size: 0 (0.00 %)
+Code Size: 41 (0.68 %)
+LDS: 0 (0.00 %)
+Max Waves: 0 (0.00 %)
+Wait states: 0 (0.00 %)
+
+*** BY PERCENTAGE ***
+
+Max Increase:
+
+SGPRS: 10 -> 16 (60.00 %) (in 3.pipeline_test)
+VGPRS: 0 -> 0 (0.00 %)
+Spilled SGPRs: 0 -> 0 (0.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 244 -> 288 (18.03 %) bytes (in 28.pipeline_test)
+LDS: 0 -> 0 (0.00 %) blocks
+Max Waves: 0 -> 0 (0.00 %)
+Wait states: 0 -> 0 (0.00 %)
+
+Max Decrease:
+
+SGPRS: 48 -> 32 (-33.33 %) (in 18.pipeline_test)
+VGPRS: 24 -> 4 (-83.33 %) (in 16.pipeline_test)
+Spilled SGPRs: 0 -> 0 (0.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 348 -> 300 (-13.79 %) bytes (in 18.pipeline_test)
+LDS: 0 -> 0 (0.00 %) blocks
+Max Waves: 0 -> 0 (0.00 %)
+Wait states: 0 -> 0 (0.00 %)
+
+*** BY UNIT ***
+
+Max Increase:
+
+SGPRS: 24 -> 32 (33.33 %) (in 11.pipeline_test)
+VGPRS: 0 -> 0 (0.00 %)
+Spilled SGPRs: 0 -> 0 (0.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 244 -> 288 (18.03 %) bytes (in 28.pipeline_test)
+LDS: 0 -> 0 (0.00 %) blocks
+Max Waves: 0 -> 0 (0.00 %)
+Wait states: 0 -> 0 (0.00 %)
+
+Max Decrease:
+
+SGPRS: 48 -> 32 (-33.33 %) (in 18.pipeline_test)
+VGPRS: 24 -> 4 (-83.33 %) (in 16.pipeline_test)
+Spilled SGPRs: 0 -> 0 (0.00 %)
+Spilled VGPRs: 0 -> 0 (0.00 %)
+Private memory VGPRs: 0 -> 0 (0.00 %)
+Scratch size: 0 -> 0 (0.00 %) dwords per thread
+Code Size: 348 -> 300 (-13.79 %) bytes (in 18.pipeline_test)
+LDS: 0 -> 0 (0.00 %) blocks
+Max Waves: 0 -> 0 (0.00 %)
+Wait states: 0 -> 0 (0.00 %)
+
+ WORST VGPR SPILLS (not deltas)                                        VGPRs SpillVGPR  PrivVGPR ScratchSize
+
+ VGPR SPILLING APPS   Shaders SpillVGPR  PrivVGPR ScratchSize
+
+ WORST SGPR SPILLS (not deltas)                                        SGPRs SpillSGPR
+
+ SGPR SPILLING APPS   Shaders SpillSGPR AvgPerSh
+
+ WORST REGRESSIONS - SGPRS                                            Before     After     Delta Percentage
+ 1.pipeline_test [0]                                                      24        32         8   33.33 %
+ 28.pipeline_test [1]                                                     16        24         8   50.00 %
+ 29.pipeline_test [0]                                                     24        32         8   33.33 %
+ 11.pipeline_test [0]                                                     24        32         8   33.33 %
+ 0.pipeline_test [0]                                                      24        32         8   33.33 %
+ 30.pipeline_test [0]                                                     16        24         8   50.00 %
+ 4.pipeline_test [0]                                                      10        16         6   60.00 %
+ 3.pipeline_test [0]                                                      10        16         6   60.00 %
+ 12.pipeline_test [0]                                                     10        16         6   60.00 %
+ 2.pipeline_test [0]                                                      10        16         6   60.00 %
+ 16.pipeline_test [0]                                                      8         9         1   12.50 %
+ 15.pipeline_test [0]                                                      8         9         1   12.50 %
+
+ WORST REGRESSIONS - Code Size                                        Before     After     Delta Percentage
+ 28.pipeline_test [0]                                                    244       288        44   18.03 %
+ 4.pipeline_test [0]                                                     132       144        12    9.09 %
+ 1.pipeline_test [0]                                                     252       264        12    4.76 %
+ 3.pipeline_test [0]                                                     132       144        12    9.09 %
+ 11.pipeline_test [0]                                                    252       264        12    4.76 %
+ 12.pipeline_test [0]                                                    132       144        12    9.09 %
+ 0.pipeline_test [0]                                                     252       264        12    4.76 %
+ 2.pipeline_test [0]                                                     132       144        12    9.09 %
+ 28.pipeline_test [1]                                                    120       124         4    3.33 %
+ 13.pipeline_test [0]                                                    220       224         4    1.82 %
+ 9.pipeline_test [0]                                                     220       224         4    1.82 %
+ 6.pipeline_test [0]                                                     220       224         4    1.82 %
+ 7.pipeline_test [0]                                                     220       224         4    1.82 %
+ 8.pipeline_test [0]                                                     220       224         4    1.82 %
+ 5.pipeline_test [0]                                                     220       224         4    1.82 %
+ 26.pipeline_test [0]                                                    356       360         4    1.12 %
+ 10.pipeline_test [0]                                                    220       224         4    1.82 %
+
+ BIGGEST IMPROVEMENTS - VGPRS                                            
+ Before After     Delta Percentage
+ 16.pipeline_test [0]                                                     24         4       -20  -83.33 %
+ 28.pipeline_test [1]                                                     24         4       -20  -83.33 %
+ 15.pipeline_test [0]                                                     24         4       -20  -83.33 %
+ 4.pipeline_test [0]                                                      24         8       -16  -66.67 %
+ 3.pipeline_test [0]                                                      24         8       -16  -66.67 %
+ 12.pipeline_test [0]                                                     24         8       -16  -66.67 %
+ 2.pipeline_test [0]                                                      24         8       -16  -66.67 %
+ 1.pipeline_test [0]                                                      24        12       -12  -50.00 %
+ 13.pipeline_test [0]                                                     24        12       -12  -50.00 %
+ 9.pipeline_test [0]                                                      24        12       -12  -50.00 %
+ 6.pipeline_test [0]                                                      24        12       -12  -50.00 %
+ 11.pipeline_test [0]                                                     24        12       -12  -50.00 %
+ 7.pipeline_test [0]                                                      24        12       -12  -50.00 %
+ 0.pipeline_test [0]                                                      24        12       -12  -50.00 %
+ 8.pipeline_test [0]                                                      24        12       -12  -50.00 %
+ 5.pipeline_test [0]                                                      24        12       -12  -50.00 %
+ 26.pipeline_test [0]                                                     24        12       -12  -50.00 %
+ 10.pipeline_test [0]                                                     24        12       -12  -50.00 %
+
+ BIGGEST IMPROVEMENTS - Code Size                                        
+ Before After     Delta Percentage
+ 30.pipeline_test [0]                                                    264       256        -8   -3.03 %
+ 29.pipeline_test [0]                                                    200       196        -4   -2.00 %
+
+ PERCENTAGE DELTAS    Shaders     SGPRs     VGPRs SpillSGPR SpillVGPR  PrivVGPR   Scratch  CodeSize  MaxWaves     Waits
+ (unknown)                 60   -2.93 %  -44.87 %     .         .         .         .       -3.69 %     .         .    
+ ----------------------------------------------------------------------------------------------------------------------
+ All affected              60   -2.93 %  -44.87 %     .         .         .         .       -3.69 %     .         .    
+ ----------------------------------------------------------------------------------------------------------------------
+ Total                     60   -2.93 %  -44.87 %     .         .         .         .       -3.69 %     .         .    
